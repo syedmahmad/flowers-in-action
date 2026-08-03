@@ -115,7 +115,7 @@ npm run build
 vercel --prod
 ```
 
-Set environment variables in the Vercel dashboard. Connect your domain and enable `NEXT_PUBLIC_ALLOW_INDEXING=true` on production only.
+Set environment variables in the Vercel dashboard. Connect your domain and enable `NEXT_PUBLIC_ALLOW_INDEXING=true` on production only
 
 ## Deployment (Cloudflare Pages)
 
