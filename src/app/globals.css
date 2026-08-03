@@ -1,26 +1,114 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --maroon: #720016;
+  --maroon-deep: #4b0010;
+  --ivory: #fffdf8;
+  --blush: #f7e9e8;
+  --rose-muted: #c88d91;
+  --green-natural: #64755c;
+  --charcoal: #282323;
+  --white: #ffffff;
+  --background: var(--ivory);
+  --foreground: var(--charcoal);
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-maroon: var(--maroon);
+  --color-maroon-deep: var(--maroon-deep);
+  --color-ivory: var(--ivory);
+  --color-blush: var(--blush);
+  --color-rose-muted: var(--rose-muted);
+  --color-green-natural: var(--green-natural);
+  --color-charcoal: var(--charcoal);
+  --font-serif: var(--font-playfair);
+  --font-sans: var(--font-inter);
+  --font-script: var(--font-great-vibes);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
   }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-inter), system-ui, sans-serif;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: var(--blush);
+  color: var(--maroon-deep);
+}
+
+:focus-visible {
+  outline: 2px solid var(--maroon);
+  outline-offset: 2px;
+}
+
+.section-padding {
+  @apply scroll-mt-20 px-4 py-10 sm:px-6 sm:py-16 lg:px-8 lg:py-24;
+}
+
+.container-padding {
+  @apply px-4 sm:px-6 lg:px-8;
+}
+
+.container-narrow {
+  @apply mx-auto w-full max-w-7xl;
+}
+
+.heading-serif {
+  font-family: var(--font-playfair), Georgia, serif;
+}
+
+.script-accent {
+  font-family: var(--font-great-vibes), cursive;
+}
+
+.card-shadow {
+  box-shadow: 0 4px 24px rgba(114, 0, 22, 0.06);
+}
+
+.card-shadow-hover {
+  transition: box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.card-shadow-hover:hover {
+  box-shadow: 0 8px 32px rgba(114, 0, 22, 0.1);
+  transform: translateY(-2px);
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.4s ease-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-fade-in {
+    animation: none;
+  }
 }

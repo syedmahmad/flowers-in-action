@@ -1,0 +1,59 @@
+export const siteConfig = {
+  name: "Flowers In Action",
+  tagline: "Flowers That Turn Feelings Into Moments",
+  shortTagline: "Fresh Flowers. Beautiful Moments.",
+  description:
+    "Order fresh bouquets, floral boxes, chocolate bouquets, bridal flowers, groom garlands and customised gifts from Flowers In Action near DHA Phase 4, State Life and Lake City Lahore.",
+  url: process.env.NEXT_PUBLIC_SITE_URL || "https://flowersinaction.pk",
+  locale: "en_PK",
+  phone: "+923299989911",
+  phoneDisplay: "+92 329 998 9911",
+  whatsappBase: "https://wa.me/923299989911",
+  email: "hello@flowersinaction.pk",
+  address: {
+    street: "Plaza 24, B Block Bankers, Ground Floor",
+    locality: "Lahore",
+    region: "Punjab",
+    country: "PK",
+    full: "Plaza 24, B Block Bankers, Ground Floor, near DHA Phase 4, State Life Housing Society and Lake City Meadows, Lahore",
+  },
+  mapEmbedUrl:
+    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3403.0!2d74.4!3d31.47!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sPlaza%2024%20Bankers%20Town%20Lahore!5e0!3m2!1sen!2spk!4v1",
+  mapDirectionsUrl:
+    "https://www.google.com/maps/search/?api=1&query=Plaza+24+B+Block+Bankers+Lahore",
+  businessHoursNote: "Contact us to confirm today's opening hours",
+  serviceAreas: [
+    "DHA Phase 4 Lahore",
+    "DHA Phase 3 Lahore",
+    "DHA Phase 5 Lahore",
+    "State Life Housing Society",
+    "Bankers Town",
+    "Lake City Lahore",
+    "Valencia Town",
+    "Wapda Town",
+    "Khayaban-e-Amin",
+    "Johar Town",
+  ],
+  advancePaymentNote:
+    "Only 10% advance payment is required to confirm customised and delivery orders. The remaining payment can be settled according to the confirmed order arrangement.",
+  launchOfferHeadline: "50% Launch Discount on Selected Floral Creations",
+  launchOfferBadge: "50% OFF",
+  launchOfferNote:
+    "Launch offer is subject to product availability, flower season, selected customisation and delivery area.",
+  announcementMessages: [
+    "Fresh Flower Delivery Available Across Lahore",
+    "Only 10% Advance Required to Confirm Your Order",
+  ],
+  social: {
+    instagram: "https://instagram.com/flowersinaction",
+    facebook: "https://facebook.com/flowersinaction",
+  },
+  analytics: {
+    ga4Id: process.env.NEXT_PUBLIC_GA4_ID || "",
+    metaPixelId: process.env.NEXT_PUBLIC_META_PIXEL_ID || "",
+  },
+  isProduction: process.env.NODE_ENV === "production",
+  allowIndexing:
+    process.env.NEXT_PUBLIC_ALLOW_INDEXING === "true" ||
+    process.env.VERCEL_ENV === "production",
+} as const;
