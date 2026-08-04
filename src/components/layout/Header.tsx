@@ -13,6 +13,7 @@ const navItems = [
   { label: "Occasions", href: "#occasions" },
   { label: "Flowers", href: "#flowers" },
   { label: "Weddings", href: "#weddings" },
+  { label: "Areas", href: "#areas" },
   { label: "Custom", href: "#custom-orders" },
   { label: "About", href: "#about" },
   { label: "FAQs", href: "#faqs" },

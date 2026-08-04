@@ -21,17 +21,17 @@ export function Hero() {
               {siteConfig.launchOfferBadge} · Launch Offer
             </div>
             <p className="mb-2 text-xs font-semibold uppercase tracking-widest text-rose-muted sm:mb-3 sm:text-sm">
-              Premium Flower Shop in Lahore
+              {siteConfig.name}
             </p>
             <h1
               id="hero-heading"
               className="heading-serif mb-4 text-[1.65rem] font-bold leading-tight text-maroon-deep sm:mb-6 sm:text-4xl lg:text-5xl xl:text-6xl"
             >
-              Flowers That Bring Every Emotion Into Action
+              {siteConfig.tagline}
             </h1>
             <p className="mb-6 text-base leading-relaxed text-charcoal/80 sm:mb-8 sm:text-lg">
-              Thoughtfully designed bouquets, floral boxes, wedding flowers, garlands and
-              personalised gifts, handcrafted in Lahore.
+              Fresh bouquets, floral boxes, bridal flowers, groom garlands and personalised
+              gifts — handcrafted in Lahore and delivered across the city.
             </p>
             <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:gap-4">
               <Button href="#shop" size="lg" className="w-full sm:w-auto">

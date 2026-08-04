@@ -19,7 +19,7 @@ export function FAQSection() {
           </p>
         </div>
 
-        <div className="space-y-3">
+        <dl className="space-y-3">
           {faqs.map((faq, index) => {
             const isOpen = openIndex === index;
             return (
@@ -27,32 +27,34 @@ export function FAQSection() {
                 key={faq.question}
                 className="overflow-hidden rounded-2xl bg-white card-shadow"
               >
-                <button
-                  type="button"
-                  className="flex w-full items-center justify-between gap-4 px-5 py-4 text-left"
-                  onClick={() => setOpenIndex(isOpen ? null : index)}
-                  aria-expanded={isOpen}
-                >
-                  <span className="font-semibold text-maroon-deep">{faq.question}</span>
-                  <span
-                    className={cn(
-                      "shrink-0 text-maroon transition-transform",
-                      isOpen && "rotate-180"
-                    )}
-                    aria-hidden="true"
+                <dt>
+                  <button
+                    type="button"
+                    className="flex w-full items-center justify-between gap-4 px-5 py-4 text-left"
+                    onClick={() => setOpenIndex(isOpen ? null : index)}
+                    aria-expanded={isOpen}
                   >
-                    ▼
-                  </span>
-                </button>
+                    <span className="font-semibold text-maroon-deep">{faq.question}</span>
+                    <span
+                      className={cn(
+                        "shrink-0 text-maroon transition-transform",
+                        isOpen && "rotate-180"
+                      )}
+                      aria-hidden="true"
+                    >
+                      ▼
+                    </span>
+                  </button>
+                </dt>
                 {isOpen && (
-                  <div className="border-t border-blush px-5 py-4">
+                  <dd className="border-t border-blush px-5 py-4">
                     <p className="text-sm leading-relaxed text-charcoal/80">{faq.answer}</p>
-                  </div>
+                  </dd>
                 )}
               </div>
             );
           })}
-        </div>
+        </dl>
       </div>
     </section>
   );

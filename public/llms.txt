@@ -1,55 +1,53 @@
 # Flowers In Action
 
-> Flowers That Turn Feelings Into Moments
+Premium florist and flower delivery service in Lahore, Pakistan.
 
-## Business Identity
+## Business
 
-- **Name:** Flowers In Action
-- **Type:** Physical flower shop and WhatsApp-based flower delivery service
-- **Location:** Plaza 24, B Block Bankers, Ground Floor, near DHA Phase 4, State Life Housing Society and Lake City Meadows, Lahore, Pakistan
-- **WhatsApp:** +92 329 998 9911 (https://wa.me/923299989911)
-- **Website:** https://flowersinaction.pk
+Flowers In Action is a physical flower shop and WhatsApp-based ordering florist located at Plaza 24, B Block Bankers, Ground Floor, Lahore — near DHA Phase 4, State Life Housing Society and Lake City.
 
 ## Services
 
-- Fresh floral bouquets and hand-tied arrangements
-- Floral boxes and floral & chocolate gift boxes
-- Wedding flowers: bridal bouquets, floral jewellery, groom garlands, car and room decoration
-- Money bouquets, gift baskets, crochet flowers
-- Custom orders via WhatsApp
-- Delivery across selected Lahore areas
+- Fresh floral bouquets
+- Floral boxes and gift boxes
+- Floral and chocolate bouquets
+- Gift baskets
+- Money bouquets
+- Crochet flowers
+- Bridal bouquets
+- Floral jewellery and gajra
+- Groom garlands
+- Wedding car decoration
+- Room decoration
+- Birthday flower delivery
+- Anniversary and romantic flowers
+- Same-day flower delivery (subject to confirmation)
+- Custom floral designs via WhatsApp
 
-## Service Areas
+## Delivery
 
-DHA Phase 3–5 Lahore, State Life Housing Society, Bankers Town, Lake City, Valencia Town, Wapda Town, Khayaban-e-Amin, Johar Town, and surrounding Lahore neighbourhoods.
+Flower and gift delivery available across Lahore including DHA, State Life, Bankers Town, Lake City, Valencia Town, Wapda Town, Johar Town and Khayaban-e-Amin.
 
 ## Ordering
 
-This is not a traditional e-commerce site. Customers browse products on the website and order via WhatsApp. A 10% advance payment is typically required to confirm customised and delivery orders. No online card checkout.
-
-## Product Categories
-
-- Floral Bouquets
-- Floral & Chocolate Bouquets
-- Floral Boxes
-- Floral & Chocolate Boxes
-- Gift Baskets
-- Money Bouquets
-- Crochet Flowers
-- Wedding Collection (bridal bouquets, floral jewellery, groom garlands, car decoration, room decoration)
-
-## Current Offer
-
-50% launch discount on listed products (subject to availability, season, customisation and delivery area).
-
-## Policies
-
-- Delivery availability and charges confirmed on WhatsApp
-- Fresh flowers may vary by season; substitutions of equal value may be suggested
-- Orders cancellable before preparation begins
-- Refunds assessed case-by-case for damaged or incorrect items
+Orders are placed via WhatsApp. No online card checkout. A 10% advance payment is typically required to confirm delivery and customised orders.
 
 ## Contact
 
-WhatsApp: +92 329 998 9911
-Address: Plaza 24, B Block Bankers, Ground Floor, Lahore, Pakistan
+- WhatsApp: +923299989911
+- Phone: +92 329 998 9911
+- Website: https://www.flowersinaction.com
+- Location: Plaza 24, B Block Bankers, Ground Floor, Lahore, Pakistan
+
+## Product Categories
+
+floral-bouquets, floral-chocolate-bouquets, floral-boxes, floral-chocolate-boxes, baskets, money-bouquets, crochet-flowers, wedding-flowers
+
+## Key Pages
+
+- Shop: /#shop
+- Occasions: /#occasions
+- Wedding flowers: /#weddings
+- Lahore delivery areas: /#areas
+- FAQs: /#faqs
+- Contact: /#contact

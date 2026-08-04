@@ -14,6 +14,7 @@ const footerLinks = [
   { label: "Shop", href: "#shop" },
   { label: "Occasions", href: "#occasions" },
   { label: "Wedding Flowers", href: "#weddings" },
+  { label: "Delivery Areas", href: "#areas" },
   { label: "Custom Orders", href: "#custom-orders" },
   { label: "FAQs", href: "#faqs" },
   { label: "Contact", href: "#contact" },
@@ -36,7 +37,8 @@ export function Footer() {
             <div>
               <Logo className="mb-4" />
               <p className="text-sm leading-relaxed text-charcoal/80">
-                Fresh flowers, meaningful gifts and wedding creations handcrafted in Lahore.
+                {siteConfig.tagline}. Fresh flowers, meaningful gifts and wedding creations
+                handcrafted in Lahore.
               </p>
             </div>
 

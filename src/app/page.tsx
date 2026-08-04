@@ -14,6 +14,7 @@ import { CustomOrdersSection } from "@/components/sections/CustomOrdersSection";
 import { AboutSection } from "@/components/sections/AboutSection";
 import { HowItWorksSection } from "@/components/sections/HowItWorksSection";
 import { StoreSection } from "@/components/sections/StoreSection";
+import { ServiceAreasSection } from "@/components/sections/ServiceAreasSection";
 import { FAQSection } from "@/components/sections/FAQSection";
 import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
 import { GallerySection } from "@/components/sections/GallerySection";
@@ -47,6 +48,7 @@ export default function HomePage() {
         <AboutSection />
         <HowItWorksSection />
         <StoreSection />
+        <ServiceAreasSection />
         <FAQSection />
         <TestimonialsSection />
         <GallerySection />

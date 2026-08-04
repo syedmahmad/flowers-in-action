@@ -35,11 +35,12 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: "Flowers In Action | Flower Shop & Bouquet Delivery in Lahore",
-    template: "%s | Flowers In Action",
+    default: siteConfig.seoTitle,
+    template: `%s | ${siteConfig.name}`,
   },
-  description: siteConfig.description,
+  description: siteConfig.seoDescription,
   keywords: [
+    "premium florist Lahore",
     "flower shop in Lahore",
     "flowers delivery Lahore",
     "florist in Lahore",
@@ -47,7 +48,10 @@ export const metadata: Metadata = {
     "flower shop near DHA Phase 4 Lahore",
     "wedding flowers Lahore",
     "bridal bouquet Lahore",
+    "groom garland Lahore",
+    "floral jewellery Lahore",
     "same-day flowers Lahore",
+    "WhatsApp flower order Lahore",
   ],
   authors: [{ name: siteConfig.name }],
   creator: siteConfig.name,
@@ -56,14 +60,21 @@ export const metadata: Metadata = {
     locale: siteConfig.locale,
     url: siteConfig.url,
     siteName: siteConfig.name,
-    title: "Flowers In Action | Flower Shop & Bouquet Delivery in Lahore",
-    description: siteConfig.description,
-    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: siteConfig.name }],
+    title: siteConfig.seoTitle,
+    description: siteConfig.seoDescription,
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: `${siteConfig.name} — ${siteConfig.tagline}`,
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Flowers In Action | Flower Shop & Bouquet Delivery in Lahore",
-    description: siteConfig.description,
+    title: siteConfig.seoTitle,
+    description: siteConfig.seoDescription,
     images: ["/og-image.jpg"],
   },
   alternates: {

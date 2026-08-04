@@ -25,7 +25,16 @@ export default function robots(): MetadataRoute.Robots {
         userAgent: "Google-Extended",
         allow: "/",
       },
+      {
+        userAgent: "ClaudeBot",
+        allow: "/",
+      },
+      {
+        userAgent: "PerplexityBot",
+        allow: "/",
+      },
     ],
     sitemap: `${siteConfig.url}/sitemap.xml`,
+    host: siteConfig.url.replace(/^https?:\/\//, ""),
   };
 }

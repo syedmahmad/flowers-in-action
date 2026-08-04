@@ -1,10 +1,14 @@
 export const siteConfig = {
   name: "Flowers In Action",
-  tagline: "Flowers That Turn Feelings Into Moments",
+  tagline: "Premium Florist & Flower Delivery in Lahore",
+  secondaryTagline: "Flowers That Turn Feelings Into Moments",
   shortTagline: "Fresh Flowers. Beautiful Moments.",
   description:
-    "Order fresh bouquets, floral boxes, chocolate bouquets, bridal flowers, groom garlands and customised gifts from Flowers In Action near DHA Phase 4, State Life and Lake City Lahore.",
-  url: process.env.NEXT_PUBLIC_SITE_URL || "https://flowersinaction.pk",
+    "Flowers In Action is a premium florist in Lahore offering fresh bouquets, bridal flowers, groom garlands, floral jewellery, wedding décor and Lahore-wide delivery. Order on WhatsApp from Plaza 24, B Block Bankers near DHA Phase 4.",
+  seoTitle: "Flowers In Action | Premium Florist & Flower Delivery in Lahore",
+  seoDescription:
+    "Premium florist in Lahore. Fresh bouquets, bridal bouquets, floral jewellery, groom garlands, wedding car & room decoration, birthday flowers & Lahore-wide delivery. Order on WhatsApp.",
+  url: process.env.NEXT_PUBLIC_SITE_URL || "https://www.flowersinaction.com",
   locale: "en_PK",
   phone: "+923299989911",
   phoneDisplay: "+92 329 998 9911",
@@ -15,13 +19,17 @@ export const siteConfig = {
     locality: "Lahore",
     region: "Punjab",
     country: "PK",
-    full: "Plaza 24, B Block Bankers, Ground Floor, near DHA Phase 4, State Life Housing Society and Lake City Meadows, Lahore",
+    full: "Plaza 24, B Block Bankers, Ground Floor, near DHA Phase 4, State Life Housing Society and Lake City Meadows, Lahore, Pakistan",
+  },
+  geo: {
+    latitude: 31.4702,
+    longitude: 74.4034,
   },
   mapEmbedUrl:
     "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3403.0!2d74.4!3d31.47!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sPlaza%2024%20Bankers%20Town%20Lahore!5e0!3m2!1sen!2spk!4v1",
   mapDirectionsUrl:
     "https://www.google.com/maps/search/?api=1&query=Plaza+24+B+Block+Bankers+Lahore",
-  businessHoursNote: "Contact us to confirm today's opening hours",
+  businessHoursNote: "Contact us on WhatsApp to confirm today's opening hours",
   serviceAreas: [
     "DHA Phase 4 Lahore",
     "DHA Phase 3 Lahore",
@@ -33,6 +41,7 @@ export const siteConfig = {
     "Wapda Town",
     "Khayaban-e-Amin",
     "Johar Town",
+    "All Lahore",
   ],
   advancePaymentNote:
     "Only 10% advance payment is required to confirm customised and delivery orders. The remaining payment can be settled according to the confirmed order arrangement.",
