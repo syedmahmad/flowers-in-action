@@ -15,6 +15,7 @@ export function JsonLd() {
     "@type": ["Florist", "LocalBusiness"],
     "@id": `${siteConfig.url}/#localbusiness`,
     name: siteConfig.name,
+    alternateName: ["Phool Pattiyan Lahore", "Phool Pattiyan Florist"],
     description: siteConfig.description,
     url: siteConfig.url,
     telephone: siteConfig.phone,
@@ -125,7 +126,7 @@ export function JsonLd() {
     "@context": "https://schema.org",
     "@type": "ItemList",
     "@id": `${siteConfig.url}/#shop-list`,
-    name: "Flowers In Action Product Catalogue",
+    name: `${siteConfig.name} Product Catalogue`,
     numberOfItems: products.length,
     itemListElement: products.map((product, index) => ({
       "@type": "ListItem",

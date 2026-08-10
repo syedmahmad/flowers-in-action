@@ -15,8 +15,8 @@ export default function GlobalError({
 
   return (
     <html lang="en">
-      <body className="flex min-h-screen flex-col items-center justify-center bg-[#FFFDF8] px-4 text-[#282323]">
-        <h1 className="mb-2 text-2xl font-semibold text-[#720016]">
+      <body className="flex min-h-screen flex-col items-center justify-center bg-ivory px-4 text-charcoal">
+        <h1 className="heading-serif mb-2 text-2xl font-semibold text-maroon-deep">
           Something went wrong
         </h1>
         <p className="mb-6 max-w-md text-center text-sm opacity-80">
@@ -25,7 +25,7 @@ export default function GlobalError({
         <button
           type="button"
           onClick={() => reset()}
-          className="rounded-full bg-[#720016] px-6 py-3 text-sm font-medium text-white"
+          className="rounded-full bg-maroon px-6 py-3 text-sm font-medium text-white"
         >
           Try again
         </button>

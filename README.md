@@ -1,6 +1,6 @@
-# Flowers In Action — Premium Flower Shop Website
+# Phool Pattiyan — Premium Florist Website
 
-Production-ready, mobile-first single-page website for **Flowers In Action**, a Lahore-based flower shop and WhatsApp ordering service.
+Production-ready, mobile-first single-page website for **Phool Pattiyan**, a Lahore-based florist and WhatsApp ordering service.
 
 ## Tech Stack
 
@@ -31,7 +31,7 @@ npm run dev
 Create `.env.local`:
 
 ```env
-NEXT_PUBLIC_SITE_URL=https://flowersinaction.pk
+NEXT_PUBLIC_SITE_URL=https://www.phoolpattiyan.com
 NEXT_PUBLIC_ALLOW_INDEXING=true
 NEXT_PUBLIC_GA4_ID=G-XXXXXXXXXX          # optional
 NEXT_PUBLIC_META_PIXEL_ID=               # optional
@@ -153,5 +153,5 @@ src/
 
 ## License
 
-Proprietary — Flowers In Action.
+Proprietary — Phool Pattiyan.
 # test

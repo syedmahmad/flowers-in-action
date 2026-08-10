@@ -9,7 +9,7 @@ export function buildProductOrderMessage(product: Product): string {
   );
   const categoryLabel = product.category.replace(/-/g, " ");
 
-  return `Hello Flowers In Action,
+  return `Hello ${siteConfig.name},
 I would like to order:
 
 Product: ${product.name}
@@ -30,7 +30,7 @@ export function buildProductWhatsAppUrl(product: Product): string {
 }
 
 export function buildCustomOrderUrl(): string {
-  const message = `Hello Flowers In Action,
+  const message = `Hello ${siteConfig.name},
 I would like to discuss a custom order.
 
 Occasion:
@@ -51,7 +51,7 @@ export function buildContactFormUrl(data: {
   budget: string;
   message: string;
 }): string {
-  const message = `Hello Flowers In Action,
+  const message = `Hello ${siteConfig.name},
 I have an enquiry:
 
 Name: ${data.name}
@@ -68,6 +68,6 @@ Please share availability and next steps.`;
 export function buildGeneralWhatsAppUrl(message?: string): string {
   const text =
     message ||
-    "Hello Flowers In Action, I would like to place an order. Please share details.";
+    `Hello ${siteConfig.name}, I would like to place an order. Please share details.`;
   return `${siteConfig.whatsappBase}?text=${encodeURIComponent(text)}`;
 }

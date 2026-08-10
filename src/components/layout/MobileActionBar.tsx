@@ -8,7 +8,7 @@ export function MobileActionBar() {
         <a
           href={`tel:${siteConfig.phone}`}
           className="flex min-h-[52px] flex-col items-center justify-center gap-0.5 py-2 text-xs font-medium text-maroon"
-          aria-label="Call Flowers In Action"
+          aria-label={`Call ${siteConfig.name}`}
         >
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
             <path

@@ -49,10 +49,10 @@ export function Header() {
         )}
       >
         <div className="container-narrow container-padding">
-          <div className="flex h-14 items-center justify-between sm:h-16 lg:grid lg:grid-cols-[auto_1fr_auto] lg:items-center lg:gap-4">
+          <div className="flex min-h-16 items-center gap-4 py-1 sm:min-h-[4.25rem] sm:py-1.5 lg:min-h-20">
             <Link
               href="#home"
-              className="flex min-w-0 items-center lg:max-w-none"
+              className="flex shrink-0 items-center"
               aria-label={`${siteConfig.name} home`}
               onClick={closeMenu}
             >
@@ -60,15 +60,15 @@ export function Header() {
             </Link>
 
             <nav
-              className="hidden lg:flex lg:justify-center"
+              className="hidden min-w-0 flex-1 lg:block"
               aria-label="Main navigation"
             >
-              <ul className="flex items-center gap-1">
+              <ul className="flex flex-wrap items-center gap-0.5 xl:gap-1">
                 {navItems.map((item) => (
                   <li key={item.href}>
                     <Link
                       href={item.href}
-                      className="whitespace-nowrap rounded-full px-3 py-2 text-sm font-medium text-charcoal transition-colors hover:bg-blush hover:text-maroon"
+                      className="whitespace-nowrap rounded-full px-2.5 py-2 text-sm font-medium text-charcoal transition-colors hover:bg-blush hover:text-maroon xl:px-3"
                     >
                       {item.label}
                     </Link>
@@ -77,36 +77,24 @@ export function Header() {
               </ul>
             </nav>
 
-            <div className="flex items-center justify-end gap-2">
-              <Button
-                variant="whatsapp"
-                size="sm"
-                href={buildGeneralWhatsAppUrl()}
-                external
-                className="hidden lg:inline-flex"
-              >
-                Order on WhatsApp
-              </Button>
-
-              <button
-                type="button"
-                className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full text-maroon hover:bg-blush lg:hidden"
-                onClick={() => setMenuOpen(!menuOpen)}
-                aria-expanded={menuOpen}
-                aria-controls="mobile-menu"
-                aria-label={menuOpen ? "Close menu" : "Open menu"}
-              >
-                {menuOpen ? (
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                    <path d="M6 6L18 18M18 6L6 18" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
-                  </svg>
-                ) : (
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                    <path d="M4 7H20M4 12H20M4 17H20" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
-                  </svg>
-                )}
-              </button>
-            </div>
+            <button
+              type="button"
+              className="ml-auto flex h-11 w-11 shrink-0 items-center justify-center rounded-full text-maroon hover:bg-blush lg:hidden"
+              onClick={() => setMenuOpen(!menuOpen)}
+              aria-expanded={menuOpen}
+              aria-controls="mobile-menu"
+              aria-label={menuOpen ? "Close menu" : "Open menu"}
+            >
+              {menuOpen ? (
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M6 6L18 18M18 6L6 18" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+                </svg>
+              ) : (
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M4 7H20M4 12H20M4 17H20" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+                </svg>
+              )}
+            </button>
           </div>
         </div>
       </header>
@@ -120,7 +108,7 @@ export function Header() {
           />
           <nav
             id="mobile-menu"
-            className="fixed inset-x-0 bottom-0 top-14 z-50 overflow-y-auto bg-white px-4 pb-8 pt-4 sm:top-16 lg:hidden"
+            className="fixed inset-x-0 bottom-0 top-16 z-50 overflow-y-auto bg-white px-4 pb-8 pt-4 sm:top-[4.25rem] lg:hidden"
             aria-label="Mobile navigation"
           >
             <ul className="space-y-1">

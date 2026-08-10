@@ -34,8 +34,8 @@ export function Footer() {
       <footer className="border-t border-blush bg-white">
         <div className="container-narrow section-padding !py-12">
           <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
-            <div>
-              <Logo className="mb-4" />
+            <div className="min-w-0">
+              <Logo className="mb-4 h-12 max-w-[220px] sm:h-14 sm:max-w-[260px] lg:h-16 lg:max-w-[280px]" />
               <p className="text-sm leading-relaxed text-charcoal/80">
                 {siteConfig.tagline}. Fresh flowers, meaningful gifts and wedding creations
                 handcrafted in Lahore.

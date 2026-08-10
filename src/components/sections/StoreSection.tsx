@@ -11,7 +11,7 @@ export function StoreSection() {
         <div className="grid gap-10 lg:grid-cols-2">
           <div>
             <h2 className="heading-serif mb-4 text-3xl font-bold text-maroon-deep sm:text-4xl">
-              Visit Flowers In Action
+              Visit Phool Pattiyan
             </h2>
             <p className="mb-4 text-lg text-charcoal/80">{siteConfig.address.full}</p>
             <p className="mb-6 text-sm font-medium text-maroon">
@@ -37,7 +37,7 @@ export function StoreSection() {
             <div className="relative aspect-video overflow-hidden rounded-2xl">
               <Image
                 src={images.store}
-                alt="Flowers In Action flower shop storefront placeholder — replace with actual store photo"
+                alt="Phool Pattiyan flower shop storefront in Lahore — replace with actual store photo"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 className="object-cover"
@@ -46,7 +46,7 @@ export function StoreSection() {
             </div>
             <div className="overflow-hidden rounded-2xl">
               <iframe
-                title="Flowers In Action location map"
+                title="Phool Pattiyan location map"
                 src={siteConfig.mapEmbedUrl}
                 width="100%"
                 height="250"

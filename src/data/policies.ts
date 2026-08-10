@@ -40,7 +40,7 @@ export const policies = {
   privacy: {
     title: "Privacy Policy",
     content: [
-      "Flowers In Action collects customer name, phone number, delivery address, recipient details, order notes and payment confirmation details to process enquiries and coordinate delivery.",
+      "Phool Pattiyan collects customer name, phone number, delivery address, recipient details, order notes and payment confirmation details to process enquiries and coordinate delivery.",
       "Information is used to fulfil orders, improve service, respond to enquiries and comply with legal requirements.",
       "We do not sell personal information to third parties.",
       "Analytics and cookies may be used to understand website usage when consent is provided.",

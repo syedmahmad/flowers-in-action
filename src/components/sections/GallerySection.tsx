@@ -31,7 +31,7 @@ export function GallerySection() {
             >
               <Image
                 src={src}
-                alt={galleryAlt[i] ?? "Flowers In Action studio floral arrangement"}
+                alt={galleryAlt[i] ?? "Phool Pattiyan studio floral arrangement Lahore"}
                 fill
                 sizes="(max-width: 768px) 50vw, 33vw"
                 className="object-cover transition-transform duration-500 hover:scale-105"

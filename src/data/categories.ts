@@ -11,7 +11,7 @@ export const categories: {
     slug: "floral-bouquets",
     label: "Floral Bouquets",
     intro:
-      "Hand-tied floral bouquets designed in Lahore for birthdays, anniversaries, congratulations, apologies and everyday expressions of care. Each bouquet is prepared with fresh seasonal flowers — roses, lilies, chrysanthemums, sunflowers and mixed blooms — wrapped in premium paper with ribbon finishing. Customise colours, size and message on WhatsApp before your order is confirmed.",
+      "Hand-tied fresh flower bouquets designed in Lahore for birthdays, anniversaries, shadi gifts, congratulations and everyday gifting. Phool Pattiyan prepares each bouquet with seasonal blooms — roses, lilies, chrysanthemums, sunflowers and mixed flowers — wrapped in premium paper with ribbon finishing.",
     image: categoryImage("floral-bouquets"),
   },
   {

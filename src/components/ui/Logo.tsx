@@ -1,35 +1,24 @@
-import Image from "next/image";
-
-interface LogoProps {
-  className?: string;
-  variant?: "full" | "icon";
-}
+import { cn } from "@/lib/utils";
 
 const LOGO_SRC = "/images/brand/logo.png";
 
-export function Logo({ className = "", variant = "full" }: LogoProps) {
-  if (variant === "icon") {
-    return (
-      <Image
-        src={LOGO_SRC}
-        alt=""
-        width={48}
-        height={48}
-        className={`h-8 w-8 object-contain object-left ${className}`}
-        aria-hidden="true"
-        priority
-      />
-    );
-  }
+interface LogoProps {
+  className?: string;
+}
 
+/** Phool Pattiyan wordmark — header & footer */
+export function Logo({ className = "" }: LogoProps) {
   return (
-    <Image
+    // Native img avoids Next.js image optimizer cache serving stale logos
+    <img
       src={LOGO_SRC}
-      alt="Flowers In Action"
-      width={1024}
-      height={169}
-      className={`h-10 w-auto max-w-[175px] object-contain object-left sm:max-w-[200px] lg:h-11 lg:max-w-[240px] ${className}`}
-      priority
+      alt="Phool Pattiyan — premium florist in Lahore"
+      width={958}
+      height={190}
+      className={cn(
+        "block h-14 w-auto max-w-full object-contain object-left sm:h-16 lg:h-[4.25rem]",
+        className
+      )}
     />
   );
 }

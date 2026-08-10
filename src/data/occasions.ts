@@ -6,13 +6,13 @@ export const occasions: { slug: OccasionSlug; label: string; intro: string }[] =
       slug: "wedding",
       label: "Wedding",
       intro:
-        "Complete your wedding look with bridal bouquets, floral jewellery, gajra, groom garlands, car decoration and room décor created to complement your colours, outfits and event style. We serve nikkah, barat, mehndi and reception functions across Lahore with advance booking and WhatsApp consultation.",
+        "Complete your shadi function look with bridal bouquets, mehndi gajra, floral jewellery, groom garlands, car decoration and room décor. We serve nikkah, barat, mehndi and reception functions across Lahore with advance booking and WhatsApp consultation.",
     },
     {
       slug: "birthday",
       label: "Birthday",
       intro:
-        "Make their birthday brighter with cheerful bouquets, flower boxes, chocolate combinations and personalised gifts delivered across Lahore. From vibrant sunflowers to elegant rose arrangements, choose a design that matches their personality and add a custom message on WhatsApp.",
+        "Make their birthday brighter with cheerful bouquets, birthday room decoration, flower boxes, chocolate combinations and personalised gifts delivered across Lahore. From kids' birthday décor to elegant rose arrangements — choose a design that matches their personality on WhatsApp.",
     },
     {
       slug: "congratulations",

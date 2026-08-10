@@ -1,7 +1,7 @@
 /** Local image paths — all assets live in /public/images/ */
 
 export const images = {
-  hero: "/images/placeholders/hero.png",
+  hero: "/images/placeholders/hero-landing.png",
   store: "/images/placeholders/storefront.png",
 
   categories: {

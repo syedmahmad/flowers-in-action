@@ -8,11 +8,12 @@ export function WeddingsSection() {
       <div className="container-narrow">
         <div className="mb-10 text-center">
           <h2 className="heading-serif mb-3 text-3xl font-bold text-maroon-deep sm:text-4xl">
-            Wedding Flowers &amp; Décor
+            Shadi, Mehndi &amp; Wedding Flowers
           </h2>
           <p className="mx-auto max-w-2xl text-charcoal/80">
-            Complete your wedding look with bridal bouquets, floral jewellery, groom garlands,
-            car decoration and room décor — customised for your Lahore celebration.
+            Complete your shadi and mehndi functions with bridal bouquets, gajra, floral
+            jewellery, groom garlands, car decoration and room décor — customised for your
+            Lahore wedding celebration.
           </p>
         </div>
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">

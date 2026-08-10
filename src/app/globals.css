@@ -1,14 +1,18 @@
 @import "tailwindcss";
 
 :root {
-  --maroon: #720016;
-  --maroon-deep: #4b0010;
+  --maroon: #1b4332;
+  --maroon-deep: #0f2922;
   --ivory: #fffdf8;
-  --blush: #f7e9e8;
-  --rose-muted: #c88d91;
-  --green-natural: #64755c;
-  --charcoal: #282323;
+  --blush: #f0ebe6;
+  --rose-muted: #8fa88a;
+  --rose-light: #e8f0ea;
+  --green-natural: #2d6a4f;
+  --sage: #40916c;
+  --charcoal: #1a1f1c;
   --white: #ffffff;
+  --whatsapp: #25d366;
+  --whatsapp-hover: #1da851;
   --background: var(--ivory);
   --foreground: var(--charcoal);
 }
@@ -19,7 +23,9 @@
   --color-ivory: var(--ivory);
   --color-blush: var(--blush);
   --color-rose-muted: var(--rose-muted);
+  --color-rose-light: var(--rose-light);
   --color-green-natural: var(--green-natural);
+  --color-sage: var(--sage);
   --color-charcoal: var(--charcoal);
   --font-serif: var(--font-playfair);
   --font-sans: var(--font-inter);
@@ -52,7 +58,7 @@ body {
 }
 
 ::selection {
-  background: var(--blush);
+  background: var(--rose-light);
   color: var(--maroon-deep);
 }
 
@@ -82,7 +88,7 @@ body {
 }
 
 .card-shadow {
-  box-shadow: 0 4px 24px rgba(114, 0, 22, 0.06);
+  box-shadow: 0 4px 24px rgba(27, 67, 50, 0.08);
 }
 
 .card-shadow-hover {
@@ -90,7 +96,7 @@ body {
 }
 
 .card-shadow-hover:hover {
-  box-shadow: 0 8px 32px rgba(114, 0, 22, 0.1);
+  box-shadow: 0 8px 32px rgba(27, 67, 50, 0.12);
   transform: translateY(-2px);
 }
 

@@ -30,11 +30,11 @@ export function AboutSection() {
             Flowers Crafted With Feeling
           </h2>
           <p className="text-lg leading-relaxed text-charcoal/80">
-            Flowers In Action is a Lahore-based flower and decoration studio created to make
+            Phool Pattiyan is a Lahore-based flower and decoration studio created to make
             meaningful gifting easier, more personal and more beautiful. From fresh bouquets
-            and floral boxes to bridal flowers, groom garlands and customised celebration
-            pieces, every arrangement is prepared with attention to colour, freshness and
-            presentation.
+            and birthday decoration to shadi function flowers, mehndi gajra, groom garlands
+            and floral jewellery, every arrangement is prepared with attention to colour,
+            freshness and presentation.
           </p>
           <p className="mt-4 text-lg leading-relaxed text-charcoal/80">
             Located at Plaza 24, B Block Bankers, close to DHA Phase 4, State Life Housing

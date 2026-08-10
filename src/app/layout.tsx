@@ -27,7 +27,7 @@ const greatVibes = Great_Vibes({
 });
 
 export const viewport: Viewport = {
-  themeColor: "#720016",
+  themeColor: "#1b4332",
   width: "device-width",
   initialScale: 1,
 };
@@ -39,20 +39,7 @@ export const metadata: Metadata = {
     template: `%s | ${siteConfig.name}`,
   },
   description: siteConfig.seoDescription,
-  keywords: [
-    "premium florist Lahore",
-    "flower shop in Lahore",
-    "flowers delivery Lahore",
-    "florist in Lahore",
-    "bouquet delivery Lahore",
-    "flower shop near DHA Phase 4 Lahore",
-    "wedding flowers Lahore",
-    "bridal bouquet Lahore",
-    "groom garland Lahore",
-    "floral jewellery Lahore",
-    "same-day flowers Lahore",
-    "WhatsApp flower order Lahore",
-  ],
+  keywords: [...siteConfig.seoKeywords],
   authors: [{ name: siteConfig.name }],
   creator: siteConfig.name,
   openGraph: {
@@ -83,6 +70,10 @@ export const metadata: Metadata = {
   robots: siteConfig.allowIndexing
     ? { index: true, follow: true }
     : { index: false, follow: false },
+  icons: {
+    icon: [{ url: "/images/brand/logo-icon.png", type: "image/png" }],
+    apple: "/images/brand/logo-icon.png",
+  },
 };
 
 export default function RootLayout({
@@ -95,9 +86,6 @@ export default function RootLayout({
       lang="en"
       className={`${playfair.variable} ${inter.variable} ${greatVibes.variable} scroll-smooth`}
     >
-      <head>
-        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-      </head>
       <body className="min-h-screen bg-ivory text-charcoal antialiased">
         <JsonLd />
         {children}
