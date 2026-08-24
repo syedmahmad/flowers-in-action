@@ -6,7 +6,8 @@
     "dev": "next dev --webpack",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "catalog:process": "node scripts/process-catalog-images.mjs && node scripts/generate-catalog-data.mjs"
   },
   "dependencies": {
     "clsx": "^2.1.1",

@@ -1,10 +1,16 @@
 import { siteConfig } from "@/data/config";
 import { products } from "@/data/products";
+import { bouquets } from "@/data/bouquets";
+import { events } from "@/data/events";
 import { faqs } from "@/data/faqs";
 import { categories } from "@/data/categories";
 import { occasions } from "@/data/occasions";
 import { weddingTypes } from "@/data/flowers";
-import { getDiscountedPrice } from "@/lib/pricing";
+import {
+  getLegacySellingPrice,
+  getSellingPrice,
+  hasDiscount,
+} from "@/lib/pricing";
 
 export function JsonLd() {
   const absolute = (path: string) =>
@@ -40,7 +46,11 @@ export function JsonLd() {
       { "@type": "City", name: "Lahore" },
       ...siteConfig.serviceAreas.map((area) => ({ "@type": "Place", name: area })),
     ],
-    sameAs: [siteConfig.social.instagram, siteConfig.social.facebook],
+    sameAs: [
+      siteConfig.social.instagram,
+      siteConfig.social.facebook,
+      siteConfig.google.reviewsUrl,
+    ],
     hasOfferCatalog: {
       "@type": "OfferCatalog",
       name: "Floral Products",
@@ -101,6 +111,46 @@ export function JsonLd() {
     })),
   };
 
+  const bouquetSchemas = bouquets.map((bouquet) => ({
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "@id": `${siteConfig.url}/#bouquet-${bouquet.slug}`,
+    name: bouquet.name,
+    description: bouquet.description,
+    image: absolute(bouquet.image),
+    brand: { "@type": "Brand", name: siteConfig.name },
+    offers: {
+      "@type": "Offer",
+      url: `${siteConfig.url}/?bouquet=${bouquet.slug}#bouquets`,
+      priceCurrency: "PKR",
+      price: getSellingPrice(bouquet),
+      ...(hasDiscount(bouquet) && bouquet.originalPrice
+        ? { priceValidUntil: undefined }
+        : {}),
+      availability: bouquet.available
+        ? "https://schema.org/InStock"
+        : "https://schema.org/OutOfStock",
+      seller: { "@id": `${siteConfig.url}/#localbusiness` },
+    },
+  }));
+
+  const eventSchemas = events.map((event) => ({
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "@id": `${siteConfig.url}/#event-${event.slug}`,
+    name: event.name,
+    description: event.description,
+    image: event.images.map(absolute),
+    provider: { "@id": `${siteConfig.url}/#localbusiness` },
+    offers: {
+      "@type": "Offer",
+      url: `${siteConfig.url}/?event=${event.slug}#events`,
+      priceCurrency: "PKR",
+      price: event.price,
+      seller: { "@id": `${siteConfig.url}/#localbusiness` },
+    },
+  }));
+
   const productSchemas = products.map((product) => ({
     "@context": "https://schema.org",
     "@type": "Product",
@@ -114,7 +164,7 @@ export function JsonLd() {
       "@type": "Offer",
       url: `${siteConfig.url}/?product=${product.slug}#shop`,
       priceCurrency: "PKR",
-      price: getDiscountedPrice(product.originalPrice, product.discountPercentage),
+      price: getLegacySellingPrice(product),
       availability: product.available
         ? "https://schema.org/InStock"
         : "https://schema.org/OutOfStock",
@@ -181,6 +231,8 @@ export function JsonLd() {
     occasionItemList,
     weddingItemList,
     breadcrumb,
+    ...bouquetSchemas,
+    ...eventSchemas,
     ...productSchemas,
   ];
 

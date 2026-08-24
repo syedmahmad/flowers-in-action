@@ -37,7 +37,7 @@ export function StoreSection() {
             <div className="relative aspect-video overflow-hidden rounded-2xl">
               <Image
                 src={images.store}
-                alt="Phool Pattiyan flower shop storefront in Lahore — replace with actual store photo"
+                alt="Phool Pattiyan flower shop in Lahore"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 className="object-cover"

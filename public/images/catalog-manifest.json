@@ -1,0 +1,1019 @@
+{
+  "bouquets": [
+    {
+      "src": "magenta-white-chrysanthemum-blush.png",
+      "name": "Blush Magenta Chrysanthemum Bouquet",
+      "description": "Magenta and white chrysanthemums with tulle accents in blush pink wrap and black ribbon — lush and celebratory.",
+      "price": 6000,
+      "discount": 10,
+      "slug": "blush-magenta-chrysanthemum-bouquet",
+      "origin": "local",
+      "image": "/images/bouquets/web/blush-magenta-chrysanthemum-bouquet.jpg",
+      "originalPrice": 6667,
+      "discountPercentage": 10,
+      "featured": true,
+      "id": "bq-035",
+      "imageAlt": "Blush Magenta Chrysanthemum Bouquet fresh flower bouquet by Phool Pattiyan Lahore",
+      "available": true
+    },
+    {
+      "src": "baby-boy-balloon-bouquet.png",
+      "name": "Baby Boy Balloon Bouquet",
+      "description": "It's A Boy themed foil balloon bouquet with baby bottle and star balloons in gold marble wrap and blue ribbon — perfect for baby showers and welcome home gifts.",
+      "price": 3800,
+      "discount": 10,
+      "slug": "baby-boy-balloon-bouquet",
+      "origin": "local",
+      "image": "/images/bouquets/web/baby-boy-balloon-bouquet.jpg",
+      "originalPrice": 4222,
+      "discountPercentage": 10,
+      "featured": true,
+      "id": "bq-032",
+      "imageAlt": "Baby Boy Balloon Bouquet by Phool Pattiyan Lahore",
+      "available": true
+    },
+    {
+      "src": "red-rose-tuberose-pink-black-wrap.png",
+      "name": "Red Rose Tuberose Pink Black Wrap",
+      "description": "Deep red roses with white tuberoses in pink and black layered wrap and blush ribbon — soft yet striking.",
+      "price": 2500,
+      "discount": 10,
+      "slug": "red-rose-tuberose-pink-black-wrap",
+      "origin": "local",
+      "image": "/images/bouquets/web/red-rose-tuberose-pink-black-wrap.jpg",
+      "originalPrice": 2778,
+      "discountPercentage": 10,
+      "featured": true,
+      "id": "bq-028",
+      "imageAlt": "Red Rose Tuberose Pink Black Wrap fresh flower bouquet by Phool Pattiyan Lahore",
+      "available": true
+    },
+    {
+      "src": "red-white-rose-bouquet.png",
+      "name": "Red White Rose Bouquet",
+      "description": "Deep red and cream roses with tuberose accents in white rose-gold wrap and black ribbon — lush and elegant.",
+      "price": 4500,
+      "discount": 10,
+      "slug": "red-white-rose-bouquet",
+      "origin": "local",
+      "image": "/images/bouquets/web/red-white-rose-bouquet.jpg",
+      "originalPrice": 5000,
+      "discountPercentage": 10,
+      "featured": true,
+      "id": "bq-029",
+      "imageAlt": "Red White Rose Bouquet fresh flower bouquet by Phool Pattiyan Lahore",
+      "available": true
+    },
+    {
+      "src": "sunflower-babys-breath-bouquet.png",
+      "name": "Sunflower Baby's Breath Bouquet",
+      "description": "Bright sunflowers with baby's breath and greenery in kraft paper wrap and satin ribbon — warm, cheerful and gift-ready.",
+      "price": 3500,
+      "discount": 10,
+      "slug": "sunflower-baby-s-breath-bouquet",
+      "origin": "local",
+      "image": "/images/bouquets/web/sunflower-baby-s-breath-bouquet.jpg",
+      "originalPrice": 3889,
+      "discountPercentage": 10,
+      "featured": true,
+      "id": "bq-024",
+      "imageAlt": "Sunflower Baby's Breath Bouquet fresh flower bouquet by Phool Pattiyan Lahore",
+      "available": true
+    },
+    {
+      "src": "WhatsApp Image 2026-08-21 at 18.45.10.jpeg",
+      "name": "Purple White Chrysanthemum",
+      "description": "White and purple chrysanthemums with baby's breath in crisp white wrap and black ribbon — soft and elegant.",
+      "price": 5000,
+      "discount": 10,
+      "cropRegion": {
+        "width": 900,
+        "height": 1050,
+        "x": 300,
+        "y": 0
+      },
+      "slug": "purple-white-chrysanthemum",
+      "origin": "local",
+      "image": "/images/bouquets/web/purple-white-chrysanthemum.jpg",
+      "originalPrice": 5556,
+      "discountPercentage": 10,
+      "featured": true,
+      "id": "bq-014",
+      "imageAlt": "Purple White Chrysanthemum fresh flower bouquet by Phool Pattiyan Lahore",
+      "available": true
+    },
+    {
+      "src": "WhatsApp Image 2026-08-21 at 21.42.07.jpeg",
+      "name": "Regal Garden Roses",
+      "description": "Magenta chrysanthemums and white daisies in lavender-pink wrap with black satin bow — rich and luxurious.",
+      "price": 5500,
+      "discount": 10,
+      "slug": "regal-garden-roses",
+      "origin": "local",
+      "image": "/images/bouquets/web/regal-garden-roses.jpg",
+      "originalPrice": 6111,
+      "discountPercentage": 10,
+      "featured": true,
+      "id": "bq-012",
+      "imageAlt": "Regal Garden Roses fresh flower bouquet by Phool Pattiyan Lahore",
+      "available": true
+    },
+    {
+      "src": "WhatsApp Image 2026-08-21 at 18.45.09.jpeg",
+      "name": "Crimson Love",
+      "description": "Deep red roses with white chrysanthemums and tuberoses in a rich burgundy wrap — our signature romantic bouquet.",
+      "price": 5000,
+      "discount": 10,
+      "slug": "crimson-love",
+      "origin": "local",
+      "image": "/images/bouquets/web/crimson-love.jpg",
+      "originalPrice": 5556,
+      "discountPercentage": 10,
+      "featured": true,
+      "id": "bq-001",
+      "imageAlt": "Crimson Love fresh flower bouquet by Phool Pattiyan Lahore",
+      "available": true
+    },
+    {
+      "src": "WhatsApp Image 2026-08-20 at 21.08.56 (1).jpeg",
+      "name": "Sunflower Bouquet",
+      "description": "Bright sunflowers with white accent blooms in textured black wrap and white satin ribbon — a bold birthday favourite.",
+      "price": 3500,
+      "discount": 10,
+      "slug": "sunflower-bouquet",
+      "origin": "local",
+      "image": "/images/bouquets/web/sunflower-bouquet.jpg",
+      "originalPrice": 3889,
+      "discountPercentage": 10,
+      "featured": true,
+      "id": "bq-002",
+      "imageAlt": "Sunflower Bouquet fresh flower bouquet by Phool Pattiyan Lahore",
+      "available": true
+    },
+    {
+      "src": "WhatsApp Image 2026-08-15 at 18.51.08 (1).jpeg",
+      "name": "Phool Pattiyan Pink",
+      "description": "White chrysanthemums and blush roses with tuberoses in soft pink wrap — handcrafted with our signature styling.",
+      "price": 5000,
+      "discount": 10,
+      "slug": "phool-pattiyan-pink",
+      "origin": "local",
+      "image": "/images/bouquets/web/phool-pattiyan-pink.jpg",
+      "originalPrice": 5556,
+      "discountPercentage": 10,
+      "featured": true,
+      "id": "bq-003",
+      "imageAlt": "Phool Pattiyan Pink fresh flower bouquet by Phool Pattiyan Lahore",
+      "available": true
+    },
+    {
+      "src": "WhatsApp Image 2026-08-18 at 20.29.35.jpeg",
+      "name": "Premium Blush Wrap",
+      "description": "Fresh pink roses, white mums and tuberoses with rose-gold trimmed wrap — dew-kissed and elegantly tied.",
+      "price": 6000,
+      "discount": 10,
+      "slug": "premium-blush-wrap",
+      "origin": "local",
+      "image": "/images/bouquets/web/premium-blush-wrap.jpg",
+      "originalPrice": 6667,
+      "discountPercentage": 10,
+      "featured": true,
+      "id": "bq-004",
+      "imageAlt": "Premium Blush Wrap fresh flower bouquet by Phool Pattiyan Lahore",
+      "available": true
+    },
+    {
+      "src": "WhatsApp Image 2026-08-15 at 18.10.10.jpeg",
+      "name": "Peach Serenity",
+      "description": "Soft peach roses and white chrysanthemums in elegant layered wrap — calm, feminine and beautifully balanced.",
+      "price": 5000,
+      "discount": 10,
+      "slug": "peach-serenity",
+      "origin": "local",
+      "image": "/images/bouquets/web/peach-serenity.jpg",
+      "originalPrice": 5556,
+      "discountPercentage": 10,
+      "featured": true,
+      "id": "bq-007",
+      "imageAlt": "Peach Serenity fresh flower bouquet by Phool Pattiyan Lahore",
+      "available": true
+    },
+    {
+      "src": "WhatsApp Image 2026-08-15 at 18.10.00.jpeg",
+      "name": "Ruby Romance",
+      "description": "Ruby-red roses with tuberoses in luminous gold wrap and satin ribbon — a luxury gift statement.",
+      "price": 5500,
+      "discount": 10,
+      "slug": "ruby-romance",
+      "origin": "local",
+      "image": "/images/bouquets/web/ruby-romance.jpg",
+      "originalPrice": 6111,
+      "discountPercentage": 10,
+      "featured": true,
+      "id": "bq-010",
+      "imageAlt": "Ruby Romance fresh flower bouquet by Phool Pattiyan Lahore",
+      "available": true
+    },
+    {
+      "src": "WhatsApp Image 2026-08-18 at 20.29.34 (1).jpeg",
+      "name": "Pink Marble Wrap",
+      "description": "Pink roses and white chrysanthemums in gold-veined marble wrap — soft, premium and beautifully balanced.",
+      "price": 5000,
+      "discount": 10,
+      "slug": "pink-marble-wrap",
+      "origin": "local",
+      "image": "/images/bouquets/web/pink-marble-wrap.jpg",
+      "originalPrice": 5556,
+      "discountPercentage": 10,
+      "featured": true,
+      "id": "bq-011",
+      "imageAlt": "Pink Marble Wrap fresh flower bouquet by Phool Pattiyan Lahore",
+      "available": true
+    },
+    {
+      "src": "WhatsApp Image 2026-08-15 at 18.10.09 (2).jpeg",
+      "name": "Soft Pink Bloom",
+      "description": "Blush roses and white mums in rose-gold trimmed frosted wrap — airy, feminine and beautifully layered.",
+      "price": 5000,
+      "discount": 10,
+      "slug": "soft-pink-bloom",
+      "origin": "local",
+      "image": "/images/bouquets/web/soft-pink-bloom.jpg",
+      "originalPrice": 5556,
+      "discountPercentage": 10,
+      "featured": true,
+      "id": "bq-013",
+      "imageAlt": "Soft Pink Bloom fresh flower bouquet by Phool Pattiyan Lahore",
+      "available": true
+    },
+    {
+      "src": "WhatsApp Image 2026-08-15 at 18.10.02 (2).jpeg",
+      "name": "Golden Rose Tuberose",
+      "description": "Deep red roses with white tuberoses in luminous gold wrap and satin ribbon — a classic romantic gift.",
+      "price": 2500,
+      "discount": 10,
+      "slug": "golden-rose-tuberose",
+      "origin": "local",
+      "image": "/images/bouquets/web/golden-rose-tuberose.jpg",
+      "originalPrice": 2778,
+      "discountPercentage": 10,
+      "featured": true,
+      "id": "bq-015",
+      "imageAlt": "Golden Rose Tuberose fresh flower bouquet by Phool Pattiyan Lahore",
+      "available": true
+    },
+    {
+      "src": "artificial-love-teddy-bouquet.png",
+      "name": "Forever Love Artificial Bouquet",
+      "description": "Artificial red roses with teddy bear and I Love You heart in cream wrap — a lasting romantic gift that never fades.",
+      "price": 7000,
+      "discount": 10,
+      "slug": "forever-love-artificial-bouquet",
+      "origin": "local",
+      "image": "/images/bouquets/web/forever-love-artificial-bouquet.jpg",
+      "originalPrice": 7778,
+      "discountPercentage": 10,
+      "featured": true,
+      "id": "bq-016",
+      "imageAlt": "Forever Love Artificial Bouquet by Phool Pattiyan Lahore",
+      "available": true
+    },
+    {
+      "src": "artificial-ruby-carnations-bouquet.png",
+      "name": "Ruby Radiance Artificial Bouquet",
+      "description": "Vibrant artificial red carnations with white filler in frosted wrap and rose-gold trim — bold, lasting and gift-ready.",
+      "price": 4500,
+      "discount": 10,
+      "slug": "ruby-radiance-artificial-bouquet",
+      "origin": "local",
+      "image": "/images/bouquets/web/ruby-radiance-artificial-bouquet.jpg",
+      "originalPrice": 5000,
+      "discountPercentage": 10,
+      "featured": true,
+      "id": "bq-017",
+      "imageAlt": "Ruby Radiance Artificial Bouquet by Phool Pattiyan Lahore",
+      "available": true
+    },
+    {
+      "src": "artificial-sunflower-marble-bouquet.png",
+      "name": "Sunshine Marble Artificial Bouquet",
+      "description": "Artificial sunflowers and blush carnations in layered black, newsprint and gold-marble wrap — bold, modern and lasting.",
+      "price": 4800,
+      "discount": 10,
+      "slug": "sunshine-marble-artificial-bouquet",
+      "origin": "local",
+      "image": "/images/bouquets/web/sunshine-marble-artificial-bouquet.jpg",
+      "originalPrice": 5333,
+      "discountPercentage": 10,
+      "featured": true,
+      "id": "bq-018",
+      "imageAlt": "Sunshine Marble Artificial Bouquet by Phool Pattiyan Lahore",
+      "available": true
+    },
+    {
+      "src": "talking-peach-cat.png",
+      "name": "Peach Talking Cat",
+      "description": "Soft peach plush talking cat with red ribbon — press to hear cute miaowo sounds. Batteries (cells) included.",
+      "price": 3300,
+      "discount": 10,
+      "slug": "miaowo-peach-talking-cat",
+      "origin": "local",
+      "image": "/images/bouquets/web/miaowo-peach-talking-cat.jpg",
+      "originalPrice": 3667,
+      "discountPercentage": 10,
+      "featured": true,
+      "id": "bq-019",
+      "imageAlt": "Peach Talking Cat gift by Phool Pattiyan Lahore",
+      "available": true
+    },
+    {
+      "src": "talking-pink-cat.png",
+      "name": "Pink Talking Cat",
+      "description": "Fluffy pink plush talking cat with Love ribbon — press to hear cute miaowo sounds. Batteries (cells) included.",
+      "price": 3300,
+      "discount": 10,
+      "slug": "miaowo-pink-talking-cat",
+      "origin": "local",
+      "image": "/images/bouquets/web/miaowo-pink-talking-cat.jpg",
+      "originalPrice": 3667,
+      "discountPercentage": 10,
+      "featured": true,
+      "id": "bq-020",
+      "imageAlt": "Pink Talking Cat gift by Phool Pattiyan Lahore",
+      "available": true
+    },
+    {
+      "src": "look-heart-teddy.png",
+      "name": "Look Heart Teddy",
+      "description": "Creamy white plush teddy with red hat and Look heart pillow — a sweet gift-ready keepsake.",
+      "price": 3500,
+      "discount": 10,
+      "slug": "look-heart-teddy",
+      "origin": "local",
+      "image": "/images/bouquets/web/look-heart-teddy.jpg",
+      "originalPrice": 3889,
+      "discountPercentage": 10,
+      "featured": true,
+      "id": "bq-031",
+      "imageAlt": "Look Heart Teddy gift by Phool Pattiyan Lahore",
+      "available": true
+    },
+    {
+      "src": "single-imported-rose-babys-breath.png",
+      "name": "Single Imported Rose with Baby's Breath",
+      "description": "One premium imported red rose with baby's breath in frosted chevron wrap and red ribbon — a classic romantic gesture.",
+      "price": 1200,
+      "discount": 10,
+      "origin": "imported",
+      "slug": "single-imported-rose-with-baby-s-breath",
+      "image": "/images/bouquets/web/single-imported-rose-with-baby-s-breath.jpg",
+      "originalPrice": 1333,
+      "discountPercentage": 10,
+      "featured": true,
+      "id": "bq-021",
+      "imageAlt": "Single Imported Rose with Baby's Breath by Phool Pattiyan Lahore",
+      "available": true
+    },
+    {
+      "src": "sunflower-red-rose-bouquet.png",
+      "name": "Sunflower Red Rose Bouquet",
+      "description": "Bright sunflower with deep red roses and greenery in soft peach-pink wrap — bold, fresh and beautifully balanced.",
+      "price": 1800,
+      "discount": 10,
+      "slug": "sunflower-red-rose-bouquet",
+      "origin": "local",
+      "image": "/images/bouquets/web/sunflower-red-rose-bouquet.jpg",
+      "originalPrice": 2000,
+      "discountPercentage": 10,
+      "featured": true,
+      "id": "bq-022",
+      "imageAlt": "Sunflower Red Rose Bouquet fresh flower bouquet by Phool Pattiyan Lahore",
+      "available": true
+    },
+    {
+      "src": "imported-rose-chrysanthemum-babys-breath.png",
+      "name": "Imported Rose White Chrysanthemum Bouquet",
+      "description": "Premium imported red rose with white chrysanthemums and baby's breath in gold-marble wrap and black ribbon — elegant and romantic.",
+      "price": 4500,
+      "discount": 10,
+      "origin": "imported",
+      "slug": "imported-rose-white-chrysanthemum-bouquet",
+      "image": "/images/bouquets/web/imported-rose-white-chrysanthemum-bouquet.jpg",
+      "originalPrice": 5000,
+      "discountPercentage": 10,
+      "featured": true,
+      "id": "bq-023",
+      "imageAlt": "Imported Rose White Chrysanthemum Bouquet by Phool Pattiyan Lahore",
+      "available": true
+    },
+    {
+      "src": "bridal-gajray-pink-rose-chrysanthemum.png",
+      "name": "Special Bridal Gajray Set",
+      "description": "Pair of lush bridal gajray with imported pink roses, white chrysanthemums and baby's breath — elegant for mehndi and shadi functions.",
+      "price": 5000,
+      "discount": 10,
+      "origin": "imported",
+      "slug": "special-bridal-gajray-set",
+      "image": "/images/bouquets/web/special-bridal-gajray-set.jpg",
+      "originalPrice": 5556,
+      "discountPercentage": 10,
+      "featured": true,
+      "id": "bq-025",
+      "imageAlt": "Special Bridal Gajray Set by Phool Pattiyan Lahore",
+      "available": true
+    },
+    {
+      "src": "luxury-red-rose-tuberose.png",
+      "name": "Luxury Red Rose Tuberose",
+      "description": "Lush deep red roses with white tuberoses in textured gold wrap and satin ribbon — a generous romantic statement.",
+      "price": 4000,
+      "discount": 10,
+      "slug": "luxury-red-rose-tuberose",
+      "origin": "local",
+      "image": "/images/bouquets/web/luxury-red-rose-tuberose.jpg",
+      "originalPrice": 4444,
+      "discountPercentage": 10,
+      "featured": true,
+      "id": "bq-026",
+      "imageAlt": "Luxury Red Rose Tuberose fresh flower bouquet by Phool Pattiyan Lahore",
+      "available": true
+    },
+    {
+      "src": "red-rose-tuberose-black-wrap.png",
+      "name": "Red Rose Tuberose Black Wrap",
+      "description": "Deep red roses with white tuberoses in dramatic black wrap and white satin ribbon — bold and romantic.",
+      "price": 2500,
+      "discount": 10,
+      "slug": "red-rose-tuberose-black-wrap",
+      "origin": "local",
+      "image": "/images/bouquets/web/red-rose-tuberose-black-wrap.jpg",
+      "originalPrice": 2778,
+      "discountPercentage": 10,
+      "featured": true,
+      "id": "bq-027",
+      "imageAlt": "Red Rose Tuberose Black Wrap fresh flower bouquet by Phool Pattiyan Lahore",
+      "available": true
+    },
+    {
+      "src": "white-imported-rose-chrysanthemum.png",
+      "name": "White Imported Rose Chrysanthemum Bouquet",
+      "description": "White imported roses and chrysanthemums with a single red rose accent in frosted rose-gold wrap and black ribbon — elegant and striking.",
+      "price": 4000,
+      "discount": 10,
+      "origin": "imported",
+      "slug": "white-imported-rose-chrysanthemum-bouquet",
+      "image": "/images/bouquets/web/white-imported-rose-chrysanthemum-bouquet.jpg",
+      "originalPrice": 4444,
+      "discountPercentage": 10,
+      "featured": true,
+      "id": "bq-030",
+      "imageAlt": "White Imported Rose Chrysanthemum Bouquet by Phool Pattiyan Lahore",
+      "available": true
+    },
+    {
+      "src": "pink-bunny-celebration-basket.png",
+      "name": "Pink Bunny Celebration Basket",
+      "description": "Gift basket with pink plush bunny, white lilies, carnations, blush roses, mini balloons and greenery in a white woven basket — perfect for birthdays and baby celebrations.",
+      "price": 8000,
+      "discount": 10,
+      "slug": "pink-bunny-celebration-basket",
+      "origin": "local",
+      "image": "/images/bouquets/web/pink-bunny-celebration-basket.jpg",
+      "originalPrice": 8889,
+      "discountPercentage": 10,
+      "featured": true,
+      "id": "bq-033",
+      "imageAlt": "Pink Bunny Celebration Basket by Phool Pattiyan Lahore",
+      "available": true
+    },
+    {
+      "src": "purple-harmony-gift-basket.png",
+      "name": "Purple Harmony Gift Basket",
+      "description": "Gift basket with Cadbury chocolates, scented candle, illuminated flower gift box, pink and white roses, purple heart balloons and greenery — perfect for birthdays and thank-you gifts.",
+      "price": 7000,
+      "discount": 10,
+      "slug": "purple-harmony-gift-basket",
+      "origin": "local",
+      "image": "/images/bouquets/web/purple-harmony-gift-basket.jpg",
+      "gallery": [
+        "/images/bouquets/web/purple-harmony-gift-basket-2.jpg"
+      ],
+      "originalPrice": 7778,
+      "discountPercentage": 10,
+      "featured": true,
+      "id": "bq-034",
+      "imageAlt": "Purple Harmony Gift Basket by Phool Pattiyan Lahore",
+      "available": true
+    }
+  ],
+  "events": [
+    {
+      "id": "ev-1",
+      "slug": "safari-kids-birthday",
+      "name": "Safari Kids Birthday",
+      "description": "Themed safari birthday setup with balloon arch, animal cutouts and personalised name styling.",
+      "images": [
+        "/images/events/web/safari-kids-birthday.jpg",
+        "/images/events/web/safari-kids-birthday-2.jpg",
+        "/images/events/web/safari-kids-birthday-3.jpg"
+      ],
+      "imageAlt": "Safari Kids Birthday by Phool Pattiyan Lahore",
+      "pricePrefix": "Starting from",
+      "includedItems": [
+        "Balloon arch & backdrop",
+        "Theme cutouts",
+        "Personalised name styling",
+        "Setup in Lahore"
+      ],
+      "featured": true,
+      "available": true,
+      "price": 38000,
+      "originalPrice": 42222,
+      "discountPercentage": 10
+    },
+    {
+      "id": "ev-2",
+      "slug": "cocomelon-first-birthday",
+      "name": "Cocomelon First Birthday",
+      "description": "Colourful Cocomelon theme with balloon arch, character cutouts and personalised name display.",
+      "images": [
+        "/images/events/web/cocomelon-first-birthday.jpg"
+      ],
+      "imageAlt": "Cocomelon First Birthday by Phool Pattiyan Lahore",
+      "pricePrefix": "Starting from",
+      "includedItems": [
+        "Theme backdrop",
+        "Balloon arch & columns",
+        "Character cutouts",
+        "Personalised name styling"
+      ],
+      "featured": true,
+      "available": true,
+      "price": 45000,
+      "originalPrice": 50000,
+      "discountPercentage": 10
+    },
+    {
+      "id": "ev-3",
+      "slug": "butterfly-birthday-celebration",
+      "name": "Butterfly Birthday Celebration",
+      "description": "Elegant butterfly theme with floral pedestals, balloon garland and personalised birthday panels.",
+      "images": [
+        "/images/events/web/butterfly-birthday-celebration.jpg"
+      ],
+      "imageAlt": "Butterfly Birthday Celebration by Phool Pattiyan Lahore",
+      "pricePrefix": "Starting from",
+      "includedItems": [
+        "Butterfly props",
+        "Floral pedestals",
+        "Balloon garland",
+        "Personalised panels"
+      ],
+      "featured": true,
+      "available": true,
+      "price": 58000,
+      "originalPrice": 64444,
+      "discountPercentage": 10
+    },
+    {
+      "id": "ev-4",
+      "slug": "purple-gold-birthday",
+      "name": "Purple Gold Birthday",
+      "description": "Luxury purple and gold birthday styling with neon signage, floral cart and balloon cascade.",
+      "images": [
+        "/images/events/web/purple-gold-birthday.jpg"
+      ],
+      "imageAlt": "Purple Gold Birthday by Phool Pattiyan Lahore",
+      "pricePrefix": "Starting from",
+      "includedItems": [
+        "Neon Happy Birthday sign",
+        "Decor cart styling",
+        "Balloon cascade",
+        "Floral accents"
+      ],
+      "featured": true,
+      "available": true,
+      "price": 52000,
+      "originalPrice": 57778,
+      "discountPercentage": 10
+    },
+    {
+      "id": "ev-5",
+      "slug": "pastel-first-birthday",
+      "name": "Pastel First Birthday",
+      "description": "Soft pastel balloon arch with floral-topped pedestals and personalised name board for first birthdays.",
+      "images": [
+        "/images/events/web/pastel-first-birthday.jpg"
+      ],
+      "imageAlt": "Pastel First Birthday by Phool Pattiyan Lahore",
+      "pricePrefix": "Starting from",
+      "includedItems": [
+        "Pastel balloon arch",
+        "Name backdrop",
+        "Pedestal styling",
+        "Floor balloon clusters"
+      ],
+      "featured": true,
+      "available": true,
+      "price": 40000,
+      "originalPrice": 44444,
+      "discountPercentage": 10
+    },
+    {
+      "id": "ev-6",
+      "slug": "unicorn-birthday-party",
+      "name": "Unicorn Birthday Party",
+      "description": "Dreamy unicorn theme with pink, gold and blue pedestals, floral accents and balloon garland.",
+      "images": [
+        "/images/events/web/unicorn-birthday-party.jpg"
+      ],
+      "imageAlt": "Unicorn Birthday Party by Phool Pattiyan Lahore",
+      "pricePrefix": "Starting from",
+      "includedItems": [
+        "Unicorn backdrop",
+        "Balloon garland",
+        "Themed pedestals",
+        "Floral styling"
+      ],
+      "featured": true,
+      "available": true,
+      "price": 48000,
+      "originalPrice": 53333,
+      "discountPercentage": 10
+    },
+    {
+      "id": "ev-7",
+      "slug": "luxury-pink-birthday",
+      "name": "Luxury Pink Birthday",
+      "description": "Grand outdoor pink birthday stage with floral columns, chandelier canopy and custom floor styling.",
+      "images": [
+        "/images/events/web/luxury-pink-birthday.jpg"
+      ],
+      "imageAlt": "Luxury Pink Birthday by Phool Pattiyan Lahore",
+      "pricePrefix": "Starting from",
+      "includedItems": [
+        "Stage backdrop panels",
+        "Floral columns",
+        "Chandelier canopy",
+        "Custom floor wrap"
+      ],
+      "featured": true,
+      "available": true,
+      "price": 60000,
+      "originalPrice": 66667,
+      "discountPercentage": 10
+    },
+    {
+      "id": "ev-8",
+      "slug": "aqiqah-and-naming-ceremony",
+      "name": "Aqiqah & Naming Ceremony",
+      "description": "Elegant blue, white and gold setup for aqiqah and naming celebrations.",
+      "images": [
+        "/images/events/web/aqiqah-and-naming-ceremony.jpg"
+      ],
+      "imageAlt": "Aqiqah & Naming Ceremony by Phool Pattiyan Lahore",
+      "pricePrefix": "Starting from",
+      "includedItems": [
+        "Backdrop & balloons",
+        "Personalised name display",
+        "Theme styling"
+      ],
+      "featured": true,
+      "available": true,
+      "price": 55000,
+      "originalPrice": 61111,
+      "discountPercentage": 10
+    },
+    {
+      "id": "ev-9",
+      "slug": "princess-baby-celebration",
+      "name": "Princess Baby Celebration",
+      "description": "Soft pink and cream moon theme for baby welcome and first celebrations.",
+      "images": [
+        "/images/events/web/princess-baby-celebration.jpg"
+      ],
+      "imageAlt": "Princess Baby Celebration by Phool Pattiyan Lahore",
+      "pricePrefix": "Starting from",
+      "includedItems": [
+        "Moon backdrop",
+        "Balloon styling",
+        "Personalised name display"
+      ],
+      "featured": true,
+      "available": true,
+      "price": 42000,
+      "originalPrice": 46667,
+      "discountPercentage": 10
+    },
+    {
+      "id": "ev-10",
+      "slug": "mehndi-and-haldi-decor",
+      "name": "Mehndi & Haldi Décor",
+      "description": "Traditional marigold styling with bride-to-be neon and festive floor décor.",
+      "images": [
+        "/images/events/web/mehndi-and-haldi-decor.jpg"
+      ],
+      "imageAlt": "Mehndi & Haldi Décor by Phool Pattiyan Lahore",
+      "pricePrefix": "Starting from",
+      "includedItems": [
+        "Marigold garlands",
+        "Neon signage",
+        "Traditional props",
+        "Floor styling"
+      ],
+      "featured": true,
+      "available": true,
+      "price": 90000,
+      "originalPrice": 100000,
+      "discountPercentage": 10
+    },
+    {
+      "id": "ev-11",
+      "slug": "grand-opening-decor",
+      "name": "Grand Opening Décor",
+      "description": "Fresh flower opening arrangements and balloon styling for shop and business launches.",
+      "images": [
+        "/images/events/web/grand-opening-decor.jpg"
+      ],
+      "imageAlt": "Grand Opening Décor by Phool Pattiyan Lahore",
+      "pricePrefix": "Starting from",
+      "includedItems": [
+        "Entrance balloon arch",
+        "Fresh flower arrangements",
+        "Ribbon styling"
+      ],
+      "featured": true,
+      "available": true,
+      "price": 15000
+    },
+    {
+      "id": "ev-12",
+      "slug": "oh-baby-peach-birthday",
+      "name": "Oh Baby Peach Birthday",
+      "description": "Outdoor Oh Baby birthday setup with peach and cream balloon garlands, arched backdrop, golden teddy bear and pedestal props.",
+      "images": [
+        "/images/events/web/oh-baby-peach-birthday.jpg"
+      ],
+      "imageAlt": "Oh Baby Peach Birthday by Phool Pattiyan Lahore",
+      "pricePrefix": "Starting from",
+      "includedItems": [
+        "Oh Baby arched backdrop",
+        "Peach & cream balloon garlands",
+        "Golden teddy bear prop",
+        "Pedestal & cube styling",
+        "Outdoor lawn setup"
+      ],
+      "featured": true,
+      "available": true,
+      "price": 30000,
+      "originalPrice": 33333,
+      "discountPercentage": 10
+    },
+    {
+      "id": "ev-13",
+      "slug": "luxury-gold-rose-balloon-birthday",
+      "name": "Luxury Gold Rose Balloon Birthday",
+      "description": "Gold and blush pink balloon arch with mosaic backdrop, neon signage, floral accents and gold pedestal plinths — elegant for birthdays and celebrations.",
+      "images": [
+        "/images/events/web/luxury-gold-rose-balloon-birthday.jpg"
+      ],
+      "imageAlt": "Luxury Gold Rose Balloon Birthday by Phool Pattiyan Lahore",
+      "pricePrefix": "Starting from",
+      "includedItems": [
+        "Gold & pink balloon arch",
+        "Mosaic backdrop with neon sign",
+        "Gold pedestal plinths",
+        "Floral balloon accents",
+        "Floor balloon clusters"
+      ],
+      "featured": true,
+      "available": true,
+      "price": 25000,
+      "originalPrice": 27778,
+      "discountPercentage": 10
+    },
+    {
+      "id": "ev-14",
+      "slug": "traditional-mehndi-floor-setup",
+      "name": "Traditional Mehndi Floor Setup",
+      "description": "Yellow floor seating with cushions, floral vine arch, fairy lights, circular floral wreath backdrop and gold pedestal candles — perfect for intimate mehndi celebrations.",
+      "images": [
+        "/images/events/web/traditional-mehndi-floor-setup.jpg"
+      ],
+      "imageAlt": "Traditional Mehndi Floor Setup by Phool Pattiyan Lahore",
+      "pricePrefix": "Starting from",
+      "includedItems": [
+        "Yellow floor seating with cushions",
+        "Floral vine arch & fairy lights",
+        "Circular floral wreath backdrop",
+        "Gold pedestal candle styling",
+        "Green drapery backdrop"
+      ],
+      "featured": true,
+      "available": true,
+      "price": 100000,
+      "originalPrice": 111111,
+      "discountPercentage": 10
+    },
+    {
+      "id": "ev-15",
+      "slug": "gold-mint-birthday-balloon-arch",
+      "name": "Gold Mint Birthday Balloon Arch",
+      "description": "Gold, mint green and white balloon arch with Happy Birthday neon sign, greenery accents and gold pedestal — elegant indoor birthday styling.",
+      "images": [
+        "/images/events/web/gold-mint-birthday-balloon-arch.jpg"
+      ],
+      "imageAlt": "Gold Mint Birthday Balloon Arch by Phool Pattiyan Lahore",
+      "pricePrefix": "Starting from",
+      "includedItems": [
+        "Gold, mint & white balloon arch",
+        "Happy Birthday neon sign",
+        "Greenery accents",
+        "Gold pedestal plinth",
+        "Indoor setup in Lahore"
+      ],
+      "featured": true,
+      "available": true,
+      "price": 25000,
+      "originalPrice": 27778,
+      "discountPercentage": 10
+    },
+    {
+      "id": "ev-16",
+      "slug": "luxury-gold-rose-birthday-setup",
+      "name": "Luxury Gold Rose Birthday Setup",
+      "description": "Gold, rose gold, red and white balloon garland with circular Happy Birthday backdrop, curtain styling and gold pedestal plinths — elegant indoor birthday décor.",
+      "images": [
+        "/images/events/web/luxury-gold-rose-birthday-setup.jpg"
+      ],
+      "imageAlt": "Luxury Gold Rose Birthday Setup by Phool Pattiyan Lahore",
+      "pricePrefix": "Starting from",
+      "includedItems": [
+        "Gold & rose gold balloon garland",
+        "Circular Happy Birthday backdrop",
+        "Personalised name styling",
+        "Gold pedestal plinths",
+        "Indoor setup in Lahore"
+      ],
+      "featured": true,
+      "available": true,
+      "price": 30000,
+      "originalPrice": 33333,
+      "discountPercentage": 10
+    },
+    {
+      "id": "ev-17",
+      "slug": "black-silver-gold-birthday-setup",
+      "name": "Black Silver Gold Birthday Setup",
+      "description": "Black and chrome silver balloon arch with sequin backdrop, Happy Birthday sign, floral pedestal styling and floor balloon clusters — sleek modern birthday décor.",
+      "images": [
+        "/images/events/web/black-silver-gold-birthday-setup.jpg"
+      ],
+      "imageAlt": "Black Silver Gold Birthday Setup by Phool Pattiyan Lahore",
+      "pricePrefix": "Starting from",
+      "includedItems": [
+        "Black & silver balloon arch",
+        "Sequin Happy Birthday backdrop",
+        "Floral pedestal arrangements",
+        "Gold vase styling",
+        "Floor balloon clusters"
+      ],
+      "featured": true,
+      "available": true,
+      "price": 30000,
+      "originalPrice": 33333,
+      "discountPercentage": 10
+    },
+    {
+      "id": "ev-20",
+      "slug": "gold-purple-neon-birthday-arch",
+      "name": "Gold Purple Neon Birthday Arch",
+      "description": "Gold, silver and purple balloon arch with Happy Birthday neon sign, confetti balloons, white rose accents and gold pedestal plinths — glamorous indoor birthday styling.",
+      "images": [
+        "/images/events/web/gold-purple-neon-birthday-arch.jpg"
+      ],
+      "imageAlt": "Gold Purple Neon Birthday Arch by Phool Pattiyan Lahore",
+      "pricePrefix": "Starting from",
+      "includedItems": [
+        "Gold, silver & purple balloon arch",
+        "Happy Birthday neon sign",
+        "Confetti balloon accents",
+        "Gold pedestal plinths",
+        "Indoor setup in Lahore"
+      ],
+      "featured": true,
+      "available": true,
+      "price": 28000,
+      "originalPrice": 31111,
+      "discountPercentage": 10
+    },
+    {
+      "id": "ev-21",
+      "slug": "boss-baby-first-birthday",
+      "name": "Boss Baby First Birthday",
+      "description": "Boss Baby themed first birthday with blue and white backdrop panels, balloon arches, character balloons, themed pedestal plinths and personalised name styling.",
+      "images": [
+        "/images/events/web/boss-baby-first-birthday.jpg"
+      ],
+      "imageAlt": "Boss Baby First Birthday by Phool Pattiyan Lahore",
+      "pricePrefix": "Starting from",
+      "includedItems": [
+        "Themed backdrop panels",
+        "Blue & white balloon arches",
+        "Boss Baby character balloons",
+        "Themed pedestal plinths",
+        "Personalised name styling"
+      ],
+      "featured": true,
+      "available": true,
+      "price": 44000,
+      "originalPrice": 48889,
+      "discountPercentage": 10
+    },
+    {
+      "id": "ev-22",
+      "slug": "silver-sequin-neon-birthday",
+      "name": "Silver Sequin Neon Birthday",
+      "description": "Silver sequin backdrop with Happy Birthday neon sign, silver, white and grey balloon arch, white rose accents and chrome pedestal plinths — elegant birthday styling.",
+      "images": [
+        "/images/events/web/silver-sequin-neon-birthday.jpg"
+      ],
+      "imageAlt": "Silver Sequin Neon Birthday by Phool Pattiyan Lahore",
+      "pricePrefix": "Starting from",
+      "includedItems": [
+        "Sequin backdrop wall",
+        "Happy Birthday neon sign",
+        "Silver & white balloon arch",
+        "White rose accents",
+        "Chrome pedestal plinths"
+      ],
+      "featured": true,
+      "available": true,
+      "price": 34000,
+      "originalPrice": 37778,
+      "discountPercentage": 10
+    }
+  ],
+  "shop": [
+    {
+      "slug": "storefront",
+      "image": "/images/shopPhotos/web/storefront.jpg"
+    },
+    {
+      "slug": "whatsapp-image-2026-08-17-at-18-17-35",
+      "image": "/images/shopPhotos/web/whatsapp-image-2026-08-17-at-18-17-35.jpg"
+    },
+    {
+      "slug": "whatsapp-image-2026-08-17-at-18-18-19-2-",
+      "image": "/images/shopPhotos/web/whatsapp-image-2026-08-17-at-18-18-19-2-.jpg"
+    },
+    {
+      "slug": "whatsapp-image-2026-08-17-at-18-18-19-3-",
+      "image": "/images/shopPhotos/web/whatsapp-image-2026-08-17-at-18-18-19-3-.jpg"
+    },
+    {
+      "slug": "whatsapp-image-2026-08-17-at-18-18-19",
+      "image": "/images/shopPhotos/web/whatsapp-image-2026-08-17-at-18-18-19.jpg"
+    },
+    {
+      "slug": "whatsapp-image-2026-08-17-at-18-18-20-1-",
+      "image": "/images/shopPhotos/web/whatsapp-image-2026-08-17-at-18-18-20-1-.jpg"
+    },
+    {
+      "slug": "whatsapp-image-2026-08-17-at-18-18-20",
+      "image": "/images/shopPhotos/web/whatsapp-image-2026-08-17-at-18-18-20.jpg"
+    },
+    {
+      "slug": "whatsapp-image-2026-08-17-at-18-18-27",
+      "image": "/images/shopPhotos/web/whatsapp-image-2026-08-17-at-18-18-27.jpg"
+    },
+    {
+      "slug": "whatsapp-image-2026-08-17-at-18-18-29",
+      "image": "/images/shopPhotos/web/whatsapp-image-2026-08-17-at-18-18-29.jpg"
+    },
+    {
+      "slug": "whatsapp-image-2026-08-17-at-18-18-30",
+      "image": "/images/shopPhotos/web/whatsapp-image-2026-08-17-at-18-18-30.jpg"
+    },
+    {
+      "slug": "whatsapp-image-2026-08-17-at-18-18-31-1-",
+      "image": "/images/shopPhotos/web/whatsapp-image-2026-08-17-at-18-18-31-1-.jpg"
+    },
+    {
+      "slug": "whatsapp-image-2026-08-17-at-18-18-31-2-",
+      "image": "/images/shopPhotos/web/whatsapp-image-2026-08-17-at-18-18-31-2-.jpg"
+    },
+    {
+      "slug": "whatsapp-image-2026-08-17-at-18-18-31-3-",
+      "image": "/images/shopPhotos/web/whatsapp-image-2026-08-17-at-18-18-31-3-.jpg"
+    },
+    {
+      "slug": "whatsapp-image-2026-08-17-at-18-18-31",
+      "image": "/images/shopPhotos/web/whatsapp-image-2026-08-17-at-18-18-31.jpg"
+    },
+    {
+      "slug": "whatsapp-image-2026-08-17-at-18-18-32-1-",
+      "image": "/images/shopPhotos/web/whatsapp-image-2026-08-17-at-18-18-32-1-.jpg"
+    }
+  ]
+}

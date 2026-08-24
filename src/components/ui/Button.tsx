@@ -54,13 +54,14 @@ export function Button({
           className={classes}
           target="_blank"
           rel="noopener noreferrer"
+          aria-label={props["aria-label"]}
         >
           {children}
         </a>
       );
     }
     return (
-      <Link href={href} className={classes}>
+      <Link href={href} className={classes} aria-label={props["aria-label"]}>
         {children}
       </Link>
     );

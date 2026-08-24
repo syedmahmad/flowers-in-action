@@ -115,9 +115,9 @@ export function ShopSection() {
           </h2>
           <p className="mx-auto max-w-2xl text-sm text-charcoal/80 sm:text-base">
             Browse fresh bouquets, floral boxes, wedding flowers and personalised gifts.
-            Every item includes a 50% launch discount — order directly on WhatsApp.
+            Order directly on WhatsApp.
           </p>
-          <p className="mt-3 text-sm text-charcoal/60">{siteConfig.launchOfferNote}</p>
+          <p className="mt-3 text-sm text-charcoal/60">{siteConfig.advancePaymentNote}</p>
         </div>
 
         <div className="mb-6 flex gap-2 overflow-x-auto pb-1 lg:hidden [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">

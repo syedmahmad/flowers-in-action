@@ -52,6 +52,28 @@ export function ContactSection() {
               <p>
                 <strong>Location:</strong> {siteConfig.address.full}
               </p>
+              <p>
+                <strong>Instagram:</strong>{" "}
+                <a
+                  href={siteConfig.social.instagram}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-maroon hover:underline"
+                >
+                  @phool_pattiyan
+                </a>
+              </p>
+              <p>
+                <strong>Google:</strong>{" "}
+                <a
+                  href={siteConfig.google.reviewsUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-maroon hover:underline"
+                >
+                  Reviews &amp; directions
+                </a>
+              </p>
             </div>
             <div className="mt-6">
               <Button variant="whatsapp" size="lg" href={buildGeneralWhatsAppUrl()} external>

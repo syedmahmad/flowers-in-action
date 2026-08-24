@@ -1,12 +1,13 @@
 import type { Metadata, Viewport } from "next";
-import { Playfair_Display, Inter, Great_Vibes } from "next/font/google";
+import { Cormorant_Garamond, Inter } from "next/font/google";
 import { siteConfig } from "@/data/config";
 import { JsonLd } from "@/components/seo/JsonLd";
 import "./globals.css";
 
-const playfair = Playfair_Display({
-  variable: "--font-playfair",
+const cormorant = Cormorant_Garamond({
+  variable: "--font-cormorant",
   subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
   display: "swap",
   preload: true,
 });
@@ -16,14 +17,6 @@ const inter = Inter({
   subsets: ["latin"],
   display: "swap",
   preload: true,
-});
-
-const greatVibes = Great_Vibes({
-  variable: "--font-great-vibes",
-  weight: "400",
-  subsets: ["latin"],
-  display: "swap",
-  preload: false,
 });
 
 export const viewport: Viewport = {
@@ -84,7 +77,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${playfair.variable} ${inter.variable} ${greatVibes.variable} scroll-smooth`}
+      className={`${cormorant.variable} ${inter.variable} scroll-smooth`}
     >
       <body className="min-h-screen bg-ivory text-charcoal antialiased">
         <JsonLd />

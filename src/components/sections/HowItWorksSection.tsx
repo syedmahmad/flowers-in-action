@@ -1,25 +1,19 @@
 const steps = [
   {
     step: "1",
-    title: "Select a Design",
-    description: "Browse products or send an inspiration photo.",
+    title: "Choose",
+    description: "Select a bouquet or event package.",
   },
   {
     step: "2",
-    title: "Message Us on WhatsApp",
-    description: "Your selected product and price are automatically included.",
+    title: "WhatsApp Us",
+    description: "Send the selected design automatically through WhatsApp.",
   },
   {
     step: "3",
-    title: "Confirm Details",
+    title: "Confirm",
     description:
-      "Share the delivery area, recipient information, date and customisation.",
-  },
-  {
-    step: "4",
-    title: "Pay 10% Advance",
-    description:
-      "After confirmation, pay the requested advance and we begin preparing your order.",
+      "Confirm availability, delivery or event details and advance payment.",
   },
 ];
 
@@ -31,11 +25,11 @@ export function HowItWorksSection() {
           id="how-it-works"
           className="heading-serif mb-10 text-center text-3xl font-bold text-maroon-deep sm:text-4xl"
         >
-          How Ordering Works
+          How It Works
         </h2>
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mx-auto grid max-w-4xl gap-6 sm:grid-cols-3">
           {steps.map((item) => (
-            <div key={item.step} className="relative rounded-2xl bg-blush/40 p-6">
+            <div key={item.step} className="rounded-2xl bg-blush/30 p-6 text-center">
               <span className="heading-serif mb-3 inline-flex h-10 w-10 items-center justify-center rounded-full bg-maroon text-lg font-bold text-white">
                 {item.step}
               </span>

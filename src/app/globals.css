@@ -27,9 +27,8 @@
   --color-green-natural: var(--green-natural);
   --color-sage: var(--sage);
   --color-charcoal: var(--charcoal);
-  --font-serif: var(--font-playfair);
+  --font-serif: var(--font-cormorant);
   --font-sans: var(--font-inter);
-  --font-script: var(--font-great-vibes);
 }
 
 html {
@@ -80,11 +79,33 @@ body {
 }
 
 .heading-serif {
-  font-family: var(--font-playfair), Georgia, serif;
+  font-family: var(--font-cormorant), Georgia, serif;
 }
 
-.script-accent {
-  font-family: var(--font-great-vibes), cursive;
+.hero-gradient {
+  background:
+    radial-gradient(ellipse 80% 60% at 10% 20%, rgba(64, 145, 108, 0.08), transparent 50%),
+    radial-gradient(ellipse 60% 50% at 90% 10%, rgba(232, 240, 234, 0.9), transparent 55%),
+    linear-gradient(165deg, #fffdf8 0%, #ffffff 45%, #f4f8f5 100%);
+}
+
+.hero-image-glow {
+  box-shadow:
+    0 4px 6px -1px rgba(27, 67, 50, 0.06),
+    0 25px 50px -12px rgba(27, 67, 50, 0.18);
+}
+
+.nav-link {
+  @apply relative whitespace-nowrap rounded-full px-4 py-2 text-[0.9375rem] font-medium tracking-wide text-charcoal/85 transition-all duration-200 hover:bg-maroon/5 hover:text-maroon;
+}
+
+.nav-link::after {
+  content: "";
+  @apply absolute bottom-1 left-1/2 h-0.5 w-0 -translate-x-1/2 rounded-full bg-green-natural transition-all duration-200;
+}
+
+.nav-link:hover::after {
+  @apply w-4;
 }
 
 .card-shadow {

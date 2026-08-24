@@ -51,7 +51,7 @@ export const policies = {
     title: "Terms of Service",
     content: [
       "By placing an enquiry or order through this website or WhatsApp, you agree to communicate accurate delivery and contact information.",
-      "Prices shown include the current launch discount where applicable and may change based on flower availability, customisation and delivery area.",
+      "Prices shown may change based on flower availability, customisation and delivery area.",
       "Order confirmation requires WhatsApp communication and, where applicable, advance payment.",
       "Product images are representative; actual arrangements may vary according to season and availability.",
       "These terms may be updated; the version in effect at the time of order confirmation applies.",

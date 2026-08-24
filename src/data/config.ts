@@ -56,7 +56,13 @@ export const siteConfig = {
   mapEmbedUrl:
     "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3403.0!2d74.4!3d31.47!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sPlaza%2024%20Bankers%20Town%20Lahore!5e0!3m2!1sen!2spk!4v1",
   mapDirectionsUrl:
-    "https://www.google.com/maps/search/?api=1&query=Plaza+24+B+Block+Bankers+Lahore",
+    "https://www.google.com/maps/search/?api=1&query=Phool+Pattiyan+Lahore",
+  google: {
+    shareUrl: "https://share.google/k6m3DD2yO1jKHdowB",
+    mapsUrl: "https://share.google/k6m3DD2yO1jKHdowB",
+    reviewsUrl: "https://share.google/k6m3DD2yO1jKHdowB",
+    placeKgMid: "/g/11nv2b24b4",
+  },
   businessHoursNote: "Contact us on WhatsApp to confirm today's opening hours",
   serviceAreas: [
     "DHA Phase 4 Lahore",
@@ -73,16 +79,12 @@ export const siteConfig = {
   ],
   advancePaymentNote:
     "Only 10% advance payment is required to confirm customised and delivery orders. The remaining payment can be settled according to the confirmed order arrangement.",
-  launchOfferHeadline: "50% Launch Discount on Selected Floral Creations",
-  launchOfferBadge: "50% OFF",
-  launchOfferNote:
-    "Launch offer is subject to product availability, flower season, selected customisation and delivery area.",
   announcementMessages: [
     "Fresh Bouquets & Flower Delivery Across Lahore — Phool Pattiyan",
     "Only 10% Advance Required to Confirm Your Order",
   ],
   social: {
-    instagram: "https://instagram.com/phoolpattiyan",
+    instagram: "https://www.instagram.com/phool_pattiyan/",
     facebook: "https://facebook.com/phoolpattiyan",
   },
   analytics: {
