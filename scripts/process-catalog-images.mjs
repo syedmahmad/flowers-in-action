@@ -91,14 +91,6 @@ const BOUQUET_CURATED = [
     discount: 10,
   },
   {
-    src: "WhatsApp Image 2026-08-15 at 18.10.00.jpeg",
-    name: "Ruby Romance",
-    description:
-      "Ruby-red roses with tuberoses in luminous gold wrap and satin ribbon — a luxury gift statement.",
-    price: 5500,
-    discount: 10,
-  },
-  {
     src: "WhatsApp Image 2026-08-18 at 20.29.34 (1).jpeg",
     name: "Pink Marble Wrap",
     description:
@@ -280,6 +272,62 @@ const BOUQUET_CURATED = [
     discount: 10,
   },
   {
+    src: "doraemon-azure-dream-basket.png",
+    name: "Doraemon Azure Dream Basket",
+    description:
+      "Gift basket with Doraemon plush, blue and white roses, tulle-wrapped blue balloons and scalloped blue backdrop in a ribbon-trimmed wicker basket.",
+    price: 5800,
+    discount: 10,
+  },
+  {
+    src: "hello-kitty-lavender-treat-basket.png",
+    name: "Hello Kitty Lavender Treat Basket",
+    description:
+      "Hello Kitty plush with cream roses, purple paper fans and lavender-wrapped treat bars in a purple ribbon gift box.",
+    price: 5500,
+    discount: 10,
+  },
+  {
+    src: "doraemon-sky-balloon-gift-box.png",
+    name: "Doraemon Sky Balloon Gift Box",
+    description:
+      "Doraemon plush with navy rose bouquet and clear balloon top filled with blue mini balloons — a playful hot-air-balloon style gift box.",
+    price: 3000,
+    discount: 10,
+  },
+  {
+    src: "crimson-love-teddy-basket.png",
+    name: "Crimson Love Teddy Basket",
+    description:
+      "Red Love teddy with white and red carnations, white lily, berries and a wrapped treat in a round basket with red satin ribbon.",
+    price: 5200,
+    discount: 10,
+  },
+  {
+    src: "monochrome-panda-luxe-basket.png",
+    name: "Monochrome Panda Luxe Basket",
+    description:
+      "Panda mom and cub plush with white roses, black tulle balloons and black-wrapped gold-bow treats in an elegant white gift box.",
+    price: 6000,
+    discount: 10,
+  },
+  {
+    src: "blush-tulle-teddy-celebration-basket.png",
+    name: "Blush Tulle Teddy Celebration Basket",
+    description:
+      "Pink teddy with blush-tipped roses and pink tulle-wrapped balloons in a gold woven rectangular basket — sweet and festive.",
+    price: 5400,
+    discount: 10,
+  },
+  {
+    src: "golden-i-love-you-teddy-basket.png",
+    name: "Golden I Love You Teddy Basket",
+    description:
+      "Tan teddy with I Love You heart, pink roses, gold-marble wrapped treats and pink fan backdrop in a ribbon-trimmed round basket.",
+    price: 5600,
+    discount: 10,
+  },
+  {
     src: "pink-bunny-celebration-basket.png",
     name: "Pink Bunny Celebration Basket",
     description:
@@ -301,6 +349,144 @@ const BOUQUET_CURATED = [
     description:
       "Magenta and white chrysanthemums with tulle accents in blush pink wrap and black ribbon — lush and celebratory.",
     price: 6000,
+    discount: 10,
+  },
+  {
+    src: "lavender-peach-chrysanthemum-bouquet.png",
+    name: "Lavender Peach Chrysanthemum Bouquet",
+    description:
+      "Lavender chrysanthemums with baby's breath in layered peach and white wrap with pink ribbon — soft, elegant and gift-ready.",
+    price: 6000,
+    discount: 10,
+    webImage: "lavender-peach-chrysanthemum-bouquet-main.jpg",
+  },
+  {
+    src: "plum-noir-chrysanthemum-bouquet.png",
+    name: "Plum Noir Chrysanthemum Bouquet",
+    description:
+      "Deep plum chrysanthemums with baby's breath in layered black wrap and red satin ribbon — bold, dramatic and gift-ready.",
+    price: 6000,
+    discount: 10,
+  },
+  {
+    src: "violet-snow-chrysanthemum-bouquet.png",
+    name: "Violet Snow Chrysanthemum Bouquet",
+    description:
+      "White and deep purple chrysanthemums with baby's breath in black wrap and white satin ribbon — crisp, elegant and gift-ready.",
+    price: 5500,
+    discount: 10,
+  },
+  {
+    src: "ivory-tuberose-chrysanthemum-bouquet.png",
+    name: "Ivory Tuberose Chrysanthemum Bouquet",
+    description:
+      "White chrysanthemums and tuberoses with baby's breath in scalloped white wrap and burgundy satin ribbon — classic, fresh and elegant.",
+    price: 5500,
+    discount: 10,
+  },
+  {
+    src: "local-red-rose-tuberose-bouquet.png",
+    name: "Local Red Rose Tuberose Bouquet",
+    description:
+      "Fresh local red roses with white tuberoses in pink or purple wrap — classic, romantic and beautifully gift-ready.",
+    price: 1800,
+    discount: 10,
+  },
+  {
+    src: "sunflower-imported-rose-bouquet.png",
+    name: "Sunflower Imported Rose Bouquet",
+    description:
+      "Bright sunflowers with white imported roses and baby's breath in kraft paper wrap and white satin ribbon — warm, cheerful and gift-ready.",
+    price: 7000,
+    discount: 10,
+    origin: "imported",
+  },
+  {
+    src: "crimson-ivory-tuberose-bouquet.png",
+    name: "Crimson Ivory Tuberose Bouquet",
+    description:
+      "Red and white roses with chrysanthemums and tuberoses in frosted rose-gold wrap and red satin ribbon — lush and romantic.",
+    price: 5800,
+    discount: 10,
+  },
+  {
+    src: "amethyst-stripe-chrysanthemum-bouquet.png",
+    name: "Amethyst Stripe Chrysanthemum Bouquet",
+    description:
+      "Deep purple chrysanthemums with baby's breath in white-striped wrap and pink satin ribbon — elegant and eye-catching.",
+    price: 5500,
+    discount: 10,
+  },
+  {
+    src: "blush-mesh-romance-bouquet.png",
+    name: "Blush Mesh Romance Bouquet",
+    description:
+      "Pink and white roses with chrysanthemums and baby's breath in mesh and layered pink-lavender wrap — soft and romantic.",
+    price: 5400,
+    discount: 10,
+  },
+  {
+    src: "crimson-sky-balloon-bouquet.png",
+    name: "Crimson Sky Balloon Bouquet",
+    description:
+      "White carnations with red mini balloons in a clear bubble top and black ribbon gift bag — a whimsical hot-air-balloon style arrangement.",
+    price: 3000,
+    discount: 10,
+  },
+  {
+    src: "plum-peach-rose-bouquet.png",
+    name: "Plum Peach Rose Bouquet",
+    description:
+      "Purple chrysanthemums with a pink rose centre and baby's breath in peach striped wrap and pink ribbon — rich yet feminine.",
+    price: 5600,
+    discount: 10,
+  },
+  {
+    src: "scarlet-lily-tuberose-bouquet.png",
+    name: "Scarlet Lily Tuberose Bouquet",
+    description:
+      "Red roses with white lilies, tuberoses and baby's breath in frosted rose-gold wrap and red ribbon — dramatic and luxurious.",
+    price: 6000,
+    discount: 10,
+  },
+  {
+    src: "indigo-daisy-bouquet.png",
+    name: "Indigo Daisy Bouquet",
+    description:
+      "White chrysanthemums with baby's breath in indigo scalloped wrap — crisp, fresh and beautifully structured.",
+    price: 5200,
+    discount: 10,
+  },
+  {
+    src: "turquoise-sunshine-bouquet.png",
+    name: "Turquoise Sunshine Bouquet",
+    description:
+      "Sunflowers with pink and white roses, tuberoses and baby's breath in bright turquoise wrap — bold, cheerful and fresh.",
+    price: 5800,
+    discount: 10,
+  },
+  {
+    src: "burgundy-solo-rose-bouquet.png",
+    name: "Burgundy Solo Rose Bouquet",
+    description:
+      "Single red rose with white chrysanthemums and baby's breath in burgundy fan wrap and white ribbon — classic and refined.",
+    price: 5000,
+    discount: 10,
+  },
+  {
+    src: "classic-red-tuberose-tower.png",
+    name: "Classic Red Tuberose Tower",
+    description:
+      "Red roses with white tuberoses in white architectural wrap and satin ribbon — tall, timeless and romantic.",
+    price: 2000,
+    discount: 10,
+  },
+  {
+    src: "ebony-crimson-chrysanthemum-bouquet.png",
+    name: "Ebony Crimson Chrysanthemum Bouquet",
+    description:
+      "Red roses with white chrysanthemums in black scalloped wrap and black ribbon — striking, modern and gift-ready.",
+    price: 2400,
     discount: 10,
   },
 ];
@@ -682,7 +868,7 @@ function main() {
       continue;
     }
     const slug = slugFromName(item.name);
-    const outName = `${slug}.jpg`;
+    const outName = item.webImage || `${slug}.jpg`;
     const output = path.join(bouquetWeb, outName);
     processBouquet(input, output, item);
     bouquetManifest.push({

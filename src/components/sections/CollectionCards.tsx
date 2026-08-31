@@ -7,9 +7,9 @@ const collections = [
     description: "Handcrafted arrangements with roses, chrysanthemums, sunflowers and seasonal blooms.",
     href: "#bouquets",
     cta: "Explore Bouquets",
-    image: "/images/bouquets/web/ruby-radiance-artificial-bouquet.jpg",
-    imageAlt: "Ruby Radiance Artificial Bouquet by Phool Pattiyan Lahore",
-    objectPosition: "center 45%",
+    image: "/images/bouquets/web/crimson-ivory-tuberose-bouquet.jpg",
+    imageAlt: "Crimson Ivory Tuberose Bouquet by Phool Pattiyan Lahore",
+    objectPosition: "center 38%",
     label: "Bouquets",
   },
   {
