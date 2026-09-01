@@ -489,6 +489,22 @@ const BOUQUET_CURATED = [
     price: 2400,
     discount: 10,
   },
+  {
+    src: "burgundy-tulle-rose-bouquet.png",
+    name: "Burgundy Tulle Rose Bouquet",
+    description:
+      "Red roses with white chrysanthemums and tuberoses in burgundy wrap with white tulle and red ribbon — lush, romantic and gift-ready.",
+    price: 5000,
+    discount: 10,
+  },
+  {
+    src: "blush-peach-satin-bouquet.png",
+    name: "Blush Peach Satin Bouquet",
+    description:
+      "Pink and cream roses with white chrysanthemums in peach fan wrap and blush satin ribbon — soft, romantic and effortlessly elegant.",
+    price: 3500,
+    discount: 10,
+  },
 ];
 
 /** Source files that are baskets, boxes, balloons or hampers — never publish */

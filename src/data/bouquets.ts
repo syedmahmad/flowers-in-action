@@ -3,6 +3,132 @@ import type { Bouquet } from "@/types/catalog";
 /** Auto-generated from public/images/catalog-manifest.json — run: node scripts/generate-catalog-data.mjs */
 export const bouquets: Bouquet[] = [
   {
+    id: "bq-061",
+    slug: "burgundy-tulle-rose-bouquet",
+    name: "Burgundy Tulle Rose Bouquet",
+    description: "Red roses with white chrysanthemums and tuberoses in burgundy wrap with white tulle and red ribbon — lush, romantic and gift-ready.",
+    image: "/images/bouquets/web/burgundy-tulle-rose-bouquet.jpg",
+    imageAlt: "Burgundy Tulle Rose Bouquet fresh flower bouquet by Phool Pattiyan Lahore",
+    price: 5000,
+    originalPrice: 5556,
+    discountPercentage: 10,
+    flowerOrigin: "local",
+    featured: true,
+    available: true,
+  },
+{
+    id: "bq-062",
+    slug: "blush-peach-satin-bouquet",
+    name: "Blush Peach Satin Bouquet",
+    description: "Pink and cream roses with white chrysanthemums in peach fan wrap and blush satin ribbon — soft, romantic and effortlessly elegant.",
+    image: "/images/bouquets/web/blush-peach-satin-bouquet.jpg",
+    imageAlt: "Blush Peach Satin Bouquet fresh flower bouquet by Phool Pattiyan Lahore",
+    price: 3500,
+    originalPrice: 3889,
+    discountPercentage: 10,
+    flowerOrigin: "local",
+    featured: true,
+    available: true,
+  },
+{
+    id: "bq-060",
+    slug: "ebony-crimson-chrysanthemum-bouquet",
+    name: "Ebony Crimson Chrysanthemum Bouquet",
+    description: "Red roses with white chrysanthemums in black scalloped wrap and black ribbon — striking, modern and gift-ready.",
+    image: "/images/bouquets/web/ebony-crimson-chrysanthemum-bouquet.jpg",
+    imageAlt: "Ebony Crimson Chrysanthemum Bouquet fresh flower bouquet by Phool Pattiyan Lahore",
+    price: 2400,
+    originalPrice: 2667,
+    discountPercentage: 10,
+    flowerOrigin: "local",
+    featured: true,
+    available: true,
+  },
+{
+    id: "bq-012",
+    slug: "regal-garden-roses",
+    name: "Regal Garden Roses",
+    description: "Magenta chrysanthemums and white daisies in lavender-pink wrap with black satin bow — rich and luxurious.",
+    image: "/images/bouquets/web/regal-garden-roses.jpg",
+    imageAlt: "Regal Garden Roses fresh flower bouquet by Phool Pattiyan Lahore",
+    price: 5500,
+    originalPrice: 6111,
+    discountPercentage: 10,
+    flowerOrigin: "local",
+    featured: true,
+    available: true,
+  },
+{
+    id: "bq-022",
+    slug: "sunflower-red-rose-bouquet",
+    name: "Sunflower Red Rose Bouquet",
+    description: "Bright sunflower with deep red roses and greenery in soft peach-pink wrap — bold, fresh and beautifully balanced.",
+    image: "/images/bouquets/web/sunflower-red-rose-bouquet.jpg",
+    imageAlt: "Sunflower Red Rose Bouquet fresh flower bouquet by Phool Pattiyan Lahore",
+    price: 1800,
+    originalPrice: 2000,
+    discountPercentage: 10,
+    flowerOrigin: "local",
+    featured: true,
+    available: true,
+  },
+{
+    id: "bq-056",
+    slug: "turquoise-sunshine-bouquet",
+    name: "Turquoise Sunshine Bouquet",
+    description: "Sunflowers with pink and white roses, tuberoses and baby's breath in bright turquoise wrap — bold, cheerful and fresh.",
+    image: "/images/bouquets/web/turquoise-sunshine-bouquet.jpg",
+    imageAlt: "Turquoise Sunshine Bouquet fresh flower bouquet by Phool Pattiyan Lahore",
+    price: 5800,
+    originalPrice: 6444,
+    discountPercentage: 10,
+    flowerOrigin: "local",
+    featured: true,
+    available: true,
+  },
+{
+    id: "bq-057",
+    slug: "burgundy-solo-rose-bouquet",
+    name: "Burgundy Solo Rose Bouquet",
+    description: "Single red rose with white chrysanthemums and baby's breath in burgundy fan wrap and white ribbon — classic and refined.",
+    image: "/images/bouquets/web/burgundy-solo-rose-bouquet.jpg",
+    imageAlt: "Burgundy Solo Rose Bouquet fresh flower bouquet by Phool Pattiyan Lahore",
+    price: 5000,
+    originalPrice: 5556,
+    discountPercentage: 10,
+    flowerOrigin: "local",
+    featured: true,
+    available: true,
+  },
+{
+    id: "bq-054",
+    slug: "scarlet-lily-tuberose-bouquet",
+    name: "Scarlet Lily Tuberose Bouquet",
+    description: "Red roses with white lilies, tuberoses and baby's breath in frosted rose-gold wrap and red ribbon — dramatic and luxurious.",
+    image: "/images/bouquets/web/scarlet-lily-tuberose-bouquet.jpg",
+    imageAlt: "Scarlet Lily Tuberose Bouquet fresh flower bouquet by Phool Pattiyan Lahore",
+    price: 6000,
+    originalPrice: 6667,
+    discountPercentage: 10,
+    flowerOrigin: "local",
+    featured: true,
+    available: true,
+  },
+{
+    id: "bq-048",
+    slug: "sunflower-imported-rose-bouquet",
+    name: "Sunflower Imported Rose Bouquet",
+    description: "Bright sunflowers with white imported roses and baby's breath in kraft paper wrap and white satin ribbon — warm, cheerful and gift-ready.",
+    image: "/images/bouquets/web/sunflower-imported-rose-bouquet.jpg",
+    imageAlt: "Sunflower Imported Rose Bouquet fresh flower bouquet by Phool Pattiyan Lahore",
+    price: 7000,
+    originalPrice: 7778,
+    discountPercentage: 10,
+    flowerOrigin: "imported",
+    featured: true,
+    available: true,
+  },
+{
     id: "bq-035",
     slug: "blush-magenta-chrysanthemum-bouquet",
     name: "Blush Magenta Chrysanthemum Bouquet",
@@ -16,7 +142,7 @@ export const bouquets: Bouquet[] = [
     featured: true,
     available: true,
   },
-  {
+{
     id: "bq-036",
     slug: "lavender-peach-chrysanthemum-bouquet",
     name: "Lavender Peach Chrysanthemum Bouquet",
@@ -30,7 +156,7 @@ export const bouquets: Bouquet[] = [
     featured: true,
     available: true,
   },
-  {
+{
     id: "bq-037",
     slug: "plum-noir-chrysanthemum-bouquet",
     name: "Plum Noir Chrysanthemum Bouquet",
@@ -44,7 +170,7 @@ export const bouquets: Bouquet[] = [
     featured: true,
     available: true,
   },
-  {
+{
     id: "bq-038",
     slug: "violet-snow-chrysanthemum-bouquet",
     name: "Violet Snow Chrysanthemum Bouquet",
@@ -58,7 +184,7 @@ export const bouquets: Bouquet[] = [
     featured: true,
     available: true,
   },
-  {
+{
     id: "bq-039",
     slug: "ivory-tuberose-chrysanthemum-bouquet",
     name: "Ivory Tuberose Chrysanthemum Bouquet",
@@ -72,7 +198,7 @@ export const bouquets: Bouquet[] = [
     featured: true,
     available: true,
   },
-  {
+{
     id: "bq-040",
     slug: "local-red-rose-tuberose-bouquet",
     name: "Local Red Rose Tuberose Bouquet",
@@ -87,21 +213,7 @@ export const bouquets: Bouquet[] = [
     featured: true,
     available: true,
   },
-  {
-    id: "bq-048",
-    slug: "sunflower-imported-rose-bouquet",
-    name: "Sunflower Imported Rose Bouquet",
-    description: "Bright sunflowers with white imported roses and baby's breath in kraft paper wrap and white satin ribbon — warm, cheerful and gift-ready.",
-    image: "/images/bouquets/web/sunflower-imported-rose-bouquet.jpg",
-    imageAlt: "Sunflower Imported Rose Bouquet fresh flower bouquet by Phool Pattiyan Lahore",
-    price: 7000,
-    originalPrice: 7778,
-    discountPercentage: 10,
-    flowerOrigin: "imported",
-    featured: true,
-    available: true,
-  },
-  {
+{
     id: "bq-049",
     slug: "crimson-ivory-tuberose-bouquet",
     name: "Crimson Ivory Tuberose Bouquet",
@@ -115,7 +227,7 @@ export const bouquets: Bouquet[] = [
     featured: true,
     available: true,
   },
-  {
+{
     id: "bq-050",
     slug: "amethyst-stripe-chrysanthemum-bouquet",
     name: "Amethyst Stripe Chrysanthemum Bouquet",
@@ -129,7 +241,7 @@ export const bouquets: Bouquet[] = [
     featured: true,
     available: true,
   },
-  {
+{
     id: "bq-051",
     slug: "blush-mesh-romance-bouquet",
     name: "Blush Mesh Romance Bouquet",
@@ -143,7 +255,7 @@ export const bouquets: Bouquet[] = [
     featured: true,
     available: true,
   },
-  {
+{
     id: "bq-052",
     slug: "crimson-sky-balloon-bouquet",
     name: "Crimson Sky Balloon Bouquet",
@@ -157,7 +269,7 @@ export const bouquets: Bouquet[] = [
     featured: true,
     available: true,
   },
-  {
+{
     id: "bq-053",
     slug: "plum-peach-rose-bouquet",
     name: "Plum Peach Rose Bouquet",
@@ -171,21 +283,7 @@ export const bouquets: Bouquet[] = [
     featured: true,
     available: true,
   },
-  {
-    id: "bq-054",
-    slug: "scarlet-lily-tuberose-bouquet",
-    name: "Scarlet Lily Tuberose Bouquet",
-    description: "Red roses with white lilies, tuberoses and baby's breath in frosted rose-gold wrap and red ribbon — dramatic and luxurious.",
-    image: "/images/bouquets/web/scarlet-lily-tuberose-bouquet.jpg",
-    imageAlt: "Scarlet Lily Tuberose Bouquet fresh flower bouquet by Phool Pattiyan Lahore",
-    price: 6000,
-    originalPrice: 6667,
-    discountPercentage: 10,
-    flowerOrigin: "local",
-    featured: true,
-    available: true,
-  },
-  {
+{
     id: "bq-055",
     slug: "indigo-daisy-bouquet",
     name: "Indigo Daisy Bouquet",
@@ -199,35 +297,7 @@ export const bouquets: Bouquet[] = [
     featured: true,
     available: true,
   },
-  {
-    id: "bq-056",
-    slug: "turquoise-sunshine-bouquet",
-    name: "Turquoise Sunshine Bouquet",
-    description: "Sunflowers with pink and white roses, tuberoses and baby's breath in bright turquoise wrap — bold, cheerful and fresh.",
-    image: "/images/bouquets/web/turquoise-sunshine-bouquet.jpg",
-    imageAlt: "Turquoise Sunshine Bouquet fresh flower bouquet by Phool Pattiyan Lahore",
-    price: 5800,
-    originalPrice: 6444,
-    discountPercentage: 10,
-    flowerOrigin: "local",
-    featured: true,
-    available: true,
-  },
-  {
-    id: "bq-057",
-    slug: "burgundy-solo-rose-bouquet",
-    name: "Burgundy Solo Rose Bouquet",
-    description: "Single red rose with white chrysanthemums and baby's breath in burgundy fan wrap and white ribbon — classic and refined.",
-    image: "/images/bouquets/web/burgundy-solo-rose-bouquet.jpg",
-    imageAlt: "Burgundy Solo Rose Bouquet fresh flower bouquet by Phool Pattiyan Lahore",
-    price: 5000,
-    originalPrice: 5556,
-    discountPercentage: 10,
-    flowerOrigin: "local",
-    featured: true,
-    available: true,
-  },
-  {
+{
     id: "bq-058",
     slug: "classic-red-tuberose-tower",
     name: "Classic Red Tuberose Tower",
@@ -241,21 +311,7 @@ export const bouquets: Bouquet[] = [
     featured: true,
     available: true,
   },
-  {
-    id: "bq-060",
-    slug: "ebony-crimson-chrysanthemum-bouquet",
-    name: "Ebony Crimson Chrysanthemum Bouquet",
-    description: "Red roses with white chrysanthemums in black scalloped wrap and black ribbon — striking, modern and gift-ready.",
-    image: "/images/bouquets/web/ebony-crimson-chrysanthemum-bouquet.jpg",
-    imageAlt: "Ebony Crimson Chrysanthemum Bouquet fresh flower bouquet by Phool Pattiyan Lahore",
-    price: 2400,
-    originalPrice: 2667,
-    discountPercentage: 10,
-    flowerOrigin: "local",
-    featured: true,
-    available: true,
-  },
-  {
+{
     id: "bq-032",
     slug: "baby-boy-balloon-bouquet",
     name: "Baby Boy Balloon Bouquet",
@@ -269,7 +325,7 @@ export const bouquets: Bouquet[] = [
     featured: true,
     available: true,
   },
-  {
+{
     id: "bq-028",
     slug: "red-rose-tuberose-pink-black-wrap",
     name: "Red Rose Tuberose Pink Black Wrap",
@@ -283,7 +339,7 @@ export const bouquets: Bouquet[] = [
     featured: true,
     available: true,
   },
-  {
+{
     id: "bq-029",
     slug: "red-white-rose-bouquet",
     name: "Red White Rose Bouquet",
@@ -297,7 +353,7 @@ export const bouquets: Bouquet[] = [
     featured: true,
     available: true,
   },
-  {
+{
     id: "bq-024",
     slug: "sunflower-baby-s-breath-bouquet",
     name: "Sunflower Baby's Breath Bouquet",
@@ -311,7 +367,7 @@ export const bouquets: Bouquet[] = [
     featured: true,
     available: true,
   },
-  {
+{
     id: "bq-014",
     slug: "purple-white-chrysanthemum",
     name: "Purple White Chrysanthemum",
@@ -325,21 +381,7 @@ export const bouquets: Bouquet[] = [
     featured: true,
     available: true,
   },
-  {
-    id: "bq-012",
-    slug: "regal-garden-roses",
-    name: "Regal Garden Roses",
-    description: "Magenta chrysanthemums and white daisies in lavender-pink wrap with black satin bow — rich and luxurious.",
-    image: "/images/bouquets/web/regal-garden-roses.jpg",
-    imageAlt: "Regal Garden Roses fresh flower bouquet by Phool Pattiyan Lahore",
-    price: 5500,
-    originalPrice: 6111,
-    discountPercentage: 10,
-    flowerOrigin: "local",
-    featured: true,
-    available: true,
-  },
-  {
+{
     id: "bq-001",
     slug: "crimson-love",
     name: "Crimson Love",
@@ -353,7 +395,7 @@ export const bouquets: Bouquet[] = [
     featured: true,
     available: true,
   },
-  {
+{
     id: "bq-002",
     slug: "sunflower-bouquet",
     name: "Sunflower Bouquet",
@@ -367,7 +409,7 @@ export const bouquets: Bouquet[] = [
     featured: true,
     available: true,
   },
-  {
+{
     id: "bq-003",
     slug: "phool-pattiyan-pink",
     name: "Phool Pattiyan Pink",
@@ -381,7 +423,7 @@ export const bouquets: Bouquet[] = [
     featured: true,
     available: true,
   },
-  {
+{
     id: "bq-004",
     slug: "premium-blush-wrap",
     name: "Premium Blush Wrap",
@@ -395,7 +437,7 @@ export const bouquets: Bouquet[] = [
     featured: true,
     available: true,
   },
-  {
+{
     id: "bq-007",
     slug: "peach-serenity",
     name: "Peach Serenity",
@@ -409,7 +451,7 @@ export const bouquets: Bouquet[] = [
     featured: true,
     available: true,
   },
-  {
+{
     id: "bq-011",
     slug: "pink-marble-wrap",
     name: "Pink Marble Wrap",
@@ -423,7 +465,7 @@ export const bouquets: Bouquet[] = [
     featured: true,
     available: true,
   },
-  {
+{
     id: "bq-013",
     slug: "soft-pink-bloom",
     name: "Soft Pink Bloom",
@@ -437,7 +479,7 @@ export const bouquets: Bouquet[] = [
     featured: true,
     available: true,
   },
-  {
+{
     id: "bq-015",
     slug: "golden-rose-tuberose",
     name: "Golden Rose Tuberose",
@@ -451,7 +493,7 @@ export const bouquets: Bouquet[] = [
     featured: true,
     available: true,
   },
-  {
+{
     id: "bq-016",
     slug: "forever-love-artificial-bouquet",
     name: "Forever Love Artificial Bouquet",
@@ -465,7 +507,7 @@ export const bouquets: Bouquet[] = [
     featured: true,
     available: true,
   },
-  {
+{
     id: "bq-017",
     slug: "ruby-radiance-artificial-bouquet",
     name: "Ruby Radiance Artificial Bouquet",
@@ -479,7 +521,7 @@ export const bouquets: Bouquet[] = [
     featured: true,
     available: true,
   },
-  {
+{
     id: "bq-018",
     slug: "sunshine-marble-artificial-bouquet",
     name: "Sunshine Marble Artificial Bouquet",
@@ -493,7 +535,7 @@ export const bouquets: Bouquet[] = [
     featured: true,
     available: true,
   },
-  {
+{
     id: "bq-019",
     slug: "miaowo-peach-talking-cat",
     name: "Peach Talking Cat",
@@ -507,7 +549,7 @@ export const bouquets: Bouquet[] = [
     featured: true,
     available: true,
   },
-  {
+{
     id: "bq-020",
     slug: "miaowo-pink-talking-cat",
     name: "Pink Talking Cat",
@@ -521,7 +563,7 @@ export const bouquets: Bouquet[] = [
     featured: true,
     available: true,
   },
-  {
+{
     id: "bq-031",
     slug: "look-heart-teddy",
     name: "Look Heart Teddy",
@@ -535,7 +577,7 @@ export const bouquets: Bouquet[] = [
     featured: true,
     available: true,
   },
-  {
+{
     id: "bq-021",
     slug: "single-imported-rose-with-baby-s-breath",
     name: "Single Imported Rose with Baby's Breath",
@@ -549,21 +591,7 @@ export const bouquets: Bouquet[] = [
     featured: true,
     available: true,
   },
-  {
-    id: "bq-022",
-    slug: "sunflower-red-rose-bouquet",
-    name: "Sunflower Red Rose Bouquet",
-    description: "Bright sunflower with deep red roses and greenery in soft peach-pink wrap — bold, fresh and beautifully balanced.",
-    image: "/images/bouquets/web/sunflower-red-rose-bouquet.jpg",
-    imageAlt: "Sunflower Red Rose Bouquet fresh flower bouquet by Phool Pattiyan Lahore",
-    price: 1800,
-    originalPrice: 2000,
-    discountPercentage: 10,
-    flowerOrigin: "local",
-    featured: true,
-    available: true,
-  },
-  {
+{
     id: "bq-023",
     slug: "imported-rose-white-chrysanthemum-bouquet",
     name: "Imported Rose White Chrysanthemum Bouquet",
@@ -577,7 +605,7 @@ export const bouquets: Bouquet[] = [
     featured: true,
     available: true,
   },
-  {
+{
     id: "bq-025",
     slug: "special-bridal-gajray-set",
     name: "Special Bridal Gajray Set",
@@ -591,7 +619,7 @@ export const bouquets: Bouquet[] = [
     featured: true,
     available: true,
   },
-  {
+{
     id: "bq-026",
     slug: "luxury-red-rose-tuberose",
     name: "Luxury Red Rose Tuberose",
@@ -605,7 +633,7 @@ export const bouquets: Bouquet[] = [
     featured: true,
     available: true,
   },
-  {
+{
     id: "bq-027",
     slug: "red-rose-tuberose-black-wrap",
     name: "Red Rose Tuberose Black Wrap",
@@ -619,7 +647,7 @@ export const bouquets: Bouquet[] = [
     featured: true,
     available: true,
   },
-  {
+{
     id: "bq-030",
     slug: "white-imported-rose-chrysanthemum-bouquet",
     name: "White Imported Rose Chrysanthemum Bouquet",
@@ -633,7 +661,7 @@ export const bouquets: Bouquet[] = [
     featured: true,
     available: true,
   },
-  {
+{
     id: "bq-041",
     slug: "doraemon-azure-dream-basket",
     name: "Doraemon Azure Dream Basket",
@@ -648,7 +676,7 @@ export const bouquets: Bouquet[] = [
     featured: true,
     available: true,
   },
-  {
+{
     id: "bq-042",
     slug: "hello-kitty-lavender-treat-basket",
     name: "Hello Kitty Lavender Treat Basket",
@@ -663,7 +691,7 @@ export const bouquets: Bouquet[] = [
     featured: true,
     available: true,
   },
-  {
+{
     id: "bq-043",
     slug: "doraemon-sky-balloon-gift-box",
     name: "Doraemon Sky Balloon Gift Box",
@@ -678,7 +706,7 @@ export const bouquets: Bouquet[] = [
     featured: true,
     available: true,
   },
-  {
+{
     id: "bq-044",
     slug: "crimson-love-teddy-basket",
     name: "Crimson Love Teddy Basket",
@@ -693,7 +721,7 @@ export const bouquets: Bouquet[] = [
     featured: true,
     available: true,
   },
-  {
+{
     id: "bq-045",
     slug: "monochrome-panda-luxe-basket",
     name: "Monochrome Panda Luxe Basket",
@@ -708,7 +736,7 @@ export const bouquets: Bouquet[] = [
     featured: true,
     available: true,
   },
-  {
+{
     id: "bq-046",
     slug: "blush-tulle-teddy-celebration-basket",
     name: "Blush Tulle Teddy Celebration Basket",
@@ -723,7 +751,7 @@ export const bouquets: Bouquet[] = [
     featured: true,
     available: true,
   },
-  {
+{
     id: "bq-047",
     slug: "golden-i-love-you-teddy-basket",
     name: "Golden I Love You Teddy Basket",
@@ -738,7 +766,7 @@ export const bouquets: Bouquet[] = [
     featured: true,
     available: true,
   },
-  {
+{
     id: "bq-033",
     slug: "pink-bunny-celebration-basket",
     name: "Pink Bunny Celebration Basket",
@@ -752,7 +780,7 @@ export const bouquets: Bouquet[] = [
     featured: true,
     available: true,
   },
-  {
+{
     id: "bq-034",
     slug: "purple-harmony-gift-basket",
     name: "Purple Harmony Gift Basket",

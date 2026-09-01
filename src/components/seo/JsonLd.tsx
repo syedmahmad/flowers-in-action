@@ -9,8 +9,11 @@ import { weddingTypes } from "@/data/flowers";
 import {
   getLegacySellingPrice,
   getSellingPrice,
-  hasDiscount,
 } from "@/lib/pricing";
+
+function toJsonLdHtml(data: unknown): string {
+  return JSON.stringify(data ?? null).replace(/</g, "\\u003c");
+}
 
 export function JsonLd() {
   const absolute = (path: string) =>
@@ -124,9 +127,6 @@ export function JsonLd() {
       url: `${siteConfig.url}/?bouquet=${bouquet.slug}#bouquets`,
       priceCurrency: "PKR",
       price: getSellingPrice(bouquet),
-      ...(hasDiscount(bouquet) && bouquet.originalPrice
-        ? { priceValidUntil: undefined }
-        : {}),
       availability: bouquet.available
         ? "https://schema.org/InStock"
         : "https://schema.org/OutOfStock",
@@ -234,17 +234,12 @@ export function JsonLd() {
     ...bouquetSchemas,
     ...eventSchemas,
     ...productSchemas,
-  ];
+  ].filter(Boolean);
 
   return (
-    <>
-      {schemas.map((schema, i) => (
-        <script
-          key={i}
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
-        />
-      ))}
-    </>
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: toJsonLdHtml(schemas) }}
+    />
   );
 }

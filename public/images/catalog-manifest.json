@@ -292,6 +292,38 @@
   "available": true
 },
     {
+  "src": "burgundy-tulle-rose-bouquet.png",
+  "name": "Burgundy Tulle Rose Bouquet",
+  "description": "Red roses with white chrysanthemums and tuberoses in burgundy wrap with white tulle and red ribbon \u2014 lush, romantic and gift-ready.",
+  "price": 5000,
+  "discount": 10,
+  "slug": "burgundy-tulle-rose-bouquet",
+  "origin": "local",
+  "image": "/images/bouquets/web/burgundy-tulle-rose-bouquet.jpg",
+  "originalPrice": 5556,
+  "discountPercentage": 10,
+  "featured": true,
+  "id": "bq-061",
+  "imageAlt": "Burgundy Tulle Rose Bouquet fresh flower bouquet by Phool Pattiyan Lahore",
+  "available": true
+},
+    {
+  "src": "blush-peach-satin-bouquet.png",
+  "name": "Blush Peach Satin Bouquet",
+  "description": "Pink and cream roses with white chrysanthemums in peach fan wrap and blush satin ribbon \u2014 soft, romantic and effortlessly elegant.",
+  "price": 3500,
+  "discount": 10,
+  "slug": "blush-peach-satin-bouquet",
+  "origin": "local",
+  "image": "/images/bouquets/web/blush-peach-satin-bouquet.jpg",
+  "originalPrice": 3889,
+  "discountPercentage": 10,
+  "featured": true,
+  "id": "bq-062",
+  "imageAlt": "Blush Peach Satin Bouquet fresh flower bouquet by Phool Pattiyan Lahore",
+  "available": true
+},
+    {
       "src": "baby-boy-balloon-bouquet.png",
       "name": "Baby Boy Balloon Bouquet",
       "description": "It's A Boy themed foil balloon bouquet with baby bottle and star balloons in gold marble wrap and blue ribbon — perfect for baby showers and welcome home gifts.",
