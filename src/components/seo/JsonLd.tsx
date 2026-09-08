@@ -54,6 +54,13 @@ export function JsonLd() {
       siteConfig.social.facebook,
       siteConfig.google.reviewsUrl,
     ],
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: String(siteConfig.google.rating),
+      reviewCount: String(siteConfig.google.reviewCount),
+      bestRating: "5",
+      worstRating: "1",
+    },
     hasOfferCatalog: {
       "@type": "OfferCatalog",
       name: "Floral Products",

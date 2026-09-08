@@ -1,9 +1,11 @@
 import { Suspense } from "react";
 import { Header } from "@/components/layout/Header";
+import { AnnouncementBar } from "@/components/layout/AnnouncementBar";
 import { Footer } from "@/components/layout/Footer";
 import { WhatsAppFloat } from "@/components/layout/WhatsAppFloat";
 import { MobileActionBar } from "@/components/layout/MobileActionBar";
 import { Hero } from "@/components/sections/Hero";
+import { TrustBar } from "@/components/sections/TrustBar";
 import { CollectionCards } from "@/components/sections/CollectionCards";
 import { BouquetsSection } from "@/components/sections/BouquetsSection";
 import { EventsSection } from "@/components/sections/EventsSection";
@@ -11,7 +13,6 @@ import { CustomOrdersSection } from "@/components/sections/CustomOrdersSection";
 import { AboutSection } from "@/components/sections/AboutSection";
 import { HowItWorksSection } from "@/components/sections/HowItWorksSection";
 import { StoreSection } from "@/components/sections/StoreSection";
-import { GoogleReviewsSection } from "@/components/sections/GoogleReviewsSection";
 import { ServiceAreasSection } from "@/components/sections/ServiceAreasSection";
 import { FAQSection } from "@/components/sections/FAQSection";
 import { ContactSection } from "@/components/sections/ContactSection";
@@ -31,8 +32,10 @@ export default function HomePage() {
   return (
     <>
       <Header />
+      <AnnouncementBar />
       <main className="pb-[calc(3.5rem+env(safe-area-inset-bottom))] sm:pb-0">
         <Hero />
+        <TrustBar />
         <CollectionCards />
         <BouquetsSection />
         <Suspense fallback={<EventsFallback />}>
@@ -42,7 +45,6 @@ export default function HomePage() {
         <AboutSection />
         <HowItWorksSection />
         <StoreSection />
-        <GoogleReviewsSection />
         <ContactSection />
         <ServiceAreasSection />
         <FAQSection />

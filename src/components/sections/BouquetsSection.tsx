@@ -6,29 +6,33 @@ import { BouquetModal } from "@/components/catalog/BouquetModal";
 import { bouquets } from "@/data/bouquets";
 import type { Bouquet } from "@/types/catalog";
 
+const PINNED_BOUQUET_SLUG = "red-rose-tuberose-pink-black-wrap";
+
+const bouquetsByPrice = [...bouquets].sort((a, b) => {
+  if (a.slug === PINNED_BOUQUET_SLUG) return -1;
+  if (b.slug === PINNED_BOUQUET_SLUG) return 1;
+  return a.price - b.price || a.name.localeCompare(b.name);
+});
+
 export function BouquetsSection() {
   const [selected, setSelected] = useState<Bouquet | null>(null);
 
   return (
     <>
-      <section id="bouquets" className="section-padding scroll-mt-20 bg-white">
+      <section id="bouquets" className="section-padding scroll-mt-20 bg-[linear-gradient(180deg,#ffffff_0%,#f8fbf9_100%)]">
         <span id="shop" className="sr-only" aria-hidden="true" />
         <div className="container-narrow">
           <div className="mb-8 text-center sm:mb-10 lg:mb-12">
-            <p className="mb-3 text-[0.6875rem] font-semibold uppercase tracking-[0.28em] text-green-natural">
-              Our Collection
-            </p>
-            <h2 className="heading-serif mb-3 text-3xl font-semibold text-maroon-deep sm:text-4xl lg:text-[2.75rem]">
-              Fresh Flower Bouquets
-            </h2>
-            <p className="mx-auto max-w-2xl text-base leading-relaxed text-charcoal/70 sm:text-lg">
+            <p className="section-eyebrow">Our Collection</p>
+            <h2 className="section-title mb-3">Fresh Flower Bouquets</h2>
+            <p className="section-lead">
               Handcrafted bouquets for birthdays, anniversaries, weddings and everyday
               moments — each arrangement prepared fresh and delivered across Lahore.
             </p>
           </div>
 
           <div className="grid grid-cols-2 gap-3 sm:gap-5 md:grid-cols-3 lg:grid-cols-4 lg:gap-6">
-            {bouquets.map((bouquet) => (
+            {bouquetsByPrice.map((bouquet) => (
               <BouquetCard key={bouquet.slug} bouquet={bouquet} onOpen={setSelected} />
             ))}
           </div>

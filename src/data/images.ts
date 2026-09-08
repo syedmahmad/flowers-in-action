@@ -1,8 +1,14 @@
 /** Local image paths — all assets live in /public/images/ */
 
 export const images = {
-  hero: "/images/placeholders/hero-landing.png",
-  store: "/images/shopPhotos/web/storefront.jpg",
+  hero: "/images/marketing/hero-bouquet.jpg",
+  store: "/images/marketing/storefront.jpg",
+  marketing: {
+    heroBouquet: "/images/marketing/hero-bouquet.jpg",
+    collectionBouquets: "/images/marketing/collection-bouquets.jpg",
+    collectionEvents: "/images/marketing/collection-events.jpg",
+    storefront: "/images/marketing/storefront.jpg",
+  },
 
   categories: {
     "floral-bouquets": "/images/bouquets/web/crimson-love.jpg",
@@ -40,7 +46,7 @@ export const images = {
     "/images/bouquets/web/sunflower-bouquet.jpg",
     "/images/events/web/safari-kids-birthday.jpg",
     "/images/events/web/mehndi-and-haldi-decor.jpg",
-    "/images/shopPhotos/web/storefront.jpg",
+    "/images/shopPhotos/web/front.jpg",
   ],
 } as const;
 

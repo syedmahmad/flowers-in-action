@@ -4,6 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { Logo } from "@/components/ui/Logo";
 import { PolicyModal } from "@/components/ui/PolicyModal";
+import { SocialLinks } from "@/components/ui/SocialLinks";
 import { siteConfig } from "@/data/config";
 import { buildGeneralWhatsAppUrl } from "@/lib/whatsapp";
 import type { policies } from "@/data/policies";
@@ -68,16 +69,7 @@ export function Footer() {
                     WhatsApp
                   </a>
                 </li>
-                <li>
-                  <a
-                    href={siteConfig.social.instagram}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="hover:text-maroon"
-                  >
-                    Instagram @phool_pattiyan
-                  </a>
-                </li>
+                <SocialLinks variant="footer" />
                 <li>
                   <a href={siteConfig.mapDirectionsUrl} className="hover:text-maroon">
                     Directions

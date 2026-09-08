@@ -25,6 +25,8 @@ function slugFromName(name) {
     .replace(/^-|-$/g, "");
 }
 
+const PINNED_BOUQUET_SLUG = "red-rose-tuberose-pink-black-wrap";
+
 const BOUQUET_CURATED = [
   {
     src: "WhatsApp Image 2026-08-21 at 18.45.09.jpeg",
@@ -128,7 +130,7 @@ const BOUQUET_CURATED = [
     name: "Golden Rose Tuberose",
     description:
       "Deep red roses with white tuberoses in luminous gold wrap and satin ribbon — a classic romantic gift.",
-    price: 2500,
+    price: 2000,
     discount: 10,
   },
   {
@@ -243,7 +245,7 @@ const BOUQUET_CURATED = [
     name: "Red Rose Tuberose Pink Black Wrap",
     description:
       "Deep red roses with white tuberoses in pink and black layered wrap and blush ribbon — soft yet striking.",
-    price: 2500,
+    price: 2000,
     discount: 10,
   },
   {
@@ -505,6 +507,55 @@ const BOUQUET_CURATED = [
     price: 3500,
     discount: 10,
   },
+  {
+    src: "sky-blue-blush-chrysanthemum-bouquet.png",
+    name: "Sky Blue Blush Chrysanthemum Bouquet",
+    description:
+      "Pink and white chrysanthemums with cream roses in sky-blue wrap and matching ribbon — fresh, colourful and gift-ready.",
+    price: 5000,
+    discount: 10,
+  },
+  {
+    src: "pink-chocolate-treat-bouquet.png",
+    name: "Pink Chocolate Treat Bouquet",
+    description:
+      "Fresh pink roses and white blooms paired with KitKat, Snickers, Dairy Milk and Bounty bars in blush pink wrap — flowers and chocolates in one.",
+    price: 5000,
+    discount: 10,
+  },
+  {
+    src: "sky-blue-daisy-meadow-bouquet.png",
+    name: "Sky Blue Daisy Meadow Bouquet",
+    description:
+      "White daisies and pink chrysanthemums with baby's breath in sky-blue scalloped wrap — bright, cheerful and perfect for any occasion.",
+    price: 5000,
+    discount: 10,
+  },
+  {
+    src: "midnight-gala-rose-bouquet.png",
+    name: "Midnight Gala Rose Bouquet",
+    description:
+      "Red roses with white chrysanthemums and baby's breath in bold black fan wrap and white satin ribbon — modern, dramatic and gift-ready.",
+    price: 2500,
+    discount: 10,
+  },
+  {
+    src: "white-hot-air-balloon-gift-box.png",
+    name: "White Hot Air Balloon Gift Box",
+    description:
+      "Red and white roses with mixed blooms in a white gift box, topped with a clear balloon filled with white mini balloons — elegant hot-air-balloon styling.",
+    price: 3000,
+    discount: 10,
+  },
+  {
+    src: "white-rose-teddy-chocolate-basket.png",
+    gallerySrcs: ["white-rose-teddy-chocolate-basket-2.png"],
+    name: "White Rose Teddy Chocolate Hamper",
+    description:
+      "Cream teddy bear with white roses, Snickers and KitKat bars in a gold ribbon basket with black tulle backdrop — a premium flowers-and-chocolates gift hamper.",
+    price: 6800,
+    discount: 10,
+  },
 ];
 
 /** Source files that are baskets, boxes, balloons or hampers — never publish */
@@ -521,7 +572,7 @@ const EVENT_GROUPS = [
     name: "Safari Kids Birthday",
     description:
       "Themed safari birthday setup with balloon arch, animal cutouts and personalised name styling.",
-    price: 38000,
+    price: 28000,
     discount: 10,
     files: [
       "WhatsApp Image 2026-08-16 at 19.49.48.jpeg",
@@ -539,7 +590,7 @@ const EVENT_GROUPS = [
     name: "Cocomelon First Birthday",
     description:
       "Colourful Cocomelon theme with balloon arch, character cutouts and personalised name display.",
-    price: 45000,
+    price: 30000,
     discount: 10,
     files: ["WhatsApp Image 2026-08-23 at 06.56.19.jpeg"],
     includedItems: [
@@ -553,7 +604,7 @@ const EVENT_GROUPS = [
     name: "Butterfly Birthday Celebration",
     description:
       "Elegant butterfly theme with floral pedestals, balloon garland and personalised birthday panels.",
-    price: 58000,
+    price: 30000,
     discount: 10,
     files: ["WhatsApp Image 2026-08-23 at 06.56.13.jpeg"],
     includedItems: [
@@ -567,7 +618,7 @@ const EVENT_GROUPS = [
     name: "Purple Gold Birthday",
     description:
       "Luxury purple and gold birthday styling with neon signage, floral cart and balloon cascade.",
-    price: 52000,
+    price: 25000,
     discount: 10,
     files: ["WhatsApp Image 2026-08-23 at 06.56.16.jpeg"],
     includedItems: [
@@ -581,7 +632,7 @@ const EVENT_GROUPS = [
     name: "Pastel First Birthday",
     description:
       "Soft pastel balloon arch with floral-topped pedestals and personalised name board for first birthdays.",
-    price: 40000,
+    price: 20000,
     discount: 10,
     files: ["WhatsApp Image 2026-08-23 at 06.56.15.jpeg"],
     includedItems: [
@@ -595,7 +646,7 @@ const EVENT_GROUPS = [
     name: "Unicorn Birthday Party",
     description:
       "Dreamy unicorn theme with pink, gold and blue pedestals, floral accents and balloon garland.",
-    price: 48000,
+    price: 22000,
     discount: 10,
     files: ["WhatsApp Image 2026-08-23 at 06.56.17.jpeg"],
     includedItems: [
@@ -609,7 +660,7 @@ const EVENT_GROUPS = [
     name: "Luxury Pink Birthday",
     description:
       "Grand outdoor pink birthday stage with floral columns, chandelier canopy and custom floor styling.",
-    price: 60000,
+    price: 25000,
     discount: 10,
     files: ["WhatsApp Image 2026-08-23 at 06.56.19 (2).jpeg"],
     includedItems: [
@@ -623,7 +674,7 @@ const EVENT_GROUPS = [
     name: "Aqiqah & Naming Ceremony",
     description:
       "Elegant blue, white and gold setup for aqiqah and naming celebrations.",
-    price: 55000,
+    price: 35000,
     discount: 10,
     files: ["WhatsApp Image 2026-08-23 at 06.56.14.jpeg"],
     includedItems: ["Backdrop & balloons", "Personalised name display", "Theme styling"],
@@ -632,7 +683,7 @@ const EVENT_GROUPS = [
     name: "Princess Baby Celebration",
     description:
       "Soft pink and cream moon theme for baby welcome and first celebrations.",
-    price: 42000,
+    price: 27000,
     discount: 10,
     files: ["WhatsApp Image 2026-08-23 at 06.56.18.jpeg"],
     includedItems: ["Moon backdrop", "Balloon styling", "Personalised name display"],
@@ -641,7 +692,7 @@ const EVENT_GROUPS = [
     name: "Mehndi & Haldi Décor",
     description:
       "Traditional marigold styling with bride-to-be neon and festive floor décor.",
-    price: 90000,
+    price: 80000,
     discount: 10,
     files: ["WhatsApp Image 2026-08-23 at 06.56.40.jpeg"],
     includedItems: [
@@ -655,7 +706,7 @@ const EVENT_GROUPS = [
     name: "Grand Opening Décor",
     description:
       "Fresh flower opening arrangements and balloon styling for shop and business launches.",
-    price: 15000,
+    price: 5000,
     discount: null,
     files: [],
     includedItems: [
@@ -669,7 +720,7 @@ const EVENT_GROUPS = [
     name: "Oh Baby Peach Birthday",
     description:
       "Outdoor Oh Baby birthday setup with peach and cream balloon garlands, arched backdrop, golden teddy bear and pedestal props.",
-    price: 30000,
+    price: 20000,
     discount: 10,
     files: ["oh-baby-peach-birthday.png"],
     includedItems: [
@@ -684,7 +735,7 @@ const EVENT_GROUPS = [
     name: "Luxury Gold Rose Balloon Birthday",
     description:
       "Gold and blush pink balloon arch with mosaic backdrop, neon signage, floral accents and gold pedestal plinths — elegant for birthdays and celebrations.",
-    price: 25000,
+    price: 18000,
     discount: 10,
     files: ["luxury-gold-rose-balloon-birthday.png"],
     includedItems: [
@@ -699,7 +750,7 @@ const EVENT_GROUPS = [
     name: "Traditional Mehndi Floor Setup",
     description:
       "Yellow floor seating with cushions, floral vine arch, fairy lights, circular floral wreath backdrop and gold pedestal candles — perfect for intimate mehndi celebrations.",
-    price: 100000,
+    price: 90000,
     discount: 10,
     files: ["traditional-mehndi-floor-setup.png"],
     includedItems: [
@@ -714,7 +765,7 @@ const EVENT_GROUPS = [
     name: "Gold Mint Birthday Balloon Arch",
     description:
       "Gold, mint green and white balloon arch with Happy Birthday neon sign, greenery accents and gold pedestal — elegant indoor birthday styling.",
-    price: 25000,
+    price: 15000,
     discount: 10,
     files: ["gold-mint-birthday-balloon-arch.png"],
     includedItems: [
@@ -729,7 +780,7 @@ const EVENT_GROUPS = [
     name: "Luxury Gold Rose Birthday Setup",
     description:
       "Gold, rose gold, red and white balloon garland with circular Happy Birthday backdrop, curtain styling and gold pedestal plinths — elegant indoor birthday décor.",
-    price: 30000,
+    price: 20000,
     discount: 10,
     files: ["luxury-gold-rose-birthday-setup.png"],
     includedItems: [
@@ -744,7 +795,7 @@ const EVENT_GROUPS = [
     name: "Black Silver Gold Birthday Setup",
     description:
       "Black and chrome silver balloon arch with sequin backdrop, Happy Birthday sign, floral pedestal styling and floor balloon clusters — sleek modern birthday décor.",
-    price: 30000,
+    price: 20000,
     discount: 10,
     files: ["black-silver-gold-birthday-setup.png"],
     includedItems: [
@@ -759,7 +810,7 @@ const EVENT_GROUPS = [
     name: "Gold Purple Neon Birthday Arch",
     description:
       "Gold, silver and purple balloon arch with Happy Birthday neon sign, confetti balloons, white rose accents and gold pedestal plinths — glamorous indoor birthday styling.",
-    price: 28000,
+    price: 18000,
     discount: 10,
     files: ["gold-purple-neon-birthday-arch.png"],
     includedItems: [
@@ -774,7 +825,7 @@ const EVENT_GROUPS = [
     name: "Boss Baby First Birthday",
     description:
       "Boss Baby themed first birthday with blue and white backdrop panels, balloon arches, character balloons, themed pedestal plinths and personalised name styling.",
-    price: 44000,
+    price: 25000,
     discount: 10,
     files: ["boss-baby-first-birthday.png"],
     includedItems: [
@@ -789,7 +840,7 @@ const EVENT_GROUPS = [
     name: "Silver Sequin Neon Birthday",
     description:
       "Silver sequin backdrop with Happy Birthday neon sign, silver, white and grey balloon arch, white rose accents and chrome pedestal plinths — elegant birthday styling.",
-    price: 34000,
+    price: 24000,
     discount: 10,
     files: ["silver-sequin-neon-birthday.png"],
     includedItems: [
@@ -798,6 +849,188 @@ const EVENT_GROUPS = [
       "Silver & white balloon arch",
       "White rose accents",
       "Chrome pedestal plinths",
+    ],
+  },
+  {
+    name: "Golden Marigold Wedding Stage",
+    description:
+      "Traditional golden stage with yellow marigold drapes, ornate seating and warm festive lighting — ideal for mehndi and mayun celebrations.",
+    price: 40000,
+    discount: 10,
+    files: ["golden-marigold-wedding-stage.png"],
+    includedItems: [
+      "Golden stage seating",
+      "Marigold drape canopy",
+      "Warm festive lighting",
+      "Setup in Lahore",
+    ],
+  },
+  {
+    name: "Radiant Harlequin Floral Stage",
+    description:
+      "Colourful diamond-pattern floral wall with ornate silver seating — a vibrant budget-friendly wedding and engagement stage.",
+    price: 150000,
+    discount: 10,
+    files: ["radiant-harlequin-floral-stage.png"],
+    includedItems: [
+      "Harlequin floral backdrop",
+      "Ornate stage seating",
+      "Stage uplighting",
+      "Setup in Lahore",
+    ],
+  },
+  {
+    name: "Classic Marigold Mehndi Canopy",
+    description:
+      "Circular marigold canopy with yellow seating, floral pillars and fairy lights — perfect for traditional mehndi and mayun events.",
+    price: 80000,
+    discount: 10,
+    files: ["classic-marigold-mehndi-canopy.png"],
+    includedItems: [
+      "Marigold canopy arch",
+      "Yellow stage seating",
+      "Floral pillars & fairy lights",
+      "Setup in Lahore",
+    ],
+  },
+  {
+    name: "Festive Mehndi Glow Setup",
+    description:
+      "Warm red and yellow drapes with fairy-light canopy, low seating and green vine pillars — cosy traditional mehndi styling.",
+    price: 45000,
+    discount: 10,
+    files: ["festive-mehndi-glow-setup.png"],
+    includedItems: [
+      "Draped backdrop & fairy lights",
+      "Low floor seating",
+      "Green vine pillars",
+      "Setup in Lahore",
+    ],
+  },
+  {
+    name: "Royal Pink Mehndi Marquee",
+    description:
+      "Pink dance floor with glowing floral pillars, floor seating and festive lighting — a bold mehndi marquee setup.",
+    price: 100000,
+    discount: 10,
+    files: ["royal-pink-mehndi-marquee.png"],
+    includedItems: [
+      "Glowing floral pillars",
+      "Pink dance floor",
+      "Floor seating area",
+      "Festive marquee lighting",
+    ],
+  },
+  {
+    name: "Traditional Marigold Stage Décor",
+    description:
+      "Yellow marigold arch with patterned floral screen, ornate seating and garland pillars — classic wedding stage décor.",
+    price: 180000,
+    discount: 10,
+    files: ["traditional-marigold-stage-decor.png"],
+    includedItems: [
+      "Marigold floral arch",
+      "Patterned backdrop screen",
+      "Ornate stage seating",
+      "Garland pillar styling",
+    ],
+  },
+  {
+    name: "Vibrant Mehndi Celebration Stage",
+    description:
+      "Yellow and magenta drapes with floral pedestals, low seating and fresh gladioli accents — festive mehndi stage package.",
+    price: 40000,
+    discount: 10,
+    files: ["vibrant-mehndi-celebration-stage.png"],
+    includedItems: [
+      "Yellow & magenta draping",
+      "Floral pedestal arrangements",
+      "Low seating with cushions",
+      "Setup in Lahore",
+    ],
+  },
+  {
+    name: "Elegant Pastel Nikah Backdrop",
+    description:
+      "Soft pink and white floral backdrop with side arrangements — a beautiful budget-friendly home nikah and engagement setup.",
+    price: 12000,
+    discount: 10,
+    files: ["elegant-pastel-nikah-backdrop.png"],
+    includedItems: [
+      "Floral header backdrop",
+      "Side floral arrangements",
+      "Draped curtain styling",
+      "Home setup in Lahore",
+    ],
+  },
+  {
+    name: "Sunlit Marble Photo Wall",
+    description:
+      "Yellow and white floral border with marble panel and fairy-light glow — modern photo booth and engagement backdrop.",
+    price: 18000,
+    discount: 10,
+    files: ["sunlit-marble-photo-wall.png"],
+    includedItems: [
+      "Marble photo panel",
+      "Floral L-frame border",
+      "Fairy-light curtain glow",
+      "Setup in Lahore",
+    ],
+  },
+  {
+    name: "Vibrant Mehndi Mandala Setup",
+    description:
+      "Colourful mandala backdrop with kite accents, floor cushions and traditional umbrellas — lively mehndi celebration décor.",
+    price: 50000,
+    discount: 10,
+    files: ["vibrant-mehndi-mandala-setup.png"],
+    includedItems: [
+      "Mandala centre backdrop",
+      "Floor cushion seating",
+      "Kite & umbrella accents",
+      "Patterned floor mat",
+    ],
+  },
+  {
+    name: "Gold Forest 1st Birthday & Aqeeqa",
+    description:
+      "Gold, green and grey balloon arch with circular backdrop, marquee letters and gold pedestals — for 1st birthday and aqeeqa.",
+    price: 18000,
+    discount: 10,
+    files: ["gold-forest-first-birthday-aqeeqa.png"],
+    includedItems: [
+      "Circular personalised backdrop",
+      "Gold & green balloon arch",
+      "Marquee name letters",
+      "Gold pedestal plinths",
+    ],
+  },
+  {
+    name: "All-Star Sports Birthday Décor",
+    description:
+      "Multi-sport balloon column with themed backdrop, soccer pedestal and gold age foil — fun budget birthday package.",
+    price: 16000,
+    discount: 10,
+    files: ["all-star-sports-birthday-decor.png"],
+    includedItems: [
+      "Sports themed backdrop",
+      "Tiered balloon column",
+      "Soccer field pedestal",
+      "Personalised age foil",
+    ],
+  },
+  {
+    name: "Blush Safari Birthday Celebration",
+    description:
+      "Outdoor pink safari birthday with toile floor wrap, floral arches, crystal chandelier and personalised name backdrop.",
+    price: 28000,
+    discount: 10,
+    files: ["blush-safari-birthday-celebration.png"],
+    includedItems: [
+      "Personalised name backdrop",
+      "Safari-pattern floor wrap",
+      "Floral arch styling",
+      "Outdoor setup in Lahore",
     ],
   },
 ];
@@ -887,16 +1120,43 @@ function main() {
     const outName = item.webImage || `${slug}.jpg`;
     const output = path.join(bouquetWeb, outName);
     processBouquet(input, output, item);
+    const gallery = [];
+    for (const [i, gallerySrc] of (item.gallerySrcs || []).entries()) {
+      const galleryInput = path.join(bouquetDir, gallerySrc);
+      if (!fs.existsSync(galleryInput)) continue;
+      const galleryOutName = `${slug}-${i + 2}.jpg`;
+      const galleryOutput = path.join(bouquetWeb, galleryOutName);
+      processBouquet(galleryInput, galleryOutput, item);
+      gallery.push(`/images/bouquets/web/${galleryOutName}`);
+    }
     bouquetManifest.push({
       ...item,
       slug,
       origin: item.origin || "local",
       image: `/images/bouquets/web/${outName}`,
+      ...(gallery.length ? { gallery } : {}),
       ...withDiscount(item.price, item.discount),
     });
   }
 
-  cleanupWebDir(bouquetWeb, new Set(bouquetManifest.map((b) => path.basename(b.image))));
+  cleanupWebDir(
+    bouquetWeb,
+    new Set(
+      bouquetManifest.flatMap((b) => [
+        path.basename(b.image),
+        ...(b.gallery || []).map((g) => path.basename(g)),
+      ])
+    )
+  );
+
+  bouquetManifest.sort(
+    (a, b) => a.price - b.price || a.name.localeCompare(b.name)
+  );
+
+  const pinnedIndex = bouquetManifest.findIndex((b) => b.slug === PINNED_BOUQUET_SLUG);
+  if (pinnedIndex > 0) {
+    bouquetManifest.unshift(...bouquetManifest.splice(pinnedIndex, 1));
+  }
 
   bouquetManifest.forEach((b, i) => {
     if (b.originalPrice === undefined && b.discount) {

@@ -2,6 +2,7 @@
 
 import { useState, FormEvent } from "react";
 import { Button } from "@/components/ui/Button";
+import { SocialLinks } from "@/components/ui/SocialLinks";
 import { siteConfig } from "@/data/config";
 import { buildContactFormUrl, buildGeneralWhatsAppUrl } from "@/lib/whatsapp";
 
@@ -52,17 +53,7 @@ export function ContactSection() {
               <p>
                 <strong>Location:</strong> {siteConfig.address.full}
               </p>
-              <p>
-                <strong>Instagram:</strong>{" "}
-                <a
-                  href={siteConfig.social.instagram}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-maroon hover:underline"
-                >
-                  @phool_pattiyan
-                </a>
-              </p>
+              <SocialLinks variant="inline" />
               <p>
                 <strong>Google:</strong>{" "}
                 <a

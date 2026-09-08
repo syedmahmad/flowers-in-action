@@ -47,20 +47,22 @@ export const siteConfig = {
     locality: "Lahore",
     region: "Punjab",
     country: "PK",
+    plusCode: "C9XV+F3 Lahore, Pakistan",
     full: "Plaza 24, B Block Bankers, Ground Floor, near DHA Phase 4, State Life Housing Society and Lake City Meadows, Lahore, Pakistan",
   },
   geo: {
-    latitude: 31.4702,
-    longitude: 74.4034,
+    latitude: 31.4719,
+    longitude: 74.3891,
   },
   mapEmbedUrl:
-    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3403.0!2d74.4!3d31.47!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sPlaza%2024%20Bankers%20Town%20Lahore!5e0!3m2!1sen!2spk!4v1",
-  mapDirectionsUrl:
-    "https://www.google.com/maps/search/?api=1&query=Phool+Pattiyan+Lahore",
+    "https://www.google.com/maps?q=C9XV%2BF3+Lahore,+Pakistan&z=18&hl=en&output=embed",
+  mapDirectionsUrl: "https://www.google.com/maps?q=C9XV%2BF3+Lahore,+Pakistan",
   google: {
-    shareUrl: "https://share.google/k6m3DD2yO1jKHdowB",
-    mapsUrl: "https://share.google/k6m3DD2yO1jKHdowB",
-    reviewsUrl: "https://share.google/k6m3DD2yO1jKHdowB",
+    shareUrl: "https://share.google/R4wmiABp51EnTikhw",
+    mapsUrl: "https://share.google/R4wmiABp51EnTikhw",
+    reviewsUrl: "https://share.google/R4wmiABp51EnTikhw",
+    rating: 5,
+    reviewCount: 21,
     placeKgMid: "/g/11nv2b24b4",
   },
   businessHoursNote: "Contact us on WhatsApp to confirm today's opening hours",
@@ -85,7 +87,9 @@ export const siteConfig = {
   ],
   social: {
     instagram: "https://www.instagram.com/phool_pattiyan/",
-    facebook: "https://facebook.com/phoolpattiyan",
+    instagramHandle: "@phool_pattiyan",
+    facebook: "https://www.facebook.com/profile.php?id=61593879555736",
+    facebookLabel: "PhoolPattiyan",
   },
   analytics: {
     ga4Id: process.env.NEXT_PUBLIC_GA4_ID || "",

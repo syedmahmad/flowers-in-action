@@ -48,12 +48,11 @@ export function EventsSection({ mode = "full" }: EventsSectionProps) {
     <>
       <section id="events" className="section-padding scroll-mt-20 bg-blush/25">
         <div className="container-narrow">
-          <div className="mb-8 flex flex-col gap-3 sm:mb-10 sm:flex-row sm:items-end sm:justify-between">
+          <div className="mb-8 flex flex-col gap-3 sm:mb-10 sm:flex-row sm:items-end sm:justify-between lg:mb-12">
             <div>
-              <h2 className="heading-serif mb-2 text-3xl font-bold text-maroon-deep sm:text-4xl">
-                Events &amp; Decorations
-              </h2>
-              <p className="max-w-2xl text-charcoal/75">
+              <p className="section-eyebrow">Celebrations</p>
+              <h2 className="section-title mb-3">Events &amp; Decorations</h2>
+              <p className="section-lead mx-0 max-w-2xl text-left">
                 Birthday decoration, wedding flowers, room setups and celebration décor —
                 crafted in Lahore with customisation on WhatsApp.
               </p>

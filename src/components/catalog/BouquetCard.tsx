@@ -39,7 +39,7 @@ export function BouquetCard({ bouquet, onOpen }: BouquetCardProps) {
   );
 
   return (
-    <article className="group flex flex-col overflow-hidden rounded-2xl bg-white ring-1 ring-maroon/8 shadow-[0_4px_24px_rgba(27,67,50,0.06)] transition-[box-shadow,transform] duration-300 hover:-translate-y-0.5 hover:shadow-[0_12px_40px_rgba(27,67,50,0.12)]">
+    <article className="group flex flex-col overflow-hidden rounded-2xl bg-white ring-1 ring-maroon/8 shadow-[0_4px_24px_rgba(27,67,50,0.06)] transition-[box-shadow,transform,ring-color] duration-300 hover:-translate-y-1 hover:shadow-[0_16px_48px_rgba(27,67,50,0.14)] hover:ring-gold/25">
       <div className="relative aspect-[4/5] overflow-hidden sm:aspect-[3/4]">
         {hasGallery && onOpen ? (
           <button

@@ -1,3 +1,5 @@
+import { SocialFollowRow } from "@/components/ui/SocialLinks";
+
 const values = [
   "Freshly Prepared",
   "Customisable",
@@ -20,6 +22,7 @@ export function AboutSection() {
               to birthday decoration and wedding flowers, every arrangement is prepared with
               care.
             </p>
+            <SocialFollowRow className="mt-6" />
           </div>
           <ul className="grid grid-cols-2 gap-3">
             {values.map((value) => (

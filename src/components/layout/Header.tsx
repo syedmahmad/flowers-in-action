@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { Logo } from "@/components/ui/Logo";
 import { Button } from "@/components/ui/Button";
+import { SocialLinks } from "@/components/ui/SocialLinks";
 import { siteConfig } from "@/data/config";
 import { buildGeneralWhatsAppUrl } from "@/lib/whatsapp";
 import { cn } from "@/lib/utils";
@@ -14,16 +15,6 @@ const navItems = [
   { label: "About", href: "#about" },
   { label: "Contact", href: "#contact" },
 ];
-
-function InstagramIcon({ className }: { className?: string }) {
-  return (
-    <svg className={className} width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-      <rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" strokeWidth="2" />
-      <circle cx="12" cy="12" r="4" stroke="currentColor" strokeWidth="2" />
-      <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" />
-    </svg>
-  );
-}
 
 export function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -82,15 +73,7 @@ export function Header() {
             </nav>
 
             <div className="flex shrink-0 items-center gap-2 lg:justify-self-end">
-              <a
-                href={siteConfig.social.instagram}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hidden h-10 w-10 items-center justify-center rounded-full text-maroon transition-colors hover:bg-maroon/5 lg:flex"
-                aria-label="Follow Phool Pattiyan on Instagram"
-              >
-                <InstagramIcon />
-              </a>
+              <SocialLinks variant="icons" className="hidden lg:flex" />
               <Button
                 variant="whatsapp"
                 size="sm"
@@ -149,15 +132,7 @@ export function Header() {
               ))}
             </ul>
             <div className="mt-8 space-y-3 border-t border-blush pt-8">
-              <a
-                href={siteConfig.social.instagram}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-3 rounded-2xl px-5 py-4 text-base font-medium text-charcoal hover:bg-maroon/5"
-              >
-                <InstagramIcon />
-                @phool_pattiyan
-              </a>
+              <SocialLinks variant="menu" />
               <Button
                 variant="whatsapp"
                 size="md"

@@ -42,20 +42,11 @@ export const metadata: Metadata = {
     siteName: siteConfig.name,
     title: siteConfig.seoTitle,
     description: siteConfig.seoDescription,
-    images: [
-      {
-        url: "/og-image.jpg",
-        width: 1200,
-        height: 630,
-        alt: `${siteConfig.name} — ${siteConfig.tagline}`,
-      },
-    ],
   },
   twitter: {
     card: "summary_large_image",
     title: siteConfig.seoTitle,
     description: siteConfig.seoDescription,
-    images: ["/og-image.jpg"],
   },
   alternates: {
     canonical: siteConfig.url,

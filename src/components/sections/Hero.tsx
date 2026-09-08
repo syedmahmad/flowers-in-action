@@ -1,83 +1,126 @@
+import Image from "next/image";
 import { Button } from "@/components/ui/Button";
 import { images } from "@/data/images";
-
-const HERO_IMAGE = images.hero;
 
 export function Hero() {
   return (
     <section
       id="home"
-      className="hero-gradient relative overflow-hidden"
+      className="hero-premium relative overflow-hidden"
       aria-labelledby="hero-heading"
     >
+      <div className="premium-noise pointer-events-none absolute inset-0" aria-hidden="true" />
       <div
-        className="pointer-events-none absolute -left-24 top-32 h-72 w-72 rounded-full bg-sage/10 blur-3xl"
+        className="pointer-events-none absolute -left-20 top-10 h-96 w-96 rounded-full bg-sage/12 blur-3xl"
         aria-hidden="true"
       />
       <div
-        className="pointer-events-none absolute -right-16 bottom-0 h-80 w-80 rounded-full bg-green-natural/10 blur-3xl"
+        className="pointer-events-none absolute -right-24 bottom-0 h-[28rem] w-[28rem] rounded-full bg-gold/10 blur-3xl"
+        aria-hidden="true"
+      />
+      <div
+        className="pointer-events-none absolute left-1/2 top-0 h-px w-[min(90%,64rem)] -translate-x-1/2 bg-gradient-to-r from-transparent via-gold/35 to-transparent"
         aria-hidden="true"
       />
 
-      <div className="container-narrow relative px-4 py-6 sm:px-6 sm:py-12 lg:px-8 lg:py-16 xl:py-20">
-        <div className="flex flex-col gap-6 sm:gap-8 lg:grid lg:grid-cols-2 lg:items-stretch lg:gap-10 xl:gap-14">
+      <div className="container-narrow relative px-4 py-8 sm:px-6 sm:py-14 lg:px-8 lg:py-20 xl:py-24">
+        <div className="flex flex-col gap-8 lg:grid lg:grid-cols-[1.05fr_0.95fr] lg:items-center lg:gap-12 xl:gap-16">
           <div className="flex flex-col justify-center text-center lg:text-left">
-            <p className="mb-3 inline-flex items-center gap-2 self-center rounded-full border border-maroon/10 bg-white/70 px-3.5 py-1.5 text-[0.625rem] font-semibold uppercase tracking-[0.2em] text-green-natural shadow-sm backdrop-blur-sm sm:mb-4 sm:px-4 sm:text-xs lg:self-start">
-              <span className="h-1.5 w-1.5 rounded-full bg-green-natural" aria-hidden="true" />
+            <p className="mb-4 inline-flex items-center gap-2.5 self-center rounded-full border border-gold/25 bg-white/75 px-4 py-2 text-[0.625rem] font-semibold uppercase tracking-[0.24em] text-maroon-deep shadow-[0_8px_30px_rgba(27,67,50,0.06)] backdrop-blur-sm sm:text-xs lg:self-start">
+              <span className="relative flex h-2 w-2" aria-hidden="true">
+                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-natural/40" />
+                <span className="relative inline-flex h-2 w-2 rounded-full bg-green-natural" />
+              </span>
               Lahore&apos;s Finest Florist
             </p>
 
             <h1
               id="hero-heading"
-              className="heading-serif mx-auto max-w-xl text-[1.875rem] font-semibold leading-[1.12] tracking-tight text-maroon-deep sm:text-[2.375rem] sm:leading-[1.08] lg:mx-0 lg:max-w-none lg:text-[3.25rem] xl:text-[3.75rem]"
+              className="heading-serif mx-auto max-w-xl text-[2rem] font-semibold leading-[1.08] tracking-tight text-maroon-deep sm:text-[2.625rem] lg:mx-0 lg:max-w-none lg:text-[3.5rem] xl:text-[4rem]"
             >
-              Premium Florist &amp;{" "}
-              <span className="text-green-natural">Fresh Flower Delivery</span>{" "}
-              <span className="font-medium text-charcoal/75">in Lahore</span>
+              Where Every Bloom{" "}
+              <span className="relative inline-block text-green-natural">
+                Tells a Story
+                <span
+                  className="absolute -bottom-1 left-0 h-[0.18em] w-full rounded-full bg-gold/45"
+                  aria-hidden="true"
+                />
+              </span>
             </h1>
 
-            <p className="mx-auto mt-4 max-w-lg text-sm leading-relaxed text-charcoal/70 sm:mt-5 sm:text-base sm:leading-[1.75] lg:mx-0 lg:mt-6 lg:max-w-xl lg:text-lg">
+            <p className="mx-auto mt-5 max-w-lg text-sm leading-relaxed text-charcoal/72 sm:text-base sm:leading-[1.8] lg:mx-0 lg:mt-6 lg:max-w-xl lg:text-lg">
               Fresh bouquets, birthday decoration, shadi &amp; mehndi flowers, gajra,
               garlands, floral jewellery and personalised gifts — handcrafted in Lahore
               and delivered across the city.
             </p>
 
-            <div className="mt-5 flex flex-col items-stretch gap-2.5 sm:mt-7 sm:flex-row sm:items-center sm:justify-center sm:gap-3 lg:mt-8 lg:justify-start">
+            <div className="mt-6 flex flex-wrap items-center justify-center gap-2 lg:justify-start">
+              {["Fresh Bouquets", "Event Décor", "Same-day Lahore"].map((tag) => (
+                <span
+                  key={tag}
+                  className="rounded-full border border-maroon/10 bg-white/70 px-3 py-1.5 text-[0.6875rem] font-medium tracking-wide text-charcoal/75 backdrop-blur-sm sm:text-xs"
+                >
+                  {tag}
+                </span>
+              ))}
+            </div>
+
+            <div className="mt-7 flex flex-col items-stretch gap-3 sm:mt-8 sm:flex-row sm:items-center sm:justify-center lg:justify-start">
               <Button
                 href="#bouquets"
                 size="lg"
-                className="w-full shadow-md shadow-maroon/15 sm:w-auto sm:min-w-[11rem]"
+                className="w-full bg-gradient-to-r from-maroon to-maroon-deep shadow-[0_14px_40px_-12px_rgba(27,67,50,0.45)] sm:w-auto sm:min-w-[12rem]"
               >
-                Explore Collection
+                Explore Bouquets
               </Button>
               <Button
                 href="#events"
                 variant="outline"
                 size="lg"
-                className="w-full border-maroon/20 bg-white/50 backdrop-blur-sm sm:w-auto"
+                className="w-full border-maroon/20 bg-white/50 backdrop-blur-sm sm:w-auto sm:min-w-[12rem]"
               >
                 Explore Events
               </Button>
             </div>
           </div>
 
-          <div className="relative mx-auto w-full max-w-[18rem] sm:max-w-xs md:max-w-sm lg:mx-0 lg:max-w-none lg:min-h-[24rem] xl:min-h-[28rem]">
+          <div className="relative mx-auto w-full max-w-[19rem] sm:max-w-sm lg:mx-0 lg:max-w-none">
             <div
-              className="absolute -inset-1 rounded-[1.125rem] bg-gradient-to-br from-green-natural/10 via-transparent to-blush/80 blur-lg sm:rounded-[1.25rem] lg:-inset-2 lg:rounded-[1.75rem]"
+              className="absolute -inset-3 rounded-[1.5rem] bg-gradient-to-br from-gold/20 via-transparent to-green-natural/15 blur-xl sm:-inset-4 sm:rounded-[1.75rem]"
               aria-hidden="true"
             />
 
-            <div className="hero-image-glow relative aspect-[4/5] overflow-hidden rounded-[1.125rem] ring-1 ring-maroon/8 sm:rounded-[1.25rem] lg:absolute lg:inset-0 lg:aspect-auto lg:rounded-[1.75rem]">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src={HERO_IMAGE}
-                alt="Premium white lily and rose bouquet by Phool Pattiyan Lahore"
-                width={1200}
-                height={1000}
-                className="h-full w-full object-cover object-[center_42%]"
-                fetchPriority="high"
-                decoding="async"
+            <div className="hero-image-glow photo-vignette relative aspect-[4/5] overflow-hidden rounded-[1.5rem] bg-[#f7f3ed] ring-1 ring-gold/25 sm:rounded-[1.75rem] lg:rounded-[2rem]">
+              <Image
+                src={images.marketing.heroBouquet}
+                alt="Premium crimson and ivory tuberose bouquet by Phool Pattiyan Lahore"
+                fill
+                priority
+                sizes="(max-width: 1024px) 90vw, 42vw"
+                className="photo-editorial object-cover object-[center_22%]"
               />
+              <div
+                className="absolute inset-0 bg-gradient-to-t from-maroon-deep/45 via-maroon-deep/5 to-[#fffef9]/20"
+                aria-hidden="true"
+              />
+              <div
+                className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(201,169,98,0.18),transparent_42%)]"
+                aria-hidden="true"
+              />
+            </div>
+
+            <div className="absolute -left-2 top-8 rounded-2xl border border-white/60 bg-white/90 px-4 py-3 shadow-[0_16px_40px_rgba(15,41,34,0.12)] backdrop-blur-md sm:-left-5 sm:top-10">
+              <p className="text-[0.625rem] font-semibold uppercase tracking-[0.22em] text-green-natural">
+                Handcrafted
+              </p>
+              <p className="heading-serif mt-1 text-lg font-semibold text-maroon-deep">Fresh Daily</p>
+            </div>
+
+            <div className="absolute -bottom-3 -right-1 rounded-2xl border border-gold/25 bg-maroon-deep px-4 py-3 text-white shadow-[0_16px_40px_rgba(15,41,34,0.2)] sm:-right-4">
+              <p className="text-[0.625rem] font-semibold uppercase tracking-[0.22em] text-gold">
+                Lahore Delivery
+              </p>
+              <p className="heading-serif mt-1 text-lg font-semibold">DHA &amp; Beyond</p>
             </div>
           </div>
         </div>

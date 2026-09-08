@@ -18,8 +18,11 @@ function serializeBouquets(bouquets) {
       `    description: "${(b.description || "").replace(/"/g, '\\"')}",`,
       `    image: "${b.image}",`,
       `    imageAlt: "${b.imageAlt.replace(/"/g, '\\"')}",`,
-      `    price: ${b.price},`,
     ];
+    if (b.gallery?.length) {
+      lines.push(`    gallery: [${b.gallery.map((g) => `"${g}"`).join(", ")}],`);
+    }
+    lines.push(`    price: ${b.price},`);
     if (b.originalPrice) lines.push(`    originalPrice: ${b.originalPrice},`);
     if (b.discountPercentage) lines.push(`    discountPercentage: ${b.discountPercentage},`);
     lines.push(
