@@ -237,7 +237,7 @@ const BOUQUET_CURATED = [
     name: "Red Rose Tuberose Black Wrap",
     description:
       "Deep red roses with white tuberoses in dramatic black wrap and white satin ribbon — bold and romantic.",
-    price: 2500,
+    price: 500,
     discount: 10,
   },
   {
@@ -554,6 +554,134 @@ const BOUQUET_CURATED = [
     description:
       "Cream teddy bear with white roses, Snickers and KitKat bars in a gold ribbon basket with black tulle backdrop — a premium flowers-and-chocolates gift hamper.",
     price: 6800,
+    discount: 10,
+  },
+  {
+    src: "sunflower-garden-mix-bouquet.png",
+    name: "Sunflower Garden Mix Bouquet",
+    description:
+      "Bright sunflower with red roses, white chrysanthemums and pink accent blooms in scalloped pink wrap and satin ribbon — cheerful, colourful and gift-ready.",
+    price: 2800,
+    discount: 10,
+  },
+  {
+    src: "lavender-sunflower-mixed-bouquet.png",
+    name: "Lavender Sunflower Mixed Bouquet",
+    description:
+      "White and purple chrysanthemums with sunflowers, tuberoses and baby's breath in lavender scalloped wrap and satin ribbon — lush, fragrant and beautifully layered.",
+    price: 4000,
+    discount: 10,
+  },
+  {
+    src: "pink-birthday-hot-air-balloon-gift-box.png",
+    name: "Pink Birthday Hot Air Balloon Gift Box",
+    description:
+      "Pink and white roses in a pink ribbon gift box with a clear balloon top and rose-gold Happy Birthday star foil — festive hot-air-balloon styling.",
+    price: 3500,
+    discount: 10,
+  },
+  {
+    src: "pink-rose-scallop-wrap-bouquet.png",
+    name: "Pink Rose Scallop Wrap Bouquet",
+    description:
+      "Pink roses with white chrysanthemums and baby's breath in pink scalloped wrap and satin ribbon — soft, elegant and gift-ready.",
+    price: 4500,
+    discount: 10,
+  },
+  {
+    src: "red-rose-tuberose-honeycomb-wrap-bouquet.png",
+    name: "Red Rose Tuberose Honeycomb Wrap",
+    description:
+      "Deep red roses with white tuberoses and baby's breath in white honeycomb wrap and burgundy satin ribbon — classic, romantic and gift-ready.",
+    price: 2500,
+    discount: 10,
+  },
+  {
+    src: "twin-sunflower-black-ribbon-bouquet.png",
+    name: "Twin Sunflower Black Ribbon Bouquet",
+    description:
+      "Twin sunflowers with baby's breath and greenery in layered brown kraft wrap and black satin ribbon — bold, cheerful and gift-ready.",
+    price: 2800,
+    discount: 10,
+  },
+  {
+    src: "red-rose-black-box-bouquet.png",
+    name: "Red Rose Black Box Bouquet",
+    description:
+      "Lush deep red roses in a matte black square gift box with red satin ribbon — dramatic, romantic and presentation-ready.",
+    price: 4600,
+    discount: 10,
+  },
+  {
+    src: "five-sunflower-glass-vase-bouquet.png",
+    name: "Five Sunflower Glass Vase Bouquet",
+    description:
+      "Five bright sunflowers with baby's breath in a clear glass vase, wrapped in burgundy fabric with black and white accents and white satin ribbon — bold, cheerful and gift-ready.",
+    price: 3500,
+    discount: 10,
+  },
+  {
+    src: "magenta-chrysanthemum-periwinkle-wrap-bouquet.png",
+    name: "Magenta Chrysanthemum Periwinkle Wrap",
+    description:
+      "Magenta and white chrysanthemums with tuberoses and baby's breath in periwinkle scalloped wrap with white tulle and satin ribbon — lush, colourful and gift-ready.",
+    price: 2700,
+    discount: 10,
+  },
+  {
+    src: "luxury-wedding-car-decoration.png",
+    name: "Luxury Wedding Car Decoration",
+    description:
+      "Fresh pink and peach florals with tulle draping on bonnet, roof and side mirrors — elegant barat car styling for wedding departures across Lahore.",
+    price: 10000,
+    discount: 10,
+  },
+  {
+    src: "sunflower-purple-white-honeycomb-bouquet.png",
+    name: "Sunflower Purple White Honeycomb Bouquet",
+    description:
+      "Twin sunflowers with purple and white chrysanthemums, tuberoses and baby's breath in white honeycomb wrap and black satin ribbon — bold, colourful and gift-ready.",
+    price: 3000,
+    discount: 10,
+  },
+  {
+    src: "pink-rose-chocolate-deluxe-bouquet.png",
+    name: "Pink Rose Chocolate Deluxe Bouquet",
+    description:
+      "Fresh pink roses with white chrysanthemums and baby's breath, plus branded chocolates (KitKat, Bounty, Snickers, Dairy Milk or similar) in pink scalloped wrap — PKR 5,000 bouquet + PKR 2,500 chocolates.",
+    price: 7500,
+    discount: 10,
+  },
+  {
+    src: "crimson-ivory-black-fan-bouquet.png",
+    name: "Crimson Ivory Black Fan Bouquet",
+    description:
+      "Deep red roses with white chrysanthemums and baby's breath in layered black fan wrap and white satin ribbon — dramatic, romantic and gift-ready.",
+    price: 3000,
+    discount: 10,
+  },
+  {
+    src: "white-red-hot-air-balloon-gift-box.png",
+    name: "White Red Hot Air Balloon Gift Box",
+    description:
+      "Red and white roses with mixed blooms in a white gift box, topped with a clear balloon filled with white mini balloons — elegant hot-air-balloon styling.",
+    price: 3300,
+    discount: 10,
+  },
+  {
+    src: "white-rose-teddy-deluxe-hamper.png",
+    name: "White Rose Teddy Deluxe Hamper",
+    description:
+      "Cream teddy bear with white roses and branded chocolates (KitKat, Bounty, Snickers, Dairy Milk or similar) in a gold ribbon tray with black tulle — PKR 6,500 hamper + PKR 2,500 chocolates.",
+    price: 9000,
+    discount: 10,
+  },
+  {
+    src: "white-birthday-hot-air-balloon-gift-box.png",
+    name: "White Birthday Hot Air Balloon Gift Box",
+    description:
+      "Pink and cream roses in a white gift box with white ribbon, topped with a clear balloon and rose-gold Happy Birthday star foil — festive hot-air-balloon styling.",
+    price: 3500,
     discount: 10,
   },
 ];
