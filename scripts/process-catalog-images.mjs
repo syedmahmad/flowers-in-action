@@ -237,7 +237,7 @@ const BOUQUET_CURATED = [
     name: "Red Rose Tuberose Black Wrap",
     description:
       "Deep red roses with white tuberoses in dramatic black wrap and white satin ribbon — bold and romantic.",
-    price: 500,
+    price: 2000,
     discount: 10,
   },
   {
