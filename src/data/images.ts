@@ -1,12 +1,12 @@
 /** Local image paths — all assets live in /public/images/ */
 
 export const images = {
-  hero: "/images/marketing/hero-bouquet.jpg",
+  hero: "/images/marketing/home-hero-bouquet.jpg",
   store: "/images/marketing/storefront.jpg",
   marketing: {
-    heroBouquet: "/images/marketing/hero-bouquet.jpg",
-    collectionBouquets: "/images/marketing/collection-bouquets.jpg",
-    collectionEvents: "/images/marketing/collection-events.jpg",
+    heroBouquet: "/images/marketing/home-hero-bouquet.jpg",
+    collectionBouquets: "/images/marketing/home-collection-bouquets-v3.jpg",
+    collectionEvents: "/images/marketing/home-collection-events-v3.jpg",
     storefront: "/images/marketing/storefront.jpg",
   },
 

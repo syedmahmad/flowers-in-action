@@ -145,14 +145,14 @@ body {
 }
 
 .collection-photo {
-  transform: scale(1.1);
-  filter: saturate(1.1) contrast(1.08) brightness(1.02);
+  transform: scale(1.04);
+  filter: saturate(1.12) contrast(1.06) brightness(1.08);
   transition: transform 850ms ease-out, filter 850ms ease-out;
 }
 
 .group:hover .collection-photo {
-  transform: scale(1.18);
-  filter: saturate(1.14) contrast(1.1) brightness(1.04);
+  transform: scale(1.1);
+  filter: saturate(1.16) contrast(1.08) brightness(1.1);
 }
 
 .nav-link {

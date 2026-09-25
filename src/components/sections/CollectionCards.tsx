@@ -9,10 +9,10 @@ const collections = [
     href: "#bouquets",
     cta: "Explore Bouquets",
     image: images.marketing.collectionBouquets,
-    imageAlt: "Burgundy tulle rose bouquet by Phool Pattiyan Lahore",
-    objectPosition: "center 28%",
+    imageAlt: "Crimson rose and ivory tuberose bouquet by Phool Pattiyan Lahore",
+    objectPosition: "center 40%",
     label: "Bouquets",
-    count: "53+ designs",
+    count: "80+ designs",
   },
   {
     title: "Events & Decorations",
@@ -20,7 +20,7 @@ const collections = [
     href: "#events",
     cta: "Explore Events",
     image: images.marketing.collectionEvents,
-    imageAlt: "Luxury gold and rose birthday decoration by Phool Pattiyan Lahore",
+    imageAlt: "Sunlit marble floral photo wall by Phool Pattiyan Lahore",
     objectPosition: "center 45%",
     label: "Events",
     count: "33+ setups",
@@ -57,11 +57,11 @@ export function CollectionCards() {
               />
 
               <div
-                className="absolute inset-0 bg-gradient-to-t from-maroon-deep/96 via-maroon-deep/52 to-maroon-deep/12"
+                className="absolute inset-0 bg-gradient-to-t from-maroon-deep/94 via-maroon-deep/38 to-transparent"
                 aria-hidden="true"
               />
               <div
-                className="absolute inset-0 bg-gradient-to-br from-gold/15 via-transparent to-black/30 opacity-95 transition-opacity duration-500 group-hover:opacity-100"
+                className="absolute inset-0 bg-gradient-to-br from-gold/12 via-transparent to-maroon-deep/20 opacity-90 transition-opacity duration-500 group-hover:opacity-100"
                 aria-hidden="true"
               />
               <div

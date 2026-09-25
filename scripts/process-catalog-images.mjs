@@ -519,7 +519,7 @@ const BOUQUET_CURATED = [
     src: "pink-chocolate-treat-bouquet.png",
     name: "Pink Chocolate Treat Bouquet",
     description:
-      "Fresh pink roses and white blooms paired with KitKat, Snickers, Dairy Milk and Bounty bars in blush pink wrap — flowers and chocolates in one.",
+      "Fresh pink roses and white blooms with your choice of chocolates (KitKat, Snickers, Dairy Milk, Bounty or similar) in blush pink wrap — chocolates are personalised to your preference, or you may provide your own.",
     price: 5000,
     discount: 10,
   },
@@ -682,6 +682,113 @@ const BOUQUET_CURATED = [
     description:
       "Pink and cream roses in a white gift box with white ribbon, topped with a clear balloon and rose-gold Happy Birthday star foil — festive hot-air-balloon styling.",
     price: 3500,
+    discount: 10,
+  },
+  {
+    src: "five-sunflower-black-wrap-bouquet.png",
+    name: "Five Sunflower Black Wrap Bouquet",
+    description:
+      "Five bright sunflowers with baby's breath and greenery in textured black wrap and white satin ribbon — bold, cheerful and gift-ready.",
+    price: 3500,
+    discount: 10,
+  },
+  {
+    src: "baby-boy-hot-air-balloon-gift-box.png",
+    name: "Baby Boy Hot Air Balloon Gift Box",
+    description:
+      "Blue and cream roses in a lavender gift box with blue ribbon, topped with a clear balloon filled with blue mini balloons — perfect baby boy welcome gift.",
+    price: 3500,
+    discount: 10,
+  },
+  {
+    src: "pink-rose-sky-blue-wrap-bouquet.jpg",
+    name: "Pink Rose Sky Blue Wrap Bouquet",
+    description:
+      "Pink and white roses with chrysanthemums and baby's breath in sky-blue scalloped wrap and satin ribbon — soft, romantic and gift-ready.",
+    price: 5000,
+    discount: 10,
+    video: "/videos/bouquets/pink-rose-sky-blue-wrap-bouquet.mp4",
+  },
+  {
+    src: "red-rose-white-gladiolus-lavender-wrap.png",
+    name: "Red Rose White Gladiolus Lavender Wrap",
+    description:
+      "Deep red roses with white gladiolus and purple accent blooms in lavender scalloped wrap and satin ribbon — lush, dramatic and gift-ready.",
+    price: 4500,
+    discount: 10,
+  },
+  {
+    src: "white-chrysanthemum-mini-aster-bouquet.png",
+    name: "White Chrysanthemum Mini Aster Bouquet",
+    description:
+      "White chrysanthemums with purple mini asters and tuberose buds in aqua scalloped wrap and satin ribbon — fresh, elegant and gift-ready.",
+    price: 5000,
+    discount: 10,
+  },
+  {
+    src: "sunflower-rose-gladiolus-mint-wrap.png",
+    name: "Sunflower Rose Gladiolus Mint Wrap",
+    description:
+      "Twin sunflowers with red roses, white gladiolus and chrysanthemums in mint-green scalloped wrap and white satin ribbon — bold, fresh and gift-ready.",
+    price: 4000,
+    discount: 10,
+  },
+  {
+    src: "red-cream-spray-rose-white-wrap.png",
+    name: "Red Cream Spray Rose White Wrap",
+    description:
+      "Deep red and cream spray roses with baby's breath in white scalloped lace wrap and red satin ribbon — romantic, elegant and gift-ready.",
+    price: 4000,
+    discount: 10,
+  },
+  {
+    src: "pink-chrysanthemum-scallop-wrap-bouquet.png",
+    name: "Pink Chrysanthemum Scallop Wrap Bouquet",
+    description:
+      "Soft pink chrysanthemums with baby's breath in hot-pink scalloped wrap and satin ribbon — lush, feminine and gift-ready.",
+    price: 5000,
+    discount: 10,
+  },
+  {
+    src: "white-chrysanthemum-purple-aster-blue-wrap.png",
+    name: "White Chrysanthemum Purple Aster Blue Wrap",
+    description:
+      "White chrysanthemums with purple asters in baby-blue scalloped wrap and satin ribbon — fresh, elegant and gift-ready.",
+    price: 4500,
+    discount: 10,
+  },
+  {
+    src: "pink-rose-chrysanthemum-scallop-wrap.png",
+    name: "Pink Rose Chrysanthemum Scallop Wrap",
+    description:
+      "Pink roses and chrysanthemums with baby's breath in blush-pink scalloped wrap and satin ribbon — lush, romantic and gift-ready.",
+    price: 5000,
+    discount: 10,
+  },
+  {
+    src: "sunflower-grey-wrap-glass-vase-bouquet.png",
+    name: "Sunflower Grey Wrap Glass Vase Bouquet",
+    description:
+      "Bright sunflowers with baby's breath in charcoal-grey striped wrap and black satin ribbon, presented in a clear glass vase — bold, cheerful and gift-ready.",
+    price: 3500,
+    discount: 10,
+  },
+  {
+    src: "purple-chrysanthemum-pink-wrap-bouquet.jpg",
+    name: "Purple Chrysanthemum Pink Wrap Bouquet",
+    description:
+      "Deep purple chrysanthemums with baby's breath in blush-pink scalloped wrap and lavender satin ribbon — lush, feminine and gift-ready.",
+    price: 5000,
+    discount: 10,
+    video: "/videos/bouquets/purple-chrysanthemum-pink-wrap-bouquet.mp4",
+  },
+  {
+    src: "money-bouquet-pink-wrap-roses.png",
+    gallerySrcs: ["money-bouquet-pink-wrap-roses-2.png"],
+    name: "Pink Wrap Money Rose Bouquet",
+    description:
+      "Currency notes fan-arranged with white roses in blush-pink scalloped wrap and satin ribbon — PKR 2,800 arrangement fee; banknotes are supplied separately by the customer.",
+    price: 2800,
     discount: 10,
   },
 ];

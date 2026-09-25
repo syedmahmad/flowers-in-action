@@ -83,6 +83,18 @@ export function BouquetModal({ bouquet, onClose }: BouquetModalProps) {
           </div>
         )}
 
+        {bouquet.video && (
+          <video
+            className="w-full rounded-xl bg-black/5"
+            controls
+            playsInline
+            preload="metadata"
+            poster={bouquet.image}
+          >
+            <source src={bouquet.video} type="video/mp4" />
+          </video>
+        )}
+
         <p className="text-sm leading-relaxed text-charcoal/80 sm:text-base">
           {bouquet.description}
         </p>

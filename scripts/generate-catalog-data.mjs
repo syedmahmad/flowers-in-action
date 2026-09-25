@@ -22,6 +22,9 @@ function serializeBouquets(bouquets) {
     if (b.gallery?.length) {
       lines.push(`    gallery: [${b.gallery.map((g) => `"${g}"`).join(", ")}],`);
     }
+    if (b.video) {
+      lines.push(`    video: "${b.video}",`);
+    }
     lines.push(`    price: ${b.price},`);
     if (b.originalPrice) lines.push(`    originalPrice: ${b.originalPrice},`);
     if (b.discountPercentage) lines.push(`    discountPercentage: ${b.discountPercentage},`);

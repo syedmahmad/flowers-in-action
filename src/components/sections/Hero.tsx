@@ -93,11 +93,11 @@ export function Hero() {
             <div className="hero-image-glow photo-vignette relative aspect-[4/5] overflow-hidden rounded-[1.5rem] bg-[#f7f3ed] ring-1 ring-gold/25 sm:rounded-[1.75rem] lg:rounded-[2rem]">
               <Image
                 src={images.marketing.heroBouquet}
-                alt="Premium crimson and ivory tuberose bouquet by Phool Pattiyan Lahore"
+                alt="Crimson rose and ivory tuberose bouquet by Phool Pattiyan Lahore"
                 fill
                 priority
                 sizes="(max-width: 1024px) 90vw, 42vw"
-                className="photo-editorial object-cover object-[center_22%]"
+                className="photo-editorial object-cover object-[center_42%]"
               />
               <div
                 className="absolute inset-0 bg-gradient-to-t from-maroon-deep/45 via-maroon-deep/5 to-[#fffef9]/20"
