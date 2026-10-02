@@ -70,6 +70,10 @@ function serializeEvents(events) {
       `    imageAlt: "${e.imageAlt.replace(/"/g, '\\"')}",`,
       `    price: ${e.price},`,
     ];
+    if (e.videos?.length) {
+      const vids = e.videos.map((v) => `"${v}"`).join(", ");
+      lines.push(`    videos: [${vids}],`);
+    }
     if (e.originalPrice) lines.push(`    originalPrice: ${e.originalPrice},`);
     if (e.discountPercentage) lines.push(`    discountPercentage: ${e.discountPercentage},`);
     lines.push(

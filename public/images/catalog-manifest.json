@@ -391,6 +391,22 @@
       "available": true
     },
     {
+      "src": "boy-hbd-hot-air-balloon-gift-box.png",
+      "name": "Boy HBD",
+      "description": "Blue and lavender roses in a white gift box with blue ribbon, topped with a clear balloon and light-blue Happy Birthday star foil — festive hot-air-balloon styling for boys.",
+      "price": 3500,
+      "discount": 10,
+      "slug": "boy-hbd",
+      "origin": "local",
+      "image": "/images/bouquets/web/boy-hbd.jpg",
+      "originalPrice": 3889,
+      "discountPercentage": 10,
+      "featured": true,
+      "id": "bq-025",
+      "imageAlt": "Boy HBD fresh flower bouquet by Phool Pattiyan Lahore",
+      "available": true
+    },
+    {
       "src": "five-sunflower-black-wrap-bouquet.png",
       "name": "Five Sunflower Black Wrap Bouquet",
       "description": "Five bright sunflowers with baby's breath and greenery in textured black wrap and white satin ribbon — bold, cheerful and gift-ready.",
@@ -402,7 +418,7 @@
       "originalPrice": 3889,
       "discountPercentage": 10,
       "featured": true,
-      "id": "bq-025",
+      "id": "bq-026",
       "imageAlt": "Five Sunflower Black Wrap Bouquet fresh flower bouquet by Phool Pattiyan Lahore",
       "available": true
     },
@@ -418,8 +434,46 @@
       "originalPrice": 3889,
       "discountPercentage": 10,
       "featured": true,
-      "id": "bq-026",
+      "id": "bq-027",
       "imageAlt": "Five Sunflower Glass Vase Bouquet fresh flower bouquet by Phool Pattiyan Lahore",
+      "available": true
+    },
+    {
+      "src": "girl-hbd-hot-air-balloon-gift-box.png",
+      "name": "Girl HBD",
+      "description": "Pink and cream roses in a blush-pink gift box with pink ribbon, topped with a clear balloon and rose-gold Happy Birthday star foil — festive hot-air-balloon styling for girls.",
+      "price": 3500,
+      "discount": 10,
+      "slug": "girl-hbd",
+      "origin": "local",
+      "image": "/images/bouquets/web/girl-hbd.jpg",
+      "originalPrice": 3889,
+      "discountPercentage": 10,
+      "featured": true,
+      "id": "bq-028",
+      "imageAlt": "Girl HBD fresh flower bouquet by Phool Pattiyan Lahore",
+      "available": true
+    },
+    {
+      "src": "artificial-ivory-red-black-fan-bouquet.png",
+      "gallerySrcs": [
+        "artificial-ivory-red-black-fan-bouquet-2.png"
+      ],
+      "name": "Ivory Red Black Fan Artificial Bouquet",
+      "description": "Artificial ivory roses with a red bloom centre in black fan wrap and white satin ribbon — lasting, dramatic and one of our best gift-ready artificial bouquets.",
+      "price": 3500,
+      "discount": 10,
+      "slug": "ivory-red-black-fan-artificial-bouquet",
+      "origin": "local",
+      "image": "/images/bouquets/web/ivory-red-black-fan-artificial-bouquet.jpg",
+      "gallery": [
+        "/images/bouquets/web/ivory-red-black-fan-artificial-bouquet-2.jpg"
+      ],
+      "originalPrice": 3889,
+      "discountPercentage": 10,
+      "featured": true,
+      "id": "bq-029",
+      "imageAlt": "Ivory Red Black Fan Artificial Bouquet fresh flower bouquet by Phool Pattiyan Lahore",
       "available": true
     },
     {
@@ -434,7 +488,7 @@
       "originalPrice": 3889,
       "discountPercentage": 10,
       "featured": true,
-      "id": "bq-027",
+      "id": "bq-030",
       "imageAlt": "Look Heart Teddy fresh flower bouquet by Phool Pattiyan Lahore",
       "available": true
     },
@@ -450,7 +504,7 @@
       "originalPrice": 3889,
       "discountPercentage": 10,
       "featured": true,
-      "id": "bq-028",
+      "id": "bq-031",
       "imageAlt": "Pink Birthday Hot Air Balloon Gift Box fresh flower bouquet by Phool Pattiyan Lahore",
       "available": true
     },
@@ -466,7 +520,7 @@
       "originalPrice": 3889,
       "discountPercentage": 10,
       "featured": true,
-      "id": "bq-029",
+      "id": "bq-032",
       "imageAlt": "Sunflower Baby's Breath Bouquet fresh flower bouquet by Phool Pattiyan Lahore",
       "available": true
     },
@@ -482,7 +536,7 @@
       "originalPrice": 3889,
       "discountPercentage": 10,
       "featured": true,
-      "id": "bq-030",
+      "id": "bq-033",
       "imageAlt": "Sunflower Grey Wrap Glass Vase Bouquet fresh flower bouquet by Phool Pattiyan Lahore",
       "available": true
     },
@@ -498,7 +552,7 @@
       "originalPrice": 3889,
       "discountPercentage": 10,
       "featured": true,
-      "id": "bq-031",
+      "id": "bq-034",
       "imageAlt": "White Birthday Hot Air Balloon Gift Box fresh flower bouquet by Phool Pattiyan Lahore",
       "available": true
     },
@@ -514,7 +568,7 @@
       "originalPrice": 4222,
       "discountPercentage": 10,
       "featured": true,
-      "id": "bq-032",
+      "id": "bq-035",
       "imageAlt": "Baby Boy Balloon Bouquet fresh flower bouquet by Phool Pattiyan Lahore",
       "available": true
     },
@@ -530,7 +584,7 @@
       "originalPrice": 4444,
       "discountPercentage": 10,
       "featured": true,
-      "id": "bq-033",
+      "id": "bq-036",
       "imageAlt": "Lavender Sunflower Mixed Bouquet fresh flower bouquet by Phool Pattiyan Lahore",
       "available": true
     },
@@ -546,7 +600,7 @@
       "originalPrice": 4444,
       "discountPercentage": 10,
       "featured": true,
-      "id": "bq-034",
+      "id": "bq-037",
       "imageAlt": "Luxury Red Rose Tuberose fresh flower bouquet by Phool Pattiyan Lahore",
       "available": true
     },
@@ -562,7 +616,7 @@
       "originalPrice": 4444,
       "discountPercentage": 10,
       "featured": true,
-      "id": "bq-035",
+      "id": "bq-038",
       "imageAlt": "Red Cream Spray Rose White Wrap fresh flower bouquet by Phool Pattiyan Lahore",
       "available": true
     },
@@ -578,7 +632,7 @@
       "originalPrice": 4444,
       "discountPercentage": 10,
       "featured": true,
-      "id": "bq-036",
+      "id": "bq-039",
       "imageAlt": "Sunflower Rose Gladiolus Mint Wrap fresh flower bouquet by Phool Pattiyan Lahore",
       "available": true
     },
@@ -594,8 +648,25 @@
       "originalPrice": 4444,
       "discountPercentage": 10,
       "featured": true,
-      "id": "bq-037",
+      "id": "bq-040",
       "imageAlt": "White Imported Rose Chrysanthemum Bouquet fresh flower bouquet by Phool Pattiyan Lahore",
+      "available": true
+    },
+    {
+      "src": "white-rose-pink-chrysanthemum-scallop-bouquet.png",
+      "name": "White Rose Pink Chrysanthemum Scallop Bouquet",
+      "description": "White roses with pink chrysanthemums in white scalloped wrap and blush satin ribbon — soft, elegant and gift-ready.",
+      "price": 4000,
+      "discount": 10,
+      "video": "/videos/bouquets/white-rose-pink-chrysanthemum-scallop-bouquet.mp4",
+      "slug": "white-rose-pink-chrysanthemum-scallop-bouquet",
+      "origin": "local",
+      "image": "/images/bouquets/web/white-rose-pink-chrysanthemum-scallop-bouquet.jpg",
+      "originalPrice": 4444,
+      "discountPercentage": 10,
+      "featured": true,
+      "id": "bq-041",
+      "imageAlt": "White Rose Pink Chrysanthemum Scallop Bouquet fresh flower bouquet by Phool Pattiyan Lahore",
       "available": true
     },
     {
@@ -610,7 +681,7 @@
       "originalPrice": 5000,
       "discountPercentage": 10,
       "featured": true,
-      "id": "bq-038",
+      "id": "bq-042",
       "imageAlt": "Imported Rose White Chrysanthemum Bouquet fresh flower bouquet by Phool Pattiyan Lahore",
       "available": true
     },
@@ -626,7 +697,7 @@
       "originalPrice": 5000,
       "discountPercentage": 10,
       "featured": true,
-      "id": "bq-039",
+      "id": "bq-043",
       "imageAlt": "Pink Rose Scallop Wrap Bouquet fresh flower bouquet by Phool Pattiyan Lahore",
       "available": true
     },
@@ -642,7 +713,7 @@
       "originalPrice": 5000,
       "discountPercentage": 10,
       "featured": true,
-      "id": "bq-040",
+      "id": "bq-044",
       "imageAlt": "Red Rose White Gladiolus Lavender Wrap fresh flower bouquet by Phool Pattiyan Lahore",
       "available": true
     },
@@ -658,7 +729,7 @@
       "originalPrice": 5000,
       "discountPercentage": 10,
       "featured": true,
-      "id": "bq-041",
+      "id": "bq-045",
       "imageAlt": "Red White Rose Bouquet fresh flower bouquet by Phool Pattiyan Lahore",
       "available": true
     },
@@ -674,7 +745,7 @@
       "originalPrice": 5000,
       "discountPercentage": 10,
       "featured": true,
-      "id": "bq-042",
+      "id": "bq-046",
       "imageAlt": "Ruby Radiance Artificial Bouquet fresh flower bouquet by Phool Pattiyan Lahore",
       "available": true
     },
@@ -690,24 +761,8 @@
       "originalPrice": 5000,
       "discountPercentage": 10,
       "featured": true,
-      "id": "bq-043",
+      "id": "bq-047",
       "imageAlt": "White Chrysanthemum Purple Aster Blue Wrap fresh flower bouquet by Phool Pattiyan Lahore",
-      "available": true
-    },
-    {
-      "src": "red-rose-black-box-bouquet.png",
-      "name": "Red Rose Black Box Bouquet",
-      "description": "Lush deep red roses in a matte black square gift box with red satin ribbon — dramatic, romantic and presentation-ready.",
-      "price": 4600,
-      "discount": 10,
-      "slug": "red-rose-black-box-bouquet",
-      "origin": "local",
-      "image": "/images/bouquets/web/red-rose-black-box-bouquet.jpg",
-      "originalPrice": 5111,
-      "discountPercentage": 10,
-      "featured": true,
-      "id": "bq-044",
-      "imageAlt": "Red Rose Black Box Bouquet fresh flower bouquet by Phool Pattiyan Lahore",
       "available": true
     },
     {
@@ -722,7 +777,7 @@
       "originalPrice": 5333,
       "discountPercentage": 10,
       "featured": true,
-      "id": "bq-045",
+      "id": "bq-048",
       "imageAlt": "Sunshine Marble Artificial Bouquet fresh flower bouquet by Phool Pattiyan Lahore",
       "available": true
     },
@@ -738,7 +793,7 @@
       "originalPrice": 5556,
       "discountPercentage": 10,
       "featured": true,
-      "id": "bq-046",
+      "id": "bq-049",
       "imageAlt": "Burgundy Solo Rose Bouquet fresh flower bouquet by Phool Pattiyan Lahore",
       "available": true
     },
@@ -754,7 +809,7 @@
       "originalPrice": 5556,
       "discountPercentage": 10,
       "featured": true,
-      "id": "bq-047",
+      "id": "bq-050",
       "imageAlt": "Burgundy Tulle Rose Bouquet fresh flower bouquet by Phool Pattiyan Lahore",
       "available": true
     },
@@ -770,7 +825,7 @@
       "originalPrice": 5556,
       "discountPercentage": 10,
       "featured": true,
-      "id": "bq-048",
+      "id": "bq-051",
       "imageAlt": "Pink Chocolate Treat Bouquet fresh flower bouquet by Phool Pattiyan Lahore",
       "available": true
     },
@@ -786,7 +841,7 @@
       "originalPrice": 5556,
       "discountPercentage": 10,
       "featured": true,
-      "id": "bq-049",
+      "id": "bq-052",
       "imageAlt": "Pink Chrysanthemum Scallop Wrap Bouquet fresh flower bouquet by Phool Pattiyan Lahore",
       "available": true
     },
@@ -802,7 +857,7 @@
       "originalPrice": 5556,
       "discountPercentage": 10,
       "featured": true,
-      "id": "bq-050",
+      "id": "bq-053",
       "imageAlt": "Pink Rose Chrysanthemum Scallop Wrap fresh flower bouquet by Phool Pattiyan Lahore",
       "available": true
     },
@@ -819,7 +874,7 @@
       "originalPrice": 5556,
       "discountPercentage": 10,
       "featured": true,
-      "id": "bq-051",
+      "id": "bq-054",
       "imageAlt": "Pink Rose Sky Blue Wrap Bouquet fresh flower bouquet by Phool Pattiyan Lahore",
       "available": true
     },
@@ -836,8 +891,40 @@
       "originalPrice": 5556,
       "discountPercentage": 10,
       "featured": true,
-      "id": "bq-052",
+      "id": "bq-055",
       "imageAlt": "Purple Chrysanthemum Pink Wrap Bouquet fresh flower bouquet by Phool Pattiyan Lahore",
+      "available": true
+    },
+    {
+      "src": "red-rose-black-box-bouquet.png",
+      "name": "Red Rose Black Box Bouquet",
+      "description": "Lush deep red roses in a matte black square gift box with red satin ribbon — dramatic, romantic and presentation-ready.",
+      "price": 5000,
+      "discount": 10,
+      "slug": "red-rose-black-box-bouquet",
+      "origin": "local",
+      "image": "/images/bouquets/web/red-rose-black-box-bouquet.jpg",
+      "originalPrice": 5556,
+      "discountPercentage": 10,
+      "featured": true,
+      "id": "bq-056",
+      "imageAlt": "Red Rose Black Box Bouquet fresh flower bouquet by Phool Pattiyan Lahore",
+      "available": true
+    },
+    {
+      "src": "red-rose-peach-scallop-wrap-bouquet.png",
+      "name": "Red Rose Peach Scallop Wrap Bouquet",
+      "description": "Deep red roses with white gerberas, chrysanthemums and baby's breath in peach scalloped wrap and white satin ribbon — warm, fresh and gift-ready.",
+      "price": 5000,
+      "discount": 10,
+      "slug": "red-rose-peach-scallop-wrap-bouquet",
+      "origin": "local",
+      "image": "/images/bouquets/web/red-rose-peach-scallop-wrap-bouquet.jpg",
+      "originalPrice": 5556,
+      "discountPercentage": 10,
+      "featured": true,
+      "id": "bq-057",
+      "imageAlt": "Red Rose Peach Scallop Wrap Bouquet fresh flower bouquet by Phool Pattiyan Lahore",
       "available": true
     },
     {
@@ -852,7 +939,7 @@
       "originalPrice": 5556,
       "discountPercentage": 10,
       "featured": true,
-      "id": "bq-053",
+      "id": "bq-058",
       "imageAlt": "Sky Blue Blush Chrysanthemum Bouquet fresh flower bouquet by Phool Pattiyan Lahore",
       "available": true
     },
@@ -868,7 +955,7 @@
       "originalPrice": 5556,
       "discountPercentage": 10,
       "featured": true,
-      "id": "bq-054",
+      "id": "bq-059",
       "imageAlt": "Sky Blue Daisy Meadow Bouquet fresh flower bouquet by Phool Pattiyan Lahore",
       "available": true
     },
@@ -884,7 +971,7 @@
       "originalPrice": 5556,
       "discountPercentage": 10,
       "featured": true,
-      "id": "bq-055",
+      "id": "bq-060",
       "imageAlt": "Special Bridal Gajray Set fresh flower bouquet by Phool Pattiyan Lahore",
       "available": true
     },
@@ -900,8 +987,24 @@
       "originalPrice": 5556,
       "discountPercentage": 10,
       "featured": true,
-      "id": "bq-056",
+      "id": "bq-061",
       "imageAlt": "White Chrysanthemum Mini Aster Bouquet fresh flower bouquet by Phool Pattiyan Lahore",
+      "available": true
+    },
+    {
+      "src": "white-rose-magenta-chrysanthemum-pink-scallop-bouquet.png",
+      "name": "White Rose Magenta Chrysanthemum Pink Scallop Bouquet",
+      "description": "White roses with magenta chrysanthemums and purple accent blooms in blush-pink scalloped wrap and satin ribbon — soft, lush and gift-ready.",
+      "price": 5000,
+      "discount": 10,
+      "slug": "white-rose-magenta-chrysanthemum-pink-scallop-bouquet",
+      "origin": "local",
+      "image": "/images/bouquets/web/white-rose-magenta-chrysanthemum-pink-scallop-bouquet.jpg",
+      "originalPrice": 5556,
+      "discountPercentage": 10,
+      "featured": true,
+      "id": "bq-062",
+      "imageAlt": "White Rose Magenta Chrysanthemum Pink Scallop Bouquet fresh flower bouquet by Phool Pattiyan Lahore",
       "available": true
     },
     {
@@ -916,7 +1019,7 @@
       "originalPrice": 5778,
       "discountPercentage": 10,
       "featured": true,
-      "id": "bq-057",
+      "id": "bq-063",
       "imageAlt": "Crimson Love Teddy Basket fresh flower bouquet by Phool Pattiyan Lahore",
       "available": true
     },
@@ -932,7 +1035,7 @@
       "originalPrice": 5778,
       "discountPercentage": 10,
       "featured": true,
-      "id": "bq-058",
+      "id": "bq-064",
       "imageAlt": "Indigo Daisy Bouquet fresh flower bouquet by Phool Pattiyan Lahore",
       "available": true
     },
@@ -948,7 +1051,7 @@
       "originalPrice": 6000,
       "discountPercentage": 10,
       "featured": true,
-      "id": "bq-059",
+      "id": "bq-065",
       "imageAlt": "Blush Mesh Romance Bouquet fresh flower bouquet by Phool Pattiyan Lahore",
       "available": true
     },
@@ -964,7 +1067,7 @@
       "originalPrice": 6000,
       "discountPercentage": 10,
       "featured": true,
-      "id": "bq-060",
+      "id": "bq-066",
       "imageAlt": "Blush Tulle Teddy Celebration Basket fresh flower bouquet by Phool Pattiyan Lahore",
       "available": true
     },
@@ -980,7 +1083,7 @@
       "originalPrice": 6111,
       "discountPercentage": 10,
       "featured": true,
-      "id": "bq-061",
+      "id": "bq-067",
       "imageAlt": "Amethyst Stripe Chrysanthemum Bouquet fresh flower bouquet by Phool Pattiyan Lahore",
       "available": true
     },
@@ -996,7 +1099,7 @@
       "originalPrice": 6111,
       "discountPercentage": 10,
       "featured": true,
-      "id": "bq-062",
+      "id": "bq-068",
       "imageAlt": "Hello Kitty Lavender Treat Basket fresh flower bouquet by Phool Pattiyan Lahore",
       "available": true
     },
@@ -1012,8 +1115,41 @@
       "originalPrice": 6111,
       "discountPercentage": 10,
       "featured": true,
-      "id": "bq-063",
+      "id": "bq-069",
       "imageAlt": "Ivory Tuberose Chrysanthemum Bouquet fresh flower bouquet by Phool Pattiyan Lahore",
+      "available": true
+    },
+    {
+      "src": "red-rose-yellow-chrysanthemum-peach-scallop-bouquet.png",
+      "name": "Red Rose Yellow Chrysanthemum Peach Scallop Bouquet",
+      "description": "Deep red roses with white and yellow chrysanthemums and baby's breath in peach scalloped wrap and burgundy satin ribbon — warm, lush and gift-ready.",
+      "price": 5500,
+      "discount": 10,
+      "video": "/videos/bouquets/red-rose-yellow-chrysanthemum-peach-scallop-bouquet.mp4",
+      "slug": "red-rose-yellow-chrysanthemum-peach-scallop-bouquet",
+      "origin": "local",
+      "image": "/images/bouquets/web/red-rose-yellow-chrysanthemum-peach-scallop-bouquet.jpg",
+      "originalPrice": 6111,
+      "discountPercentage": 10,
+      "featured": true,
+      "id": "bq-070",
+      "imageAlt": "Red Rose Yellow Chrysanthemum Peach Scallop Bouquet fresh flower bouquet by Phool Pattiyan Lahore",
+      "available": true
+    },
+    {
+      "src": "sunflower-tuberose-lavender-scallop-bouquet.png",
+      "name": "Sunflower Tuberose Lavender Scallop Bouquet",
+      "description": "Sunflowers with white and purple chrysanthemums, tuberoses and baby's breath in lavender scalloped wrap and satin ribbon — lush, fragrant and gift-ready.",
+      "price": 5500,
+      "discount": 10,
+      "slug": "sunflower-tuberose-lavender-scallop-bouquet",
+      "origin": "local",
+      "image": "/images/bouquets/web/sunflower-tuberose-lavender-scallop-bouquet.jpg",
+      "originalPrice": 6111,
+      "discountPercentage": 10,
+      "featured": true,
+      "id": "bq-071",
+      "imageAlt": "Sunflower Tuberose Lavender Scallop Bouquet fresh flower bouquet by Phool Pattiyan Lahore",
       "available": true
     },
     {
@@ -1028,7 +1164,7 @@
       "originalPrice": 6111,
       "discountPercentage": 10,
       "featured": true,
-      "id": "bq-064",
+      "id": "bq-072",
       "imageAlt": "Violet Snow Chrysanthemum Bouquet fresh flower bouquet by Phool Pattiyan Lahore",
       "available": true
     },
@@ -1044,7 +1180,7 @@
       "originalPrice": 6222,
       "discountPercentage": 10,
       "featured": true,
-      "id": "bq-065",
+      "id": "bq-073",
       "imageAlt": "Golden I Love You Teddy Basket fresh flower bouquet by Phool Pattiyan Lahore",
       "available": true
     },
@@ -1060,7 +1196,7 @@
       "originalPrice": 6222,
       "discountPercentage": 10,
       "featured": true,
-      "id": "bq-066",
+      "id": "bq-074",
       "imageAlt": "Plum Peach Rose Bouquet fresh flower bouquet by Phool Pattiyan Lahore",
       "available": true
     },
@@ -1076,7 +1212,7 @@
       "originalPrice": 6444,
       "discountPercentage": 10,
       "featured": true,
-      "id": "bq-067",
+      "id": "bq-075",
       "imageAlt": "Crimson Ivory Tuberose Bouquet fresh flower bouquet by Phool Pattiyan Lahore",
       "available": true
     },
@@ -1092,7 +1228,7 @@
       "originalPrice": 6444,
       "discountPercentage": 10,
       "featured": true,
-      "id": "bq-068",
+      "id": "bq-076",
       "imageAlt": "Doraemon Azure Dream Basket fresh flower bouquet by Phool Pattiyan Lahore",
       "available": true
     },
@@ -1108,7 +1244,7 @@
       "originalPrice": 6444,
       "discountPercentage": 10,
       "featured": true,
-      "id": "bq-069",
+      "id": "bq-077",
       "imageAlt": "Turquoise Sunshine Bouquet fresh flower bouquet by Phool Pattiyan Lahore",
       "available": true
     },
@@ -1124,7 +1260,7 @@
       "originalPrice": 6667,
       "discountPercentage": 10,
       "featured": true,
-      "id": "bq-070",
+      "id": "bq-078",
       "imageAlt": "Blush Magenta Chrysanthemum Bouquet fresh flower bouquet by Phool Pattiyan Lahore",
       "available": true
     },
@@ -1141,7 +1277,7 @@
       "originalPrice": 6667,
       "discountPercentage": 10,
       "featured": true,
-      "id": "bq-071",
+      "id": "bq-079",
       "imageAlt": "Lavender Peach Chrysanthemum Bouquet fresh flower bouquet by Phool Pattiyan Lahore",
       "available": true
     },
@@ -1157,7 +1293,7 @@
       "originalPrice": 6667,
       "discountPercentage": 10,
       "featured": true,
-      "id": "bq-072",
+      "id": "bq-080",
       "imageAlt": "Monochrome Panda Luxe Basket fresh flower bouquet by Phool Pattiyan Lahore",
       "available": true
     },
@@ -1173,7 +1309,7 @@
       "originalPrice": 6667,
       "discountPercentage": 10,
       "featured": true,
-      "id": "bq-073",
+      "id": "bq-081",
       "imageAlt": "Plum Noir Chrysanthemum Bouquet fresh flower bouquet by Phool Pattiyan Lahore",
       "available": true
     },
@@ -1189,7 +1325,7 @@
       "originalPrice": 6667,
       "discountPercentage": 10,
       "featured": true,
-      "id": "bq-074",
+      "id": "bq-082",
       "imageAlt": "Scarlet Lily Tuberose Bouquet fresh flower bouquet by Phool Pattiyan Lahore",
       "available": true
     },
@@ -1211,8 +1347,41 @@
       "originalPrice": 7556,
       "discountPercentage": 10,
       "featured": true,
-      "id": "bq-075",
+      "id": "bq-083",
       "imageAlt": "White Rose Teddy Chocolate Hamper fresh flower bouquet by Phool Pattiyan Lahore",
+      "available": true
+    },
+    {
+      "src": "birthday-package-red-rose-heart-balloons.png",
+      "name": "Birthday Package",
+      "description": "Deep red roses in a black gift box with red ribbon, Happy Birthday card and heart foil balloons — a ready-made birthday surprise in Lahore.",
+      "price": 7000,
+      "discount": 10,
+      "slug": "birthday-package",
+      "origin": "local",
+      "image": "/images/bouquets/web/birthday-package.jpg",
+      "originalPrice": 7778,
+      "discountPercentage": 10,
+      "featured": true,
+      "id": "bq-084",
+      "imageAlt": "Birthday Package fresh flower bouquet by Phool Pattiyan Lahore",
+      "available": true
+    },
+    {
+      "src": "cream-teddy-rose-celebration-basket.png",
+      "name": "Cream Teddy Rose Celebration Basket",
+      "description": "Cream teddy bears with deep red roses, gold-marble wrapped treats and feather accents in a ribbon-trimmed gift basket — a premium flowers, plush and treats hamper.",
+      "price": 7000,
+      "discount": 10,
+      "video": "/videos/bouquets/cream-teddy-rose-celebration-basket.mp4",
+      "slug": "cream-teddy-rose-celebration-basket",
+      "origin": "local",
+      "image": "/images/bouquets/web/cream-teddy-rose-celebration-basket.jpg",
+      "originalPrice": 7778,
+      "discountPercentage": 10,
+      "featured": true,
+      "id": "bq-085",
+      "imageAlt": "Cream Teddy Rose Celebration Basket fresh flower bouquet by Phool Pattiyan Lahore",
       "available": true
     },
     {
@@ -1227,7 +1396,7 @@
       "originalPrice": 7778,
       "discountPercentage": 10,
       "featured": true,
-      "id": "bq-076",
+      "id": "bq-086",
       "imageAlt": "Forever Love Artificial Bouquet fresh flower bouquet by Phool Pattiyan Lahore",
       "available": true
     },
@@ -1243,7 +1412,7 @@
       "originalPrice": 7778,
       "discountPercentage": 10,
       "featured": true,
-      "id": "bq-077",
+      "id": "bq-087",
       "imageAlt": "Purple Harmony Gift Basket fresh flower bouquet by Phool Pattiyan Lahore",
       "available": true
     },
@@ -1259,7 +1428,7 @@
       "originalPrice": 7778,
       "discountPercentage": 10,
       "featured": true,
-      "id": "bq-078",
+      "id": "bq-088",
       "imageAlt": "Sunflower Imported Rose Bouquet fresh flower bouquet by Phool Pattiyan Lahore",
       "available": true
     },
@@ -1275,8 +1444,24 @@
       "originalPrice": 8333,
       "discountPercentage": 10,
       "featured": true,
-      "id": "bq-079",
+      "id": "bq-089",
       "imageAlt": "Pink Rose Chocolate Deluxe Bouquet fresh flower bouquet by Phool Pattiyan Lahore",
+      "available": true
+    },
+    {
+      "src": "imported-red-rose-babys-breath-bouquet.png",
+      "name": "Imported Red Rose Baby's Breath Bouquet",
+      "description": "Premium imported red roses with imported baby's breath in white gold-trim wrap, Happy Birthday card and red satin ribbon — classic, romantic and gift-ready.",
+      "price": 8000,
+      "discount": 10,
+      "origin": "imported",
+      "slug": "imported-red-rose-baby-s-breath-bouquet",
+      "image": "/images/bouquets/web/imported-red-rose-baby-s-breath-bouquet.jpg",
+      "originalPrice": 8889,
+      "discountPercentage": 10,
+      "featured": true,
+      "id": "bq-090",
+      "imageAlt": "Imported Red Rose Baby's Breath Bouquet fresh flower bouquet by Phool Pattiyan Lahore",
       "available": true
     },
     {
@@ -1291,24 +1476,8 @@
       "originalPrice": 8889,
       "discountPercentage": 10,
       "featured": true,
-      "id": "bq-080",
+      "id": "bq-091",
       "imageAlt": "Pink Bunny Celebration Basket fresh flower bouquet by Phool Pattiyan Lahore",
-      "available": true
-    },
-    {
-      "src": "white-rose-teddy-deluxe-hamper.png",
-      "name": "White Rose Teddy Deluxe Hamper",
-      "description": "Cream teddy bear with white roses and branded chocolates (KitKat, Bounty, Snickers, Dairy Milk or similar) in a gold ribbon tray with black tulle — PKR 6,500 hamper + PKR 2,500 chocolates.",
-      "price": 9000,
-      "discount": 10,
-      "slug": "white-rose-teddy-deluxe-hamper",
-      "origin": "local",
-      "image": "/images/bouquets/web/white-rose-teddy-deluxe-hamper.jpg",
-      "originalPrice": 10000,
-      "discountPercentage": 10,
-      "featured": true,
-      "id": "bq-081",
-      "imageAlt": "White Rose Teddy Deluxe Hamper fresh flower bouquet by Phool Pattiyan Lahore",
       "available": true
     },
     {
@@ -1323,8 +1492,24 @@
       "originalPrice": 11111,
       "discountPercentage": 10,
       "featured": true,
-      "id": "bq-082",
+      "id": "bq-092",
       "imageAlt": "Luxury Wedding Car Decoration fresh flower bouquet by Phool Pattiyan Lahore",
+      "available": true
+    },
+    {
+      "src": "six-imported-chrysanthemum-vase-set.png",
+      "name": "Six Imported Chrysanthemum Vase Set",
+      "description": "Six clear glass vases with imported magenta and white chrysanthemums and imported baby's breath — versatile table styling for mehndi, birthdays, openings and events across Lahore.",
+      "price": 14000,
+      "discount": 10,
+      "origin": "imported",
+      "slug": "six-imported-chrysanthemum-vase-set",
+      "image": "/images/bouquets/web/six-imported-chrysanthemum-vase-set.jpg",
+      "originalPrice": 15556,
+      "discountPercentage": 10,
+      "featured": true,
+      "id": "bq-093",
+      "imageAlt": "Six Imported Chrysanthemum Vase Set fresh flower bouquet by Phool Pattiyan Lahore",
       "available": true
     }
   ],
@@ -2059,6 +2244,33 @@
       "available": true,
       "price": 28000,
       "originalPrice": 31111,
+      "discountPercentage": 10
+    },
+    {
+      "id": "ev-34",
+      "slug": "rainbow-balloon-floor-installation",
+      "name": "Rainbow Balloon Floor Installation",
+      "description": "Full-hall rainbow balloon floor scatter with long garland pathways and colour-block clusters — bold celebration styling for schools, openings and large indoor venues in Lahore.",
+      "images": [
+        "/images/events/web/rainbow-balloon-floor-installation.jpg",
+        "/images/events/web/rainbow-balloon-floor-installation-2.jpg"
+      ],
+      "imageAlt": "Rainbow Balloon Floor Installation by Phool Pattiyan Lahore",
+      "pricePrefix": "Starting from",
+      "includedItems": [
+        "Rainbow latex balloon floor styling",
+        "Long balloon garland pathways",
+        "Colour-block balloon clusters",
+        "Setup in Lahore"
+      ],
+      "videos": [
+        "/videos/events/rainbow-balloon-floor-installation-1.mp4",
+        "/videos/events/rainbow-balloon-floor-installation-2.mp4"
+      ],
+      "featured": true,
+      "available": true,
+      "price": 30000,
+      "originalPrice": 33333,
       "discountPercentage": 10
     }
   ],

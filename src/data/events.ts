@@ -495,6 +495,22 @@ export const events: EventPackage[] = [
     featured: true,
     available: true,
   },
+  {
+    id: "ev-34",
+    slug: "rainbow-balloon-floor-installation",
+    name: "Rainbow Balloon Floor Installation",
+    description: "Full-hall rainbow balloon floor scatter with long garland pathways and colour-block clusters — bold celebration styling for schools, openings and large indoor venues in Lahore.",
+    images: ["/images/events/web/rainbow-balloon-floor-installation.jpg", "/images/events/web/rainbow-balloon-floor-installation-2.jpg"],
+    imageAlt: "Rainbow Balloon Floor Installation by Phool Pattiyan Lahore",
+    price: 30000,
+    videos: ["/videos/events/rainbow-balloon-floor-installation-1.mp4", "/videos/events/rainbow-balloon-floor-installation-2.mp4"],
+    originalPrice: 33333,
+    discountPercentage: 10,
+    pricePrefix: "Starting from",
+    includedItems: ["Rainbow latex balloon floor styling", "Long balloon garland pathways", "Colour-block balloon clusters", "Setup in Lahore"],
+    featured: true,
+    available: true,
+  },
 ];
 
 export const featuredEvents = events.filter((e) => e.featured);

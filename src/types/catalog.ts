@@ -25,6 +25,7 @@ export interface EventPackage {
   name: string;
   description: string;
   images: string[];
+  videos?: string[];
   imageAlt: string;
   price: number;
   originalPrice?: number;

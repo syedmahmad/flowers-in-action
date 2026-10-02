@@ -74,6 +74,19 @@ export function EventModal({ event, onClose }: EventModalProps) {
           </div>
         )}
 
+        {event.videos?.map((src) => (
+          <video
+            key={src}
+            className="w-full rounded-xl bg-black/5"
+            controls
+            playsInline
+            preload="metadata"
+            poster={event.images[0]}
+          >
+            <source src={src} type="video/mp4" />
+          </video>
+        ))}
+
         <p className="text-sm leading-relaxed text-charcoal/80 sm:text-base">
           {event.description}
         </p>

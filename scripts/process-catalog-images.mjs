@@ -609,7 +609,7 @@ const BOUQUET_CURATED = [
     name: "Red Rose Black Box Bouquet",
     description:
       "Lush deep red roses in a matte black square gift box with red satin ribbon — dramatic, romantic and presentation-ready.",
-    price: 4600,
+    price: 5000,
     discount: 10,
   },
   {
@@ -666,14 +666,6 @@ const BOUQUET_CURATED = [
     description:
       "Red and white roses with mixed blooms in a white gift box, topped with a clear balloon filled with white mini balloons — elegant hot-air-balloon styling.",
     price: 3300,
-    discount: 10,
-  },
-  {
-    src: "white-rose-teddy-deluxe-hamper.png",
-    name: "White Rose Teddy Deluxe Hamper",
-    description:
-      "Cream teddy bear with white roses and branded chocolates (KitKat, Bounty, Snickers, Dairy Milk or similar) in a gold ribbon tray with black tulle — PKR 6,500 hamper + PKR 2,500 chocolates.",
-    price: 9000,
     discount: 10,
   },
   {
@@ -789,6 +781,108 @@ const BOUQUET_CURATED = [
     description:
       "Currency notes fan-arranged with white roses in blush-pink scalloped wrap and satin ribbon — PKR 2,800 arrangement fee; banknotes are supplied separately by the customer.",
     price: 2800,
+    discount: 10,
+  },
+  {
+    src: "sunflower-tuberose-lavender-scallop-bouquet.png",
+    name: "Sunflower Tuberose Lavender Scallop Bouquet",
+    description:
+      "Sunflowers with white and purple chrysanthemums, tuberoses and baby's breath in lavender scalloped wrap and satin ribbon — lush, fragrant and gift-ready.",
+    price: 5500,
+    discount: 10,
+  },
+  {
+    src: "imported-red-rose-babys-breath-bouquet.png",
+    name: "Imported Red Rose Baby's Breath Bouquet",
+    description:
+      "Premium imported red roses with imported baby's breath in white gold-trim wrap, Happy Birthday card and red satin ribbon — classic, romantic and gift-ready.",
+    price: 8000,
+    discount: 10,
+    origin: "imported",
+  },
+  {
+    src: "boy-hbd-hot-air-balloon-gift-box.png",
+    name: "Boy HBD",
+    description:
+      "Blue and lavender roses in a white gift box with blue ribbon, topped with a clear balloon and light-blue Happy Birthday star foil — festive hot-air-balloon styling for boys.",
+    price: 3500,
+    discount: 10,
+  },
+  {
+    src: "girl-hbd-hot-air-balloon-gift-box.png",
+    name: "Girl HBD",
+    description:
+      "Pink and cream roses in a blush-pink gift box with pink ribbon, topped with a clear balloon and rose-gold Happy Birthday star foil — festive hot-air-balloon styling for girls.",
+    price: 3500,
+    discount: 10,
+  },
+  {
+    src: "six-imported-chrysanthemum-vase-set.png",
+    name: "Six Imported Chrysanthemum Vase Set",
+    description:
+      "Six clear glass vases with imported magenta and white chrysanthemums and imported baby's breath — versatile table styling for mehndi, birthdays, openings and events across Lahore.",
+    price: 14000,
+    discount: 10,
+    origin: "imported",
+  },
+  {
+    src: "birthday-package-red-rose-heart-balloons.png",
+    name: "Birthday Package",
+    description:
+      "Deep red roses in a black gift box with red ribbon, Happy Birthday card and heart foil balloons — a ready-made birthday surprise in Lahore.",
+    price: 7000,
+    discount: 10,
+  },
+  {
+    src: "white-rose-magenta-chrysanthemum-pink-scallop-bouquet.png",
+    name: "White Rose Magenta Chrysanthemum Pink Scallop Bouquet",
+    description:
+      "White roses with magenta chrysanthemums and purple accent blooms in blush-pink scalloped wrap and satin ribbon — soft, lush and gift-ready.",
+    price: 5000,
+    discount: 10,
+  },
+  {
+    src: "red-rose-peach-scallop-wrap-bouquet.png",
+    name: "Red Rose Peach Scallop Wrap Bouquet",
+    description:
+      "Deep red roses with white gerberas, chrysanthemums and baby's breath in peach scalloped wrap and white satin ribbon — warm, fresh and gift-ready.",
+    price: 5000,
+    discount: 10,
+  },
+  {
+    src: "white-rose-pink-chrysanthemum-scallop-bouquet.png",
+    name: "White Rose Pink Chrysanthemum Scallop Bouquet",
+    description:
+      "White roses with pink chrysanthemums in white scalloped wrap and blush satin ribbon — soft, elegant and gift-ready.",
+    price: 4000,
+    discount: 10,
+    video: "/videos/bouquets/white-rose-pink-chrysanthemum-scallop-bouquet.mp4",
+  },
+  {
+    src: "red-rose-yellow-chrysanthemum-peach-scallop-bouquet.png",
+    name: "Red Rose Yellow Chrysanthemum Peach Scallop Bouquet",
+    description:
+      "Deep red roses with white and yellow chrysanthemums and baby's breath in peach scalloped wrap and burgundy satin ribbon — warm, lush and gift-ready.",
+    price: 5500,
+    discount: 10,
+    video: "/videos/bouquets/red-rose-yellow-chrysanthemum-peach-scallop-bouquet.mp4",
+  },
+  {
+    src: "cream-teddy-rose-celebration-basket.png",
+    name: "Cream Teddy Rose Celebration Basket",
+    description:
+      "Cream teddy bears with deep red roses, gold-marble wrapped treats and feather accents in a ribbon-trimmed gift basket — a premium flowers, plush and treats hamper.",
+    price: 7000,
+    discount: 10,
+    video: "/videos/bouquets/cream-teddy-rose-celebration-basket.mp4",
+  },
+  {
+    src: "artificial-ivory-red-black-fan-bouquet.png",
+    gallerySrcs: ["artificial-ivory-red-black-fan-bouquet-2.png"],
+    name: "Ivory Red Black Fan Artificial Bouquet",
+    description:
+      "Artificial ivory roses with a red bloom centre in black fan wrap and white satin ribbon — lasting, dramatic and one of our best gift-ready artificial bouquets.",
+    price: 3500,
     discount: 10,
   },
 ];
@@ -1268,6 +1362,27 @@ const EVENT_GROUPS = [
       "Outdoor setup in Lahore",
     ],
   },
+  {
+    name: "Rainbow Balloon Floor Installation",
+    description:
+      "Full-hall rainbow balloon floor scatter with long garland pathways and colour-block clusters — bold celebration styling for schools, openings and large indoor venues in Lahore.",
+    price: 30000,
+    discount: 10,
+    files: [
+      "rainbow-balloon-floor-installation-1.png",
+      "rainbow-balloon-floor-installation-2.png",
+    ],
+    videos: [
+      "/videos/events/rainbow-balloon-floor-installation-1.mp4",
+      "/videos/events/rainbow-balloon-floor-installation-2.mp4",
+    ],
+    includedItems: [
+      "Rainbow latex balloon floor styling",
+      "Long balloon garland pathways",
+      "Colour-block balloon clusters",
+      "Setup in Lahore",
+    ],
+  },
 ];
 
 function run(cmd) {
@@ -1446,6 +1561,7 @@ function main() {
       imageAlt: `${group.name} by Phool Pattiyan Lahore`,
       pricePrefix: "Starting from",
       includedItems: group.includedItems,
+      ...(group.videos?.length ? { videos: group.videos } : {}),
       featured: true,
       available: true,
       ...pricing,
