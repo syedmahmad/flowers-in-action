@@ -885,6 +885,62 @@ const BOUQUET_CURATED = [
     price: 3500,
     discount: 10,
   },
+  {
+    src: "peach-teddy-pink-rose-gift-basket.png",
+    name: "Peach Teddy Pink Rose Gift Basket",
+    description:
+      "Peach and pink teddy bears with blush roses, fabric blooms, pink wrapped treats and white feather accents in a gold ribbon gift basket — sweet, premium and gift-ready.",
+    price: 7000,
+    discount: 10,
+  },
+  {
+    src: "red-heart-anniversary-hot-air-balloon-gift-box.png",
+    name: "Red Heart Anniversary Hot Air Balloon Box",
+    description:
+      "Red and white roses in a black gift box with red ribbon, topped with a clear balloon and red heart foil — a romantic hot-air-balloon gift for anniversaries and loved ones.",
+    price: 4000,
+    discount: 10,
+  },
+  {
+    src: "sunflower-rose-chrysanthemum-cream-wrap-bouquet.png",
+    name: "Sunflower Rose Chrysanthemum Cream Wrap Bouquet",
+    description:
+      "Sunflowers with pink roses, white and purple chrysanthemums in textured cream wrap and white satin ribbon — bright, colourful and gift-ready.",
+    price: 6000,
+    discount: 10,
+  },
+  {
+    src: "pink-white-chrysanthemum-lace-wrap-bouquet.png",
+    name: "Pink White Chrysanthemum Lace Wrap Bouquet",
+    description:
+      "Pink and white chrysanthemums with baby's breath in blush-pink lace-trim wrap and satin ribbon — soft, lush and gift-ready.",
+    price: 6000,
+    discount: 10,
+  },
+  {
+    src: "blue-white-chrysanthemum-sky-blue-wrap-bouquet.png",
+    name: "Blue White Chrysanthemum Sky Blue Wrap Bouquet",
+    description:
+      "Blue and white chrysanthemums with baby's breath in sky-blue scalloped wrap and matching ribbon — fresh, cheerful and gift-ready.",
+    price: 6000,
+    discount: 10,
+  },
+  {
+    src: "doraemon-white-rose-gift-basket.png",
+    name: "Doraemon White Rose Gift Basket",
+    description:
+      "Doraemon plush with white roses, Love teddy accents, black-wrapped treats and feather styling in a floral ribbon gift box — playful, premium and gift-ready.",
+    price: 6000,
+    discount: 10,
+  },
+  {
+    src: "green-rose-teddy-treat-gift-box.png",
+    name: "Green Rose Teddy Treat Gift Box",
+    description:
+      "Green roses with a white teddy bear and mint-wrapped treat bars in a green velvet lace-trim gift box — fresh, elegant and gift-ready.",
+    price: 5000,
+    discount: 10,
+  },
 ];
 
 /** Source files that are baskets, boxes, balloons or hampers — never publish */
