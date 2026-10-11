@@ -488,7 +488,7 @@ const BOUQUET_CURATED = [
     name: "Ebony Crimson Chrysanthemum Bouquet",
     description:
       "Red roses with white chrysanthemums in black scalloped wrap and black ribbon — striking, modern and gift-ready.",
-    price: 2400,
+    price: 2700,
     discount: 10,
   },
   {

@@ -5,13 +5,24 @@ import type { EventPackage } from "@/types/catalog";
 import type { Product } from "@/types/product";
 import { getLegacySellingPrice } from "@/lib/pricing";
 
+function absoluteAssetUrl(path: string): string {
+  if (path.startsWith("http://") || path.startsWith("https://")) return path;
+  const base = siteConfig.url.replace(/\/$/, "");
+  return `${base}${path.startsWith("/") ? path : `/${path}`}`;
+}
+
 export function buildBouquetOrderMessage(bouquet: Bouquet): string {
   const price = getSellingPrice(bouquet);
   const url = `${siteConfig.url}/?bouquet=${bouquet.slug}#bouquets`;
+  const photo = absoluteAssetUrl(bouquet.image);
 
-  return `Hi ${siteConfig.name}, I'd like to order "${bouquet.name}" for PKR ${formatPrice(price)}.
+  return `Hi ${siteConfig.name}, I'd like to order:
 
-Reference: ${url}
+Item: ${bouquet.name}
+Price: PKR ${formatPrice(price)}
+Photo: ${photo}
+
+Page: ${url}
 
 Please confirm availability and delivery.`;
 }
@@ -23,10 +34,14 @@ export function buildBouquetWhatsAppUrl(bouquet: Bouquet): string {
 export function buildEventBookingMessage(event: EventPackage): string {
   const prefix = event.pricePrefix ? `${event.pricePrefix} ` : "";
   const url = `${siteConfig.url}/?event=${event.slug}#events`;
+  const photo = event.images[0] ? absoluteAssetUrl(event.images[0]) : "";
 
-  return `Hi ${siteConfig.name}, I'm interested in the ${event.name} package shown on your website (${prefix}PKR ${formatPrice(event.price)}).
+  return `Hi ${siteConfig.name}, I'm interested in:
 
-Reference: ${url}
+Item: ${event.name}
+Price: ${prefix}PKR ${formatPrice(event.price)}${photo ? `\nPhoto: ${photo}` : ""}
+
+Page: ${url}
 
 Please share availability and customisation options.`;
 }
