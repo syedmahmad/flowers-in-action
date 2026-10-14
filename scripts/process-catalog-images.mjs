@@ -941,6 +941,42 @@ const BOUQUET_CURATED = [
     price: 5000,
     discount: 10,
   },
+  {
+    src: "cream-rose-blue-bloom-white-fan-wrap-bouquet.png",
+    name: "Cream Rose Blue Bloom White Fan Wrap Bouquet",
+    description:
+      "Cream roses with vivid blue accent blooms and baby's breath in white pleated fan wrap and satin ribbon — soft, elegant and gift-ready.",
+    price: 4000,
+    discount: 10,
+  },
+  {
+    src: "white-blue-tint-chrysanthemum-blue-trim-wrap-bouquet.png",
+    name: "White Blue Tint Chrysanthemum Blue Trim Wrap Bouquet",
+    description:
+      "White chrysanthemums with soft blue-tinted blooms in layered white wrap with sky-blue trim and matching satin ribbon — fresh, elegant and gift-ready.",
+    price: 5000,
+    discount: 10,
+  },
+  {
+    src: "red-rose-babys-breath-black-wrap-bouquet.png",
+    name: "Red Rose Baby's Breath Black Wrap Bouquet",
+    description:
+      "Deep red roses with baby's breath and greenery in layered black fan wrap and white satin ribbon — classic, romantic and gift-ready.",
+    price: 3500,
+    discount: 10,
+  },
+  {
+    src: "red-teddy-wifey-balloon-gift-bouquet.png",
+    name: "Red Teddy Wifey Balloon Gift Bouquet",
+    description:
+      "Deep red blooms with plush teddy bears, I Love Wifey sign, star and message balloons in black scalloped wrap and burgundy satin ribbon — romantic, premium and gift-ready.",
+    price: 10000,
+    discount: 10,
+    videos: [
+      "/videos/bouquets/red-teddy-wifey-balloon-gift-bouquet-1.mp4",
+      "/videos/bouquets/red-teddy-wifey-balloon-gift-bouquet-2.mp4",
+    ],
+  },
 ];
 
 /** Source files that are baskets, boxes, balloons or hampers — never publish */

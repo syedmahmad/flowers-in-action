@@ -36,6 +36,9 @@ yarn-error.log*
 # vercel
 .vercel
 
+# local hisab ledger (dev fallback when Blob is not configured)
+.data/
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts

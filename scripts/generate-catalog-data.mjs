@@ -22,7 +22,10 @@ function serializeBouquets(bouquets) {
     if (b.gallery?.length) {
       lines.push(`    gallery: [${b.gallery.map((g) => `"${g}"`).join(", ")}],`);
     }
-    if (b.video) {
+    if (b.videos?.length) {
+      const vids = b.videos.map((v) => `"${v}"`).join(", ");
+      lines.push(`    videos: [${vids}],`);
+    } else if (b.video) {
       lines.push(`    video: "${b.video}",`);
     }
     lines.push(`    price: ${b.price},`);

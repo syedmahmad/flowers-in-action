@@ -9,6 +9,7 @@ export interface Bouquet {
   imageAlt: string;
   gallery?: string[];
   video?: string;
+  videos?: string[];
   price: number;
   originalPrice?: number;
   discountPercentage?: number;
