@@ -116,6 +116,20 @@ export const bouquets: Bouquet[] = [
   },
   {
     id: "bq-009",
+    slug: "red-black-white-ceiling-balloon-cluster",
+    name: "Red Black White Ceiling Balloon Cluster",
+    description: "Red heart foil balloons with black and white latex balloons gathered at the ceiling with ribbon tails — bold, modern party styling for birthdays and celebrations.",
+    image: "/images/bouquets/web/red-black-white-ceiling-balloon-cluster.jpg",
+    imageAlt: "Red Black White Ceiling Balloon Cluster fresh flower bouquet by Phool Pattiyan Lahore",
+    price: 2500,
+    originalPrice: 2778,
+    discountPercentage: 10,
+    flowerOrigin: "local",
+    featured: true,
+    available: true,
+  },
+  {
+    id: "bq-010",
     slug: "red-rose-tuberose-honeycomb-wrap",
     name: "Red Rose Tuberose Honeycomb Wrap",
     description: "Deep red roses with white tuberoses and baby's breath in white honeycomb wrap and burgundy satin ribbon — classic, romantic and gift-ready.",
@@ -129,7 +143,7 @@ export const bouquets: Bouquet[] = [
     available: true,
   },
   {
-    id: "bq-010",
+    id: "bq-011",
     slug: "ebony-crimson-chrysanthemum-bouquet",
     name: "Ebony Crimson Chrysanthemum Bouquet",
     description: "Red roses with white chrysanthemums in black scalloped wrap and black ribbon — striking, modern and gift-ready.",
@@ -143,7 +157,7 @@ export const bouquets: Bouquet[] = [
     available: true,
   },
   {
-    id: "bq-011",
+    id: "bq-012",
     slug: "magenta-chrysanthemum-periwinkle-wrap",
     name: "Magenta Chrysanthemum Periwinkle Wrap",
     description: "Magenta and white chrysanthemums with tuberoses and baby's breath in periwinkle scalloped wrap with white tulle and satin ribbon — lush, colourful and gift-ready.",
@@ -157,7 +171,7 @@ export const bouquets: Bouquet[] = [
     available: true,
   },
   {
-    id: "bq-012",
+    id: "bq-013",
     slug: "pink-wrap-money-rose-bouquet",
     name: "Pink Wrap Money Rose Bouquet",
     description: "Currency notes fan-arranged with white roses in blush-pink scalloped wrap and satin ribbon — PKR 2,800 arrangement fee; banknotes are supplied separately by the customer.",
@@ -172,7 +186,7 @@ export const bouquets: Bouquet[] = [
     available: true,
   },
   {
-    id: "bq-013",
+    id: "bq-014",
     slug: "sunflower-garden-mix-bouquet",
     name: "Sunflower Garden Mix Bouquet",
     description: "Bright sunflower with red roses, white chrysanthemums and pink accent blooms in scalloped pink wrap and satin ribbon — cheerful, colourful and gift-ready.",
@@ -186,7 +200,7 @@ export const bouquets: Bouquet[] = [
     available: true,
   },
   {
-    id: "bq-014",
+    id: "bq-015",
     slug: "twin-sunflower-black-ribbon-bouquet",
     name: "Twin Sunflower Black Ribbon Bouquet",
     description: "Twin sunflowers with baby's breath and greenery in layered brown kraft wrap and black satin ribbon — bold, cheerful and gift-ready.",
@@ -200,7 +214,7 @@ export const bouquets: Bouquet[] = [
     available: true,
   },
   {
-    id: "bq-015",
+    id: "bq-016",
     slug: "crimson-ivory-black-fan-bouquet",
     name: "Crimson Ivory Black Fan Bouquet",
     description: "Deep red roses with white chrysanthemums and baby's breath in layered black fan wrap and white satin ribbon — dramatic, romantic and gift-ready.",
@@ -214,7 +228,7 @@ export const bouquets: Bouquet[] = [
     available: true,
   },
   {
-    id: "bq-016",
+    id: "bq-017",
     slug: "crimson-sky-balloon-bouquet",
     name: "Crimson Sky Balloon Bouquet",
     description: "White carnations with red mini balloons in a clear bubble top and black ribbon gift bag — a whimsical hot-air-balloon style arrangement.",
@@ -228,7 +242,7 @@ export const bouquets: Bouquet[] = [
     available: true,
   },
   {
-    id: "bq-017",
+    id: "bq-018",
     slug: "doraemon-sky-balloon-gift-box",
     name: "Doraemon Sky Balloon Gift Box",
     description: "Doraemon plush with navy rose bouquet and clear balloon top filled with blue mini balloons — a playful hot-air-balloon style gift box.",
@@ -242,7 +256,7 @@ export const bouquets: Bouquet[] = [
     available: true,
   },
   {
-    id: "bq-018",
+    id: "bq-019",
     slug: "sunflower-purple-white-honeycomb-bouquet",
     name: "Sunflower Purple White Honeycomb Bouquet",
     description: "Twin sunflowers with purple and white chrysanthemums, tuberoses and baby's breath in white honeycomb wrap and black satin ribbon — bold, colourful and gift-ready.",
@@ -256,7 +270,7 @@ export const bouquets: Bouquet[] = [
     available: true,
   },
   {
-    id: "bq-019",
+    id: "bq-020",
     slug: "white-hot-air-balloon-gift-box",
     name: "White Hot Air Balloon Gift Box",
     description: "Red and white roses with mixed blooms in a white gift box, topped with a clear balloon filled with white mini balloons — elegant hot-air-balloon styling.",
@@ -270,7 +284,7 @@ export const bouquets: Bouquet[] = [
     available: true,
   },
   {
-    id: "bq-020",
+    id: "bq-021",
     slug: "peach-talking-cat",
     name: "Peach Talking Cat",
     description: "Soft peach plush talking cat with red ribbon — press to hear cute miaowo sounds. Batteries (cells) included.",
@@ -284,7 +298,7 @@ export const bouquets: Bouquet[] = [
     available: true,
   },
   {
-    id: "bq-021",
+    id: "bq-022",
     slug: "pink-talking-cat",
     name: "Pink Talking Cat",
     description: "Fluffy pink plush talking cat with Love ribbon — press to hear cute miaowo sounds. Batteries (cells) included.",
@@ -298,7 +312,7 @@ export const bouquets: Bouquet[] = [
     available: true,
   },
   {
-    id: "bq-022",
+    id: "bq-023",
     slug: "white-red-hot-air-balloon-gift-box",
     name: "White Red Hot Air Balloon Gift Box",
     description: "Red and white roses with mixed blooms in a white gift box, topped with a clear balloon filled with white mini balloons — elegant hot-air-balloon styling.",
@@ -312,7 +326,7 @@ export const bouquets: Bouquet[] = [
     available: true,
   },
   {
-    id: "bq-023",
+    id: "bq-024",
     slug: "baby-boy-hot-air-balloon-gift-box",
     name: "Baby Boy Hot Air Balloon Gift Box",
     description: "Blue and cream roses in a lavender gift box with blue ribbon, topped with a clear balloon filled with blue mini balloons — perfect baby boy welcome gift.",
@@ -326,7 +340,7 @@ export const bouquets: Bouquet[] = [
     available: true,
   },
   {
-    id: "bq-024",
+    id: "bq-025",
     slug: "blush-peach-satin-bouquet",
     name: "Blush Peach Satin Bouquet",
     description: "Pink and cream roses with white chrysanthemums in peach fan wrap and blush satin ribbon — soft, romantic and effortlessly elegant.",
@@ -340,7 +354,7 @@ export const bouquets: Bouquet[] = [
     available: true,
   },
   {
-    id: "bq-025",
+    id: "bq-026",
     slug: "boy-hbd",
     name: "Boy HBD",
     description: "Blue and lavender roses in a white gift box with blue ribbon, topped with a clear balloon and light-blue Happy Birthday star foil — festive hot-air-balloon styling for boys.",
@@ -354,7 +368,7 @@ export const bouquets: Bouquet[] = [
     available: true,
   },
   {
-    id: "bq-026",
+    id: "bq-027",
     slug: "five-sunflower-black-wrap-bouquet",
     name: "Five Sunflower Black Wrap Bouquet",
     description: "Five bright sunflowers with baby's breath and greenery in textured black wrap and white satin ribbon — bold, cheerful and gift-ready.",
@@ -368,7 +382,7 @@ export const bouquets: Bouquet[] = [
     available: true,
   },
   {
-    id: "bq-027",
+    id: "bq-028",
     slug: "five-sunflower-glass-vase-bouquet",
     name: "Five Sunflower Glass Vase Bouquet",
     description: "Five bright sunflowers with baby's breath in a clear glass vase, wrapped in burgundy fabric with black and white accents and white satin ribbon — bold, cheerful and gift-ready.",
@@ -382,7 +396,7 @@ export const bouquets: Bouquet[] = [
     available: true,
   },
   {
-    id: "bq-028",
+    id: "bq-029",
     slug: "girl-hbd",
     name: "Girl HBD",
     description: "Pink and cream roses in a blush-pink gift box with pink ribbon, topped with a clear balloon and rose-gold Happy Birthday star foil — festive hot-air-balloon styling for girls.",
@@ -396,7 +410,7 @@ export const bouquets: Bouquet[] = [
     available: true,
   },
   {
-    id: "bq-029",
+    id: "bq-030",
     slug: "ivory-red-black-fan-artificial-bouquet",
     name: "Ivory Red Black Fan Artificial Bouquet",
     description: "Artificial ivory roses with a red bloom centre in black fan wrap and white satin ribbon — lasting, dramatic and one of our best gift-ready artificial bouquets.",
@@ -411,7 +425,7 @@ export const bouquets: Bouquet[] = [
     available: true,
   },
   {
-    id: "bq-030",
+    id: "bq-031",
     slug: "look-heart-teddy",
     name: "Look Heart Teddy",
     description: "Creamy white plush teddy with red hat and Look heart pillow — a sweet gift-ready keepsake.",
@@ -425,7 +439,7 @@ export const bouquets: Bouquet[] = [
     available: true,
   },
   {
-    id: "bq-031",
+    id: "bq-032",
     slug: "pink-birthday-hot-air-balloon-gift-box",
     name: "Pink Birthday Hot Air Balloon Gift Box",
     description: "Pink and white roses in a pink ribbon gift box with a clear balloon top and rose-gold Happy Birthday star foil — festive hot-air-balloon styling.",
@@ -439,7 +453,7 @@ export const bouquets: Bouquet[] = [
     available: true,
   },
   {
-    id: "bq-032",
+    id: "bq-033",
     slug: "red-rose-baby-s-breath-black-wrap-bouquet",
     name: "Red Rose Baby's Breath Black Wrap Bouquet",
     description: "Deep red roses with baby's breath and greenery in layered black fan wrap and white satin ribbon — classic, romantic and gift-ready.",
@@ -453,7 +467,7 @@ export const bouquets: Bouquet[] = [
     available: true,
   },
   {
-    id: "bq-033",
+    id: "bq-034",
     slug: "sunflower-baby-s-breath-bouquet",
     name: "Sunflower Baby's Breath Bouquet",
     description: "Bright sunflowers with baby's breath and greenery in kraft paper wrap and satin ribbon — warm, cheerful and gift-ready.",
@@ -467,7 +481,7 @@ export const bouquets: Bouquet[] = [
     available: true,
   },
   {
-    id: "bq-034",
+    id: "bq-035",
     slug: "sunflower-grey-wrap-glass-vase-bouquet",
     name: "Sunflower Grey Wrap Glass Vase Bouquet",
     description: "Bright sunflowers with baby's breath in charcoal-grey striped wrap and black satin ribbon, presented in a clear glass vase — bold, cheerful and gift-ready.",
@@ -481,7 +495,7 @@ export const bouquets: Bouquet[] = [
     available: true,
   },
   {
-    id: "bq-035",
+    id: "bq-036",
     slug: "white-birthday-hot-air-balloon-gift-box",
     name: "White Birthday Hot Air Balloon Gift Box",
     description: "Pink and cream roses in a white gift box with white ribbon, topped with a clear balloon and rose-gold Happy Birthday star foil — festive hot-air-balloon styling.",
@@ -495,7 +509,7 @@ export const bouquets: Bouquet[] = [
     available: true,
   },
   {
-    id: "bq-036",
+    id: "bq-037",
     slug: "baby-boy-balloon-bouquet",
     name: "Baby Boy Balloon Bouquet",
     description: "It's A Boy themed foil balloon bouquet with baby bottle and star balloons in gold marble wrap and blue ribbon — perfect for baby showers and welcome home gifts.",
@@ -509,7 +523,7 @@ export const bouquets: Bouquet[] = [
     available: true,
   },
   {
-    id: "bq-037",
+    id: "bq-038",
     slug: "cream-rose-blue-bloom-white-fan-wrap-bouquet",
     name: "Cream Rose Blue Bloom White Fan Wrap Bouquet",
     description: "Cream roses with vivid blue accent blooms and baby's breath in white pleated fan wrap and satin ribbon — soft, elegant and gift-ready.",
@@ -523,7 +537,7 @@ export const bouquets: Bouquet[] = [
     available: true,
   },
   {
-    id: "bq-038",
+    id: "bq-039",
     slug: "lavender-sunflower-mixed-bouquet",
     name: "Lavender Sunflower Mixed Bouquet",
     description: "White and purple chrysanthemums with sunflowers, tuberoses and baby's breath in lavender scalloped wrap and satin ribbon — lush, fragrant and beautifully layered.",
@@ -537,7 +551,7 @@ export const bouquets: Bouquet[] = [
     available: true,
   },
   {
-    id: "bq-039",
+    id: "bq-040",
     slug: "luxury-red-rose-tuberose",
     name: "Luxury Red Rose Tuberose",
     description: "Lush deep red roses with white tuberoses in textured gold wrap and satin ribbon — a generous romantic statement.",
@@ -551,7 +565,7 @@ export const bouquets: Bouquet[] = [
     available: true,
   },
   {
-    id: "bq-040",
+    id: "bq-041",
     slug: "red-cream-spray-rose-white-wrap",
     name: "Red Cream Spray Rose White Wrap",
     description: "Deep red and cream spray roses with baby's breath in white scalloped lace wrap and red satin ribbon — romantic, elegant and gift-ready.",
@@ -565,7 +579,7 @@ export const bouquets: Bouquet[] = [
     available: true,
   },
   {
-    id: "bq-041",
+    id: "bq-042",
     slug: "red-heart-anniversary-hot-air-balloon-box",
     name: "Red Heart Anniversary Hot Air Balloon Box",
     description: "Red and white roses in a black gift box with red ribbon, topped with a clear balloon and red heart foil — a romantic hot-air-balloon gift for anniversaries and loved ones.",
@@ -579,7 +593,7 @@ export const bouquets: Bouquet[] = [
     available: true,
   },
   {
-    id: "bq-042",
+    id: "bq-043",
     slug: "sunflower-rose-gladiolus-mint-wrap",
     name: "Sunflower Rose Gladiolus Mint Wrap",
     description: "Twin sunflowers with red roses, white gladiolus and chrysanthemums in mint-green scalloped wrap and white satin ribbon — bold, fresh and gift-ready.",
@@ -593,7 +607,7 @@ export const bouquets: Bouquet[] = [
     available: true,
   },
   {
-    id: "bq-043",
+    id: "bq-044",
     slug: "white-imported-rose-chrysanthemum-bouquet",
     name: "White Imported Rose Chrysanthemum Bouquet",
     description: "White imported roses and chrysanthemums with a single red rose accent in frosted rose-gold wrap and black ribbon — elegant and striking.",
@@ -607,7 +621,7 @@ export const bouquets: Bouquet[] = [
     available: true,
   },
   {
-    id: "bq-044",
+    id: "bq-045",
     slug: "white-rose-pink-chrysanthemum-scallop-bouquet",
     name: "White Rose Pink Chrysanthemum Scallop Bouquet",
     description: "White roses with pink chrysanthemums in white scalloped wrap and blush satin ribbon — soft, elegant and gift-ready.",
@@ -622,7 +636,7 @@ export const bouquets: Bouquet[] = [
     available: true,
   },
   {
-    id: "bq-045",
+    id: "bq-046",
     slug: "imported-rose-white-chrysanthemum-bouquet",
     name: "Imported Rose White Chrysanthemum Bouquet",
     description: "Premium imported red rose with white chrysanthemums and baby's breath in gold-marble wrap and black ribbon — elegant and romantic.",
@@ -636,7 +650,21 @@ export const bouquets: Bouquet[] = [
     available: true,
   },
   {
-    id: "bq-046",
+    id: "bq-047",
+    slug: "peach-rose-white-chrysanthemum-gold-scallop-bouquet",
+    name: "Peach Rose White Chrysanthemum Gold Scallop Bouquet",
+    description: "Peach roses with white chrysanthemums in peach scalloped wrap with gold trim and blush satin ribbon — soft, elegant and gift-ready.",
+    image: "/images/bouquets/web/peach-rose-white-chrysanthemum-gold-scallop-bouquet.jpg",
+    imageAlt: "Peach Rose White Chrysanthemum Gold Scallop Bouquet fresh flower bouquet by Phool Pattiyan Lahore",
+    price: 4500,
+    originalPrice: 5000,
+    discountPercentage: 10,
+    flowerOrigin: "local",
+    featured: true,
+    available: true,
+  },
+  {
+    id: "bq-048",
     slug: "pink-rose-scallop-wrap-bouquet",
     name: "Pink Rose Scallop Wrap Bouquet",
     description: "Pink roses with white chrysanthemums and baby's breath in pink scalloped wrap and satin ribbon — soft, elegant and gift-ready.",
@@ -650,7 +678,21 @@ export const bouquets: Bouquet[] = [
     available: true,
   },
   {
-    id: "bq-047",
+    id: "bq-049",
+    slug: "pink-rose-white-chrysanthemum-baby-s-breath-gold-wrap-bouquet",
+    name: "Pink Rose White Chrysanthemum Baby's Breath Gold Wrap Bouquet",
+    description: "Blush pink roses with white chrysanthemums and baby's breath in pale pink scalloped wrap with gold trim and satin ribbon — airy, soft and gift-ready.",
+    image: "/images/bouquets/web/pink-rose-white-chrysanthemum-baby-s-breath-gold-wrap-bouquet.jpg",
+    imageAlt: "Pink Rose White Chrysanthemum Baby's Breath Gold Wrap Bouquet fresh flower bouquet by Phool Pattiyan Lahore",
+    price: 4500,
+    originalPrice: 5000,
+    discountPercentage: 10,
+    flowerOrigin: "local",
+    featured: true,
+    available: true,
+  },
+  {
+    id: "bq-050",
     slug: "red-rose-white-gladiolus-lavender-wrap",
     name: "Red Rose White Gladiolus Lavender Wrap",
     description: "Deep red roses with white gladiolus and purple accent blooms in lavender scalloped wrap and satin ribbon — lush, dramatic and gift-ready.",
@@ -664,7 +706,7 @@ export const bouquets: Bouquet[] = [
     available: true,
   },
   {
-    id: "bq-048",
+    id: "bq-051",
     slug: "red-white-rose-bouquet",
     name: "Red White Rose Bouquet",
     description: "Deep red and cream roses with tuberose accents in white rose-gold wrap and black ribbon — lush and elegant.",
@@ -678,7 +720,7 @@ export const bouquets: Bouquet[] = [
     available: true,
   },
   {
-    id: "bq-049",
+    id: "bq-052",
     slug: "ruby-radiance-artificial-bouquet",
     name: "Ruby Radiance Artificial Bouquet",
     description: "Vibrant artificial red carnations with white filler in frosted wrap and rose-gold trim — bold, lasting and gift-ready.",
@@ -692,7 +734,7 @@ export const bouquets: Bouquet[] = [
     available: true,
   },
   {
-    id: "bq-050",
+    id: "bq-053",
     slug: "white-chrysanthemum-purple-aster-blue-wrap",
     name: "White Chrysanthemum Purple Aster Blue Wrap",
     description: "White chrysanthemums with purple asters in baby-blue scalloped wrap and satin ribbon — fresh, elegant and gift-ready.",
@@ -706,7 +748,7 @@ export const bouquets: Bouquet[] = [
     available: true,
   },
   {
-    id: "bq-051",
+    id: "bq-054",
     slug: "sunshine-marble-artificial-bouquet",
     name: "Sunshine Marble Artificial Bouquet",
     description: "Artificial sunflowers and blush carnations in layered black, newsprint and gold-marble wrap — bold, modern and lasting.",
@@ -720,7 +762,7 @@ export const bouquets: Bouquet[] = [
     available: true,
   },
   {
-    id: "bq-052",
+    id: "bq-055",
     slug: "burgundy-solo-rose-bouquet",
     name: "Burgundy Solo Rose Bouquet",
     description: "Single red rose with white chrysanthemums and baby's breath in burgundy fan wrap and white ribbon — classic and refined.",
@@ -734,7 +776,7 @@ export const bouquets: Bouquet[] = [
     available: true,
   },
   {
-    id: "bq-053",
+    id: "bq-056",
     slug: "burgundy-tulle-rose-bouquet",
     name: "Burgundy Tulle Rose Bouquet",
     description: "Red roses with white chrysanthemums and tuberoses in burgundy wrap with white tulle and red ribbon — lush, romantic and gift-ready.",
@@ -748,7 +790,7 @@ export const bouquets: Bouquet[] = [
     available: true,
   },
   {
-    id: "bq-054",
+    id: "bq-057",
     slug: "green-rose-teddy-treat-gift-box",
     name: "Green Rose Teddy Treat Gift Box",
     description: "Green roses with a white teddy bear and mint-wrapped treat bars in a green velvet lace-trim gift box — fresh, elegant and gift-ready.",
@@ -762,7 +804,7 @@ export const bouquets: Bouquet[] = [
     available: true,
   },
   {
-    id: "bq-055",
+    id: "bq-058",
     slug: "pink-chocolate-treat-bouquet",
     name: "Pink Chocolate Treat Bouquet",
     description: "Fresh pink roses and white blooms with your choice of chocolates (KitKat, Snickers, Dairy Milk, Bounty or similar) in blush pink wrap — chocolates are personalised to your preference, or you may provide your own.",
@@ -776,7 +818,7 @@ export const bouquets: Bouquet[] = [
     available: true,
   },
   {
-    id: "bq-056",
+    id: "bq-059",
     slug: "pink-chrysanthemum-scallop-wrap-bouquet",
     name: "Pink Chrysanthemum Scallop Wrap Bouquet",
     description: "Soft pink chrysanthemums with baby's breath in hot-pink scalloped wrap and satin ribbon — lush, feminine and gift-ready.",
@@ -790,7 +832,7 @@ export const bouquets: Bouquet[] = [
     available: true,
   },
   {
-    id: "bq-057",
+    id: "bq-060",
     slug: "pink-rose-chrysanthemum-scallop-wrap",
     name: "Pink Rose Chrysanthemum Scallop Wrap",
     description: "Pink roses and chrysanthemums with baby's breath in blush-pink scalloped wrap and satin ribbon — lush, romantic and gift-ready.",
@@ -804,7 +846,7 @@ export const bouquets: Bouquet[] = [
     available: true,
   },
   {
-    id: "bq-058",
+    id: "bq-061",
     slug: "pink-rose-sky-blue-wrap-bouquet",
     name: "Pink Rose Sky Blue Wrap Bouquet",
     description: "Pink and white roses with chrysanthemums and baby's breath in sky-blue scalloped wrap and satin ribbon — soft, romantic and gift-ready.",
@@ -819,7 +861,7 @@ export const bouquets: Bouquet[] = [
     available: true,
   },
   {
-    id: "bq-059",
+    id: "bq-062",
     slug: "purple-chrysanthemum-pink-wrap-bouquet",
     name: "Purple Chrysanthemum Pink Wrap Bouquet",
     description: "Deep purple chrysanthemums with baby's breath in blush-pink scalloped wrap and lavender satin ribbon — lush, feminine and gift-ready.",
@@ -834,7 +876,7 @@ export const bouquets: Bouquet[] = [
     available: true,
   },
   {
-    id: "bq-060",
+    id: "bq-063",
     slug: "red-rose-black-box-bouquet",
     name: "Red Rose Black Box Bouquet",
     description: "Lush deep red roses in a matte black square gift box with red satin ribbon — dramatic, romantic and presentation-ready.",
@@ -848,7 +890,7 @@ export const bouquets: Bouquet[] = [
     available: true,
   },
   {
-    id: "bq-061",
+    id: "bq-064",
     slug: "red-rose-peach-scallop-wrap-bouquet",
     name: "Red Rose Peach Scallop Wrap Bouquet",
     description: "Deep red roses with white gerberas, chrysanthemums and baby's breath in peach scalloped wrap and white satin ribbon — warm, fresh and gift-ready.",
@@ -862,7 +904,7 @@ export const bouquets: Bouquet[] = [
     available: true,
   },
   {
-    id: "bq-062",
+    id: "bq-065",
     slug: "sky-blue-blush-chrysanthemum-bouquet",
     name: "Sky Blue Blush Chrysanthemum Bouquet",
     description: "Pink and white chrysanthemums with cream roses in sky-blue wrap and matching ribbon — fresh, colourful and gift-ready.",
@@ -876,7 +918,7 @@ export const bouquets: Bouquet[] = [
     available: true,
   },
   {
-    id: "bq-063",
+    id: "bq-066",
     slug: "sky-blue-daisy-meadow-bouquet",
     name: "Sky Blue Daisy Meadow Bouquet",
     description: "White daisies and pink chrysanthemums with baby's breath in sky-blue scalloped wrap — bright, cheerful and perfect for any occasion.",
@@ -890,7 +932,7 @@ export const bouquets: Bouquet[] = [
     available: true,
   },
   {
-    id: "bq-064",
+    id: "bq-067",
     slug: "special-bridal-gajray-set",
     name: "Special Bridal Gajray Set",
     description: "Pair of lush bridal gajray with imported pink roses, white chrysanthemums and baby's breath — elegant for mehndi and shadi functions.",
@@ -904,7 +946,7 @@ export const bouquets: Bouquet[] = [
     available: true,
   },
   {
-    id: "bq-065",
+    id: "bq-068",
     slug: "white-blue-tint-chrysanthemum-blue-trim-wrap-bouquet",
     name: "White Blue Tint Chrysanthemum Blue Trim Wrap Bouquet",
     description: "White chrysanthemums with soft blue-tinted blooms in layered white wrap with sky-blue trim and matching satin ribbon — fresh, elegant and gift-ready.",
@@ -918,7 +960,7 @@ export const bouquets: Bouquet[] = [
     available: true,
   },
   {
-    id: "bq-066",
+    id: "bq-069",
     slug: "white-chrysanthemum-mini-aster-bouquet",
     name: "White Chrysanthemum Mini Aster Bouquet",
     description: "White chrysanthemums with purple mini asters and tuberose buds in aqua scalloped wrap and satin ribbon — fresh, elegant and gift-ready.",
@@ -932,7 +974,7 @@ export const bouquets: Bouquet[] = [
     available: true,
   },
   {
-    id: "bq-067",
+    id: "bq-070",
     slug: "white-rose-magenta-chrysanthemum-pink-scallop-bouquet",
     name: "White Rose Magenta Chrysanthemum Pink Scallop Bouquet",
     description: "White roses with magenta chrysanthemums and purple accent blooms in blush-pink scalloped wrap and satin ribbon — soft, lush and gift-ready.",
@@ -946,7 +988,7 @@ export const bouquets: Bouquet[] = [
     available: true,
   },
   {
-    id: "bq-068",
+    id: "bq-071",
     slug: "crimson-love-teddy-basket",
     name: "Crimson Love Teddy Basket",
     description: "Red Love teddy with white and red carnations, white lily, berries and a wrapped treat in a round basket with red satin ribbon.",
@@ -960,7 +1002,7 @@ export const bouquets: Bouquet[] = [
     available: true,
   },
   {
-    id: "bq-069",
+    id: "bq-072",
     slug: "indigo-daisy-bouquet",
     name: "Indigo Daisy Bouquet",
     description: "White chrysanthemums with baby's breath in indigo scalloped wrap — crisp, fresh and beautifully structured.",
@@ -974,7 +1016,7 @@ export const bouquets: Bouquet[] = [
     available: true,
   },
   {
-    id: "bq-070",
+    id: "bq-073",
     slug: "blush-mesh-romance-bouquet",
     name: "Blush Mesh Romance Bouquet",
     description: "Pink and white roses with chrysanthemums and baby's breath in mesh and layered pink-lavender wrap — soft and romantic.",
@@ -988,7 +1030,7 @@ export const bouquets: Bouquet[] = [
     available: true,
   },
   {
-    id: "bq-071",
+    id: "bq-074",
     slug: "blush-tulle-teddy-celebration-basket",
     name: "Blush Tulle Teddy Celebration Basket",
     description: "Pink teddy with blush-tipped roses and pink tulle-wrapped balloons in a gold woven rectangular basket — sweet and festive.",
@@ -1002,7 +1044,7 @@ export const bouquets: Bouquet[] = [
     available: true,
   },
   {
-    id: "bq-072",
+    id: "bq-075",
     slug: "amethyst-stripe-chrysanthemum-bouquet",
     name: "Amethyst Stripe Chrysanthemum Bouquet",
     description: "Deep purple chrysanthemums with baby's breath in white-striped wrap and pink satin ribbon — elegant and eye-catching.",
@@ -1016,7 +1058,7 @@ export const bouquets: Bouquet[] = [
     available: true,
   },
   {
-    id: "bq-073",
+    id: "bq-076",
     slug: "hello-kitty-lavender-treat-basket",
     name: "Hello Kitty Lavender Treat Basket",
     description: "Hello Kitty plush with cream roses, purple paper fans and lavender-wrapped treat bars in a purple ribbon gift box.",
@@ -1030,7 +1072,7 @@ export const bouquets: Bouquet[] = [
     available: true,
   },
   {
-    id: "bq-074",
+    id: "bq-077",
     slug: "ivory-tuberose-chrysanthemum-bouquet",
     name: "Ivory Tuberose Chrysanthemum Bouquet",
     description: "White chrysanthemums and tuberoses with baby's breath in scalloped white wrap and burgundy satin ribbon — classic, fresh and elegant.",
@@ -1044,7 +1086,7 @@ export const bouquets: Bouquet[] = [
     available: true,
   },
   {
-    id: "bq-075",
+    id: "bq-078",
     slug: "red-rose-yellow-chrysanthemum-peach-scallop-bouquet",
     name: "Red Rose Yellow Chrysanthemum Peach Scallop Bouquet",
     description: "Deep red roses with white and yellow chrysanthemums and baby's breath in peach scalloped wrap and burgundy satin ribbon — warm, lush and gift-ready.",
@@ -1059,7 +1101,7 @@ export const bouquets: Bouquet[] = [
     available: true,
   },
   {
-    id: "bq-076",
+    id: "bq-079",
     slug: "sunflower-tuberose-lavender-scallop-bouquet",
     name: "Sunflower Tuberose Lavender Scallop Bouquet",
     description: "Sunflowers with white and purple chrysanthemums, tuberoses and baby's breath in lavender scalloped wrap and satin ribbon — lush, fragrant and gift-ready.",
@@ -1073,7 +1115,7 @@ export const bouquets: Bouquet[] = [
     available: true,
   },
   {
-    id: "bq-077",
+    id: "bq-080",
     slug: "violet-snow-chrysanthemum-bouquet",
     name: "Violet Snow Chrysanthemum Bouquet",
     description: "White and deep purple chrysanthemums with baby's breath in black wrap and white satin ribbon — crisp, elegant and gift-ready.",
@@ -1087,7 +1129,7 @@ export const bouquets: Bouquet[] = [
     available: true,
   },
   {
-    id: "bq-078",
+    id: "bq-081",
     slug: "golden-i-love-you-teddy-basket",
     name: "Golden I Love You Teddy Basket",
     description: "Tan teddy with I Love You heart, pink roses, gold-marble wrapped treats and pink fan backdrop in a ribbon-trimmed round basket.",
@@ -1101,7 +1143,7 @@ export const bouquets: Bouquet[] = [
     available: true,
   },
   {
-    id: "bq-079",
+    id: "bq-082",
     slug: "plum-peach-rose-bouquet",
     name: "Plum Peach Rose Bouquet",
     description: "Purple chrysanthemums with a pink rose centre and baby's breath in peach striped wrap and pink ribbon — rich yet feminine.",
@@ -1115,7 +1157,7 @@ export const bouquets: Bouquet[] = [
     available: true,
   },
   {
-    id: "bq-080",
+    id: "bq-083",
     slug: "crimson-ivory-tuberose-bouquet",
     name: "Crimson Ivory Tuberose Bouquet",
     description: "Red and white roses with chrysanthemums and tuberoses in frosted rose-gold wrap and red satin ribbon — lush and romantic.",
@@ -1129,7 +1171,7 @@ export const bouquets: Bouquet[] = [
     available: true,
   },
   {
-    id: "bq-081",
+    id: "bq-084",
     slug: "doraemon-azure-dream-basket",
     name: "Doraemon Azure Dream Basket",
     description: "Gift basket with Doraemon plush, blue and white roses, tulle-wrapped blue balloons and scalloped blue backdrop in a ribbon-trimmed wicker basket.",
@@ -1143,7 +1185,7 @@ export const bouquets: Bouquet[] = [
     available: true,
   },
   {
-    id: "bq-082",
+    id: "bq-085",
     slug: "turquoise-sunshine-bouquet",
     name: "Turquoise Sunshine Bouquet",
     description: "Sunflowers with pink and white roses, tuberoses and baby's breath in bright turquoise wrap — bold, cheerful and fresh.",
@@ -1157,7 +1199,7 @@ export const bouquets: Bouquet[] = [
     available: true,
   },
   {
-    id: "bq-083",
+    id: "bq-086",
     slug: "blue-white-chrysanthemum-sky-blue-wrap-bouquet",
     name: "Blue White Chrysanthemum Sky Blue Wrap Bouquet",
     description: "Blue and white chrysanthemums with baby's breath in sky-blue scalloped wrap and matching ribbon — fresh, cheerful and gift-ready.",
@@ -1171,7 +1213,7 @@ export const bouquets: Bouquet[] = [
     available: true,
   },
   {
-    id: "bq-084",
+    id: "bq-087",
     slug: "blush-magenta-chrysanthemum-bouquet",
     name: "Blush Magenta Chrysanthemum Bouquet",
     description: "Magenta and white chrysanthemums with tulle accents in blush pink wrap and black ribbon — lush and celebratory.",
@@ -1185,7 +1227,7 @@ export const bouquets: Bouquet[] = [
     available: true,
   },
   {
-    id: "bq-085",
+    id: "bq-088",
     slug: "doraemon-white-rose-gift-basket",
     name: "Doraemon White Rose Gift Basket",
     description: "Doraemon plush with white roses, Love teddy accents, black-wrapped treats and feather styling in a floral ribbon gift box — playful, premium and gift-ready.",
@@ -1199,7 +1241,7 @@ export const bouquets: Bouquet[] = [
     available: true,
   },
   {
-    id: "bq-086",
+    id: "bq-089",
     slug: "lavender-peach-chrysanthemum-bouquet",
     name: "Lavender Peach Chrysanthemum Bouquet",
     description: "Lavender chrysanthemums with baby's breath in layered peach and white wrap with pink ribbon — soft, elegant and gift-ready.",
@@ -1213,7 +1255,7 @@ export const bouquets: Bouquet[] = [
     available: true,
   },
   {
-    id: "bq-087",
+    id: "bq-090",
     slug: "monochrome-panda-luxe-basket",
     name: "Monochrome Panda Luxe Basket",
     description: "Panda mom and cub plush with white roses, black tulle balloons and black-wrapped gold-bow treats in an elegant white gift box.",
@@ -1227,7 +1269,7 @@ export const bouquets: Bouquet[] = [
     available: true,
   },
   {
-    id: "bq-088",
+    id: "bq-091",
     slug: "pink-white-chrysanthemum-lace-wrap-bouquet",
     name: "Pink White Chrysanthemum Lace Wrap Bouquet",
     description: "Pink and white chrysanthemums with baby's breath in blush-pink lace-trim wrap and satin ribbon — soft, lush and gift-ready.",
@@ -1241,7 +1283,7 @@ export const bouquets: Bouquet[] = [
     available: true,
   },
   {
-    id: "bq-089",
+    id: "bq-092",
     slug: "plum-noir-chrysanthemum-bouquet",
     name: "Plum Noir Chrysanthemum Bouquet",
     description: "Deep plum chrysanthemums with baby's breath in layered black wrap and red satin ribbon — bold, dramatic and gift-ready.",
@@ -1255,7 +1297,7 @@ export const bouquets: Bouquet[] = [
     available: true,
   },
   {
-    id: "bq-090",
+    id: "bq-093",
     slug: "scarlet-lily-tuberose-bouquet",
     name: "Scarlet Lily Tuberose Bouquet",
     description: "Red roses with white lilies, tuberoses and baby's breath in frosted rose-gold wrap and red ribbon — dramatic and luxurious.",
@@ -1269,7 +1311,7 @@ export const bouquets: Bouquet[] = [
     available: true,
   },
   {
-    id: "bq-091",
+    id: "bq-094",
     slug: "sunflower-rose-chrysanthemum-cream-wrap-bouquet",
     name: "Sunflower Rose Chrysanthemum Cream Wrap Bouquet",
     description: "Sunflowers with pink roses, white and purple chrysanthemums in textured cream wrap and white satin ribbon — bright, colourful and gift-ready.",
@@ -1283,7 +1325,7 @@ export const bouquets: Bouquet[] = [
     available: true,
   },
   {
-    id: "bq-092",
+    id: "bq-095",
     slug: "white-rose-teddy-chocolate-hamper",
     name: "White Rose Teddy Chocolate Hamper",
     description: "Cream teddy bear with white roses, Snickers and KitKat bars in a gold ribbon basket with black tulle backdrop — a premium flowers-and-chocolates gift hamper.",
@@ -1298,7 +1340,7 @@ export const bouquets: Bouquet[] = [
     available: true,
   },
   {
-    id: "bq-093",
+    id: "bq-096",
     slug: "birthday-package",
     name: "Birthday Package",
     description: "Deep red roses in a black gift box with red ribbon, Happy Birthday card and heart foil balloons — a ready-made birthday surprise in Lahore.",
@@ -1312,7 +1354,7 @@ export const bouquets: Bouquet[] = [
     available: true,
   },
   {
-    id: "bq-094",
+    id: "bq-097",
     slug: "cream-teddy-rose-celebration-basket",
     name: "Cream Teddy Rose Celebration Basket",
     description: "Cream teddy bears with deep red roses, gold-marble wrapped treats and feather accents in a ribbon-trimmed gift basket — a premium flowers, plush and treats hamper.",
@@ -1327,7 +1369,7 @@ export const bouquets: Bouquet[] = [
     available: true,
   },
   {
-    id: "bq-095",
+    id: "bq-098",
     slug: "forever-love-artificial-bouquet",
     name: "Forever Love Artificial Bouquet",
     description: "Artificial red roses with teddy bear and I Love You heart in cream wrap — a lasting romantic gift that never fades.",
@@ -1341,7 +1383,7 @@ export const bouquets: Bouquet[] = [
     available: true,
   },
   {
-    id: "bq-096",
+    id: "bq-099",
     slug: "peach-teddy-pink-rose-gift-basket",
     name: "Peach Teddy Pink Rose Gift Basket",
     description: "Peach and pink teddy bears with blush roses, fabric blooms, pink wrapped treats and white feather accents in a gold ribbon gift basket — sweet, premium and gift-ready.",
@@ -1355,7 +1397,7 @@ export const bouquets: Bouquet[] = [
     available: true,
   },
   {
-    id: "bq-097",
+    id: "bq-100",
     slug: "purple-harmony-gift-basket",
     name: "Purple Harmony Gift Basket",
     description: "Gift basket with Cadbury chocolates, scented candle, illuminated flower gift box, pink and white roses, purple heart balloons and greenery — perfect for birthdays and thank-you gifts.",
@@ -1369,7 +1411,7 @@ export const bouquets: Bouquet[] = [
     available: true,
   },
   {
-    id: "bq-098",
+    id: "bq-101",
     slug: "sunflower-imported-rose-bouquet",
     name: "Sunflower Imported Rose Bouquet",
     description: "Bright sunflowers with white imported roses and baby's breath in kraft paper wrap and white satin ribbon — warm, cheerful and gift-ready.",
@@ -1383,7 +1425,7 @@ export const bouquets: Bouquet[] = [
     available: true,
   },
   {
-    id: "bq-099",
+    id: "bq-102",
     slug: "pink-rose-chocolate-deluxe-bouquet",
     name: "Pink Rose Chocolate Deluxe Bouquet",
     description: "Fresh pink roses with white chrysanthemums and baby's breath, plus branded chocolates (KitKat, Bounty, Snickers, Dairy Milk or similar) in pink scalloped wrap — PKR 5,000 bouquet + PKR 2,500 chocolates.",
@@ -1397,7 +1439,7 @@ export const bouquets: Bouquet[] = [
     available: true,
   },
   {
-    id: "bq-100",
+    id: "bq-103",
     slug: "imported-red-rose-baby-s-breath-bouquet",
     name: "Imported Red Rose Baby's Breath Bouquet",
     description: "Premium imported red roses with imported baby's breath in white gold-trim wrap, Happy Birthday card and red satin ribbon — classic, romantic and gift-ready.",
@@ -1411,7 +1453,7 @@ export const bouquets: Bouquet[] = [
     available: true,
   },
   {
-    id: "bq-101",
+    id: "bq-104",
     slug: "pink-bunny-celebration-basket",
     name: "Pink Bunny Celebration Basket",
     description: "Gift basket with pink plush bunny, white lilies, carnations, blush roses, mini balloons and greenery in a white woven basket — perfect for birthdays and baby celebrations.",
@@ -1425,7 +1467,7 @@ export const bouquets: Bouquet[] = [
     available: true,
   },
   {
-    id: "bq-102",
+    id: "bq-105",
     slug: "luxury-wedding-car-decoration",
     name: "Luxury Wedding Car Decoration",
     description: "Fresh pink and peach florals with tulle draping on bonnet, roof and side mirrors — elegant barat car styling for wedding departures across Lahore.",
@@ -1439,7 +1481,7 @@ export const bouquets: Bouquet[] = [
     available: true,
   },
   {
-    id: "bq-103",
+    id: "bq-106",
     slug: "red-teddy-wifey-balloon-gift-bouquet",
     name: "Red Teddy Wifey Balloon Gift Bouquet",
     description: "Deep red blooms with plush teddy bears, I Love Wifey sign, star and message balloons in black scalloped wrap and burgundy satin ribbon — romantic, premium and gift-ready.",
@@ -1454,7 +1496,7 @@ export const bouquets: Bouquet[] = [
     available: true,
   },
   {
-    id: "bq-104",
+    id: "bq-107",
     slug: "six-imported-chrysanthemum-vase-set",
     name: "Six Imported Chrysanthemum Vase Set",
     description: "Six clear glass vases with imported magenta and white chrysanthemums and imported baby's breath — versatile table styling for mehndi, birthdays, openings and events across Lahore.",

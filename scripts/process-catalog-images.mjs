@@ -977,6 +977,30 @@ const BOUQUET_CURATED = [
       "/videos/bouquets/red-teddy-wifey-balloon-gift-bouquet-2.mp4",
     ],
   },
+  {
+    src: "peach-rose-white-chrysanthemum-gold-scallop-bouquet.png",
+    name: "Peach Rose White Chrysanthemum Gold Scallop Bouquet",
+    description:
+      "Peach roses with white chrysanthemums in peach scalloped wrap with gold trim and blush satin ribbon — soft, elegant and gift-ready.",
+    price: 4500,
+    discount: 10,
+  },
+  {
+    src: "pink-rose-white-chrysanthemum-babys-breath-gold-wrap-bouquet.png",
+    name: "Pink Rose White Chrysanthemum Baby's Breath Gold Wrap Bouquet",
+    description:
+      "Blush pink roses with white chrysanthemums and baby's breath in pale pink scalloped wrap with gold trim and satin ribbon — airy, soft and gift-ready.",
+    price: 4500,
+    discount: 10,
+  },
+  {
+    src: "red-black-white-ceiling-balloon-cluster.png",
+    name: "Red Black White Ceiling Balloon Cluster",
+    description:
+      "Red heart foil balloons with black and white latex balloons gathered at the ceiling with ribbon tails — bold, modern party styling for birthdays and celebrations.",
+    price: 2500,
+    discount: 10,
+  },
 ];
 
 /** Source files that are baskets, boxes, balloons or hampers — never publish */
