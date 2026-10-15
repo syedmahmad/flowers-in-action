@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 import { isDayDone } from "@/lib/hisab/calc";
 import { isHisabAuthed } from "@/lib/hisab/auth";
-import { loadMonth, saveMonth } from "@/lib/hisab/storage";
+import { HisabStorageError, loadMonth, saveMonth } from "@/lib/hisab/storage";
 
 export const dynamic = "force-dynamic";
 
@@ -46,7 +46,14 @@ export async function POST(request: Request) {
     delete monthData.dayDone[date];
   }
 
-  await saveMonth(monthData);
+  try {
+    await saveMonth(monthData);
+  } catch (err) {
+    const message =
+      err instanceof HisabStorageError ? err.message : "Could not save ledger data.";
+    console.error("[hisab/day-status POST]", err);
+    return NextResponse.json({ error: message }, { status: 503 });
+  }
 
   return NextResponse.json({
     done: isDayDone(monthData, date),

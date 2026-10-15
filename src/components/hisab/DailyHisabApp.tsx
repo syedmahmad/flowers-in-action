@@ -20,6 +20,15 @@ function monthFromDate(date: string): { year: number; month: number } {
 
 const DATE_RE = /^\d{4}-\d{2}-\d{2}$/;
 
+async function apiErrorMessage(res: Response, fallback: string): Promise<string> {
+  try {
+    const j = (await res.json()) as { error?: string };
+    return j.error ?? fallback;
+  } catch {
+    return fallback;
+  }
+}
+
 export function DailyHisabApp() {
   const searchParams = useSearchParams();
   const dateFromUrl = searchParams.get("date");
@@ -52,7 +61,10 @@ export function DailyHisabApp() {
         setAuthed(false);
         return;
       }
-      if (!res.ok) throw new Error("Could not load ledger.");
+      if (!res.ok) {
+        setFormError(await apiErrorMessage(res, "Could not load ledger."));
+        return;
+      }
       const json = (await res.json()) as {
         data: HisabMonthData;
         storage: string;
@@ -116,8 +128,7 @@ export function DailyHisabApp() {
       }),
     });
     if (!res.ok) {
-      const j = (await res.json()) as { error?: string };
-      setFormError(j.error ?? "Could not save.");
+      setFormError(await apiErrorMessage(res, "Could not save."));
       return;
     }
     setAmount("");
@@ -134,8 +145,7 @@ export function DailyHisabApp() {
       body: JSON.stringify({ date: selectedDate, id }),
     });
     if (!res.ok) {
-      const j = (await res.json()) as { error?: string };
-      setFormError(j.error ?? "Could not remove.");
+      setFormError(await apiErrorMessage(res, "Could not remove."));
       return;
     }
     await loadMonth();
@@ -150,8 +160,7 @@ export function DailyHisabApp() {
       body: JSON.stringify({ date: selectedDate, done }),
     });
     if (!res.ok) {
-      const j = (await res.json()) as { error?: string };
-      setFormError(j.error ?? "Could not update day.");
+      setFormError(await apiErrorMessage(res, "Could not update day."));
       return;
     }
     await loadMonth();
@@ -170,7 +179,7 @@ export function DailyHisabApp() {
       <div className="flex min-h-screen items-center justify-center bg-ivory px-4">
         <form
           onSubmit={handleLogin}
-          className="w-full max-w-sm rounded-2xl border border-maroon/15 bg-white p-6 shadow-lg"
+          className="relative w-full max-w-sm rounded-2xl border border-maroon/15 bg-white p-6 shadow-lg"
         >
           <h1 className="heading-serif mb-1 text-2xl font-semibold text-maroon-deep">
             Daily Hisab
@@ -178,11 +187,22 @@ export function DailyHisabApp() {
           <p className="mb-6 text-sm text-charcoal/65">
             Team PIN for daily entry only. Month and year totals are not shown here.
           </p>
+          <input
+            type="text"
+            name="username"
+            autoComplete="username"
+            value="hisab-staff"
+            readOnly
+            tabIndex={-1}
+            aria-hidden
+            className="pointer-events-none absolute h-0 w-0 opacity-0"
+          />
           <label className="mb-2 block text-sm font-medium text-charcoal">PIN</label>
           <input
             type="password"
             inputMode="numeric"
             autoComplete="current-password"
+            name="password"
             value={pin}
             onChange={(e) => setPin(e.target.value)}
             className="mb-4 w-full rounded-xl border border-maroon/20 px-4 py-3 text-lg tracking-widest"

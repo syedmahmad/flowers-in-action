@@ -22,8 +22,33 @@ function emptyMonth(year: number, month: number): HisabMonthData {
   };
 }
 
+/**
+ * Vercel Blob: legacy projects use BLOB_READ_WRITE_TOKEN; connected stores on Vercel
+ * often use OIDC (BLOB_STORE_ID) at runtime — no read-write token in env.
+ */
+export function hasBlobStorage(): boolean {
+  if (process.env.BLOB_READ_WRITE_TOKEN?.trim()) return true;
+  if (process.env.VERCEL && process.env.BLOB_STORE_ID?.trim()) return true;
+  return false;
+}
+
 function useBlob(): boolean {
-  return Boolean(process.env.BLOB_READ_WRITE_TOKEN);
+  return hasBlobStorage();
+}
+
+export class HisabStorageError extends Error {
+  constructor(message: string) {
+    super(message);
+    this.name = "HisabStorageError";
+  }
+}
+
+function assertCanPersist(): void {
+  if (process.env.VERCEL && !useBlob()) {
+    throw new HisabStorageError(
+      "Ledger storage is not configured. Connect a Blob store to this Vercel project (Storage → phool_pattiyan_blob), then redeploy."
+    );
+  }
 }
 
 async function readLocal(year: number, month: number): Promise<HisabMonthData> {
@@ -56,20 +81,29 @@ async function readBlob(year: number, month: number): Promise<HisabMonthData> {
 
 async function writeBlob(data: HisabMonthData): Promise<void> {
   const pathname = blobPath(data.year, data.month);
-  await put(pathname, JSON.stringify(data), {
-    access: "private",
-    contentType: "application/json",
-    addRandomSuffix: false,
-    allowOverwrite: true,
-  });
+  try {
+    await put(pathname, JSON.stringify(data), {
+      access: "private",
+      contentType: "application/json",
+      addRandomSuffix: false,
+      allowOverwrite: true,
+    });
+  } catch (err) {
+    const msg = err instanceof Error ? err.message : String(err);
+    throw new HisabStorageError(
+      `Could not save to Vercel Blob (${msg}). Redeploy after connecting the Blob store, then try again.`
+    );
+  }
 }
 
 export async function loadMonth(year: number, month: number): Promise<HisabMonthData> {
+  assertCanPersist();
   if (useBlob()) return readBlob(year, month);
   return readLocal(year, month);
 }
 
 export async function saveMonth(data: HisabMonthData): Promise<void> {
+  assertCanPersist();
   const next = { ...data, updatedAt: new Date().toISOString() };
   if (useBlob()) await writeBlob(next);
   else await writeLocal(next);
@@ -77,4 +111,9 @@ export async function saveMonth(data: HisabMonthData): Promise<void> {
 
 export function storageMode(): "blob" | "local" {
   return useBlob() ? "blob" : "local";
+}
+
+/** @deprecated use hasBlobStorage */
+export function hasBlobToken(): boolean {
+  return hasBlobStorage();
 }

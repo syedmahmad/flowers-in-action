@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 import { isHisabAuthed } from "@/lib/hisab/auth";
-import { loadMonth, storageMode } from "@/lib/hisab/storage";
+import { HisabStorageError, loadMonth, storageMode } from "@/lib/hisab/storage";
 
 export const dynamic = "force-dynamic";
 
@@ -23,10 +23,16 @@ export async function GET(request: Request) {
     return NextResponse.json({ error: "Invalid year or month." }, { status: 400 });
   }
 
-  const data = await loadMonth(parsed.year, parsed.month);
-
-  return NextResponse.json({
-    data,
-    storage: storageMode(),
-  });
+  try {
+    const data = await loadMonth(parsed.year, parsed.month);
+    return NextResponse.json({
+      data,
+      storage: storageMode(),
+    });
+  } catch (err) {
+    const message =
+      err instanceof HisabStorageError ? err.message : "Could not load ledger data.";
+    console.error("[hisab/month GET]", err);
+    return NextResponse.json({ error: message }, { status: 503 });
+  }
 }

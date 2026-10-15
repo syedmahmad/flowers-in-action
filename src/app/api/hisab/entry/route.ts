@@ -2,7 +2,7 @@ import { randomUUID } from "crypto";
 import { NextResponse } from "next/server";
 import { isDayDone } from "@/lib/hisab/calc";
 import { isHisabAuthed } from "@/lib/hisab/auth";
-import { loadMonth, saveMonth } from "@/lib/hisab/storage";
+import { HisabStorageError, loadMonth, saveMonth } from "@/lib/hisab/storage";
 import type { HisabEntry, HisabKind } from "@/lib/hisab/types";
 
 export const dynamic = "force-dynamic";
@@ -64,7 +64,14 @@ export async function POST(request: Request) {
 
   const list = monthData.days[date] ?? [];
   monthData.days[date] = [entry, ...list];
-  await saveMonth(monthData);
+  try {
+    await saveMonth(monthData);
+  } catch (err) {
+    const message =
+      err instanceof HisabStorageError ? err.message : "Could not save ledger data.";
+    console.error("[hisab/entry POST]", err);
+    return NextResponse.json({ error: message }, { status: 503 });
+  }
 
   return NextResponse.json({ entry });
 }
@@ -101,6 +108,13 @@ export async function DELETE(request: Request) {
     if (monthData.dayDone) delete monthData.dayDone[date];
   } else monthData.days[date] = next;
 
-  await saveMonth(monthData);
+  try {
+    await saveMonth(monthData);
+  } catch (err) {
+    const message =
+      err instanceof HisabStorageError ? err.message : "Could not save ledger data.";
+    console.error("[hisab/entry DELETE]", err);
+    return NextResponse.json({ error: message }, { status: 503 });
+  }
   return NextResponse.json({ ok: true });
 }
