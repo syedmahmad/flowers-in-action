@@ -43,6 +43,7 @@ export function DailyHisabApp() {
   const [storage, setStorage] = useState<string>("");
   const [loading, setLoading] = useState(false);
   const [formError, setFormError] = useState("");
+  const [saving, setSaving] = useState(false);
 
   const [amount, setAmount] = useState("");
   const [note, setNote] = useState("");
@@ -50,9 +51,9 @@ export function DailyHisabApp() {
 
   const { year, month } = monthFromDate(selectedDate);
 
-  const loadMonth = useCallback(async () => {
+  const loadMonth = useCallback(async (opts?: { keepError?: boolean }) => {
     setLoading(true);
-    setFormError("");
+    if (!opts?.keepError) setFormError("");
     try {
       const res = await fetch(`/api/hisab/month?year=${year}&month=${month}`, {
         credentials: "include",
@@ -116,24 +117,31 @@ export function DailyHisabApp() {
   async function addEntry(e: React.FormEvent) {
     e.preventDefault();
     setFormError("");
-    const res = await fetch("/api/hisab/entry", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      credentials: "include",
-      body: JSON.stringify({
-        date: selectedDate,
-        note,
-        amount: Number(amount),
-        kind,
-      }),
-    });
-    if (!res.ok) {
-      setFormError(await apiErrorMessage(res, "Could not save."));
-      return;
+    setSaving(true);
+    try {
+      const res = await fetch("/api/hisab/entry", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        credentials: "include",
+        body: JSON.stringify({
+          date: selectedDate,
+          note,
+          amount: Number(amount),
+          kind,
+        }),
+      });
+      if (!res.ok) {
+        setFormError(await apiErrorMessage(res, "Could not save."));
+        return;
+      }
+      setAmount("");
+      setNote("");
+      await loadMonth({ keepError: true });
+    } catch {
+      setFormError("Network error — could not save. Check connection and try again.");
+    } finally {
+      setSaving(false);
     }
-    setAmount("");
-    setNote("");
-    await loadMonth();
   }
 
   async function removeEntry(id: string) {
@@ -240,6 +248,14 @@ export function DailyHisabApp() {
         </div>
       </header>
 
+      {formError && (
+        <div className="mx-auto max-w-lg px-4 pt-3">
+          <p className="rounded-xl border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-800">
+            {formError}
+          </p>
+        </div>
+      )}
+
       <main className="mx-auto max-w-lg px-4 pt-4">
           <>
             <label className="mb-1 block text-sm font-medium text-charcoal">Date</label>
@@ -327,15 +343,14 @@ export function DailyHisabApp() {
                 placeholder="e.g. pink bouquet, flower bill Hanif, lunch"
                 className="mb-3 w-full rounded-xl border border-maroon/20 px-3 py-3"
               />
-              {formError && <p className="mb-2 text-sm text-red-700">{formError}</p>}
-              <button type="submit" className="w-full rounded-xl bg-maroon py-3 font-semibold text-white">
-                Add line
+              <button
+                type="submit"
+                disabled={saving}
+                className="w-full rounded-xl bg-maroon py-3 font-semibold text-white disabled:opacity-60"
+              >
+                {saving ? "Saving…" : "Add line"}
               </button>
             </form>
-            )}
-
-            {formError && dayClosed && (
-              <p className="mb-4 text-sm text-red-700">{formError}</p>
             )}
 
             <ul className="space-y-2">

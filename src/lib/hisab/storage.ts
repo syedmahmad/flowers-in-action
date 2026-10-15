@@ -1,6 +1,6 @@
 import fs from "fs/promises";
 import path from "path";
-import { head, put } from "@vercel/blob";
+import { get, put } from "@vercel/blob";
 import type { HisabMonthData } from "./types";
 
 function blobPath(year: number, month: number): string {
@@ -70,10 +70,12 @@ async function writeLocal(data: HisabMonthData): Promise<void> {
 async function readBlob(year: number, month: number): Promise<HisabMonthData> {
   const pathname = blobPath(year, month);
   try {
-    const meta = await head(pathname);
-    const res = await fetch(meta.url);
-    if (!res.ok) return emptyMonth(year, month);
-    return (await res.json()) as HisabMonthData;
+    const result = await get(pathname, { access: "private" });
+    if (!result || result.statusCode !== 200 || !result.stream) {
+      return emptyMonth(year, month);
+    }
+    const text = await new Response(result.stream).text();
+    return JSON.parse(text) as HisabMonthData;
   } catch {
     return emptyMonth(year, month);
   }
