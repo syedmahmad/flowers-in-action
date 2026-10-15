@@ -3,7 +3,9 @@
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { useSearchParams } from "next/navigation";
 import { formatPkr, signedAmount, summarizeDay } from "@/lib/hisab/calc";
-import type { HisabKind, HisabMonthData } from "@/lib/hisab/types";
+import type { HisabEntry, HisabKind, HisabMonthData } from "@/lib/hisab/types";
+
+const HISAB_FETCH: RequestInit = { credentials: "include", cache: "no-store" };
 
 function todayIso(): string {
   const d = new Date();
@@ -55,9 +57,10 @@ export function DailyHisabApp() {
     setLoading(true);
     if (!opts?.keepError) setFormError("");
     try {
-      const res = await fetch(`/api/hisab/month?year=${year}&month=${month}`, {
-        credentials: "include",
-      });
+      const res = await fetch(
+        `/api/hisab/month?year=${year}&month=${month}&_=${Date.now()}`,
+        HISAB_FETCH
+      );
       if (res.status === 401) {
         setAuthed(false);
         return;
@@ -122,7 +125,7 @@ export function DailyHisabApp() {
       const res = await fetch("/api/hisab/entry", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        credentials: "include",
+        ...HISAB_FETCH,
         body: JSON.stringify({
           date: selectedDate,
           note,
@@ -134,9 +137,18 @@ export function DailyHisabApp() {
         setFormError(await apiErrorMessage(res, "Could not save."));
         return;
       }
+      const { entry } = (await res.json()) as { entry: HisabEntry };
+      setMonthData((prev) => {
+        if (!prev) return prev;
+        const list = prev.days[selectedDate] ?? [];
+        return {
+          ...prev,
+          days: { ...prev.days, [selectedDate]: [entry, ...list] },
+        };
+      });
       setAmount("");
       setNote("");
-      await loadMonth({ keepError: true });
+      void loadMonth({ keepError: true });
     } catch {
       setFormError("Network error — could not save. Check connection and try again.");
     } finally {
@@ -146,17 +158,41 @@ export function DailyHisabApp() {
 
   async function removeEntry(id: string) {
     if (!confirm("Remove this line?")) return;
-    const res = await fetch("/api/hisab/entry", {
-      method: "DELETE",
-      headers: { "Content-Type": "application/json" },
-      credentials: "include",
-      body: JSON.stringify({ date: selectedDate, id }),
-    });
-    if (!res.ok) {
-      setFormError(await apiErrorMessage(res, "Could not remove."));
-      return;
+    setFormError("");
+    setSaving(true);
+    try {
+      const res = await fetch("/api/hisab/entry", {
+        method: "DELETE",
+        headers: { "Content-Type": "application/json" },
+        ...HISAB_FETCH,
+        body: JSON.stringify({ date: selectedDate, id }),
+      });
+      if (!res.ok) {
+        setFormError(await apiErrorMessage(res, "Could not remove."));
+        return;
+      }
+      setMonthData((prev) => {
+        if (!prev) return prev;
+        const list = (prev.days[selectedDate] ?? []).filter((e) => e.id !== id);
+        const days = { ...prev.days };
+        if (list.length === 0) {
+          delete days[selectedDate];
+          if (prev.dayDone) {
+            const dayDone = { ...prev.dayDone };
+            delete dayDone[selectedDate];
+            return { ...prev, days, dayDone };
+          }
+        } else {
+          days[selectedDate] = list;
+        }
+        return { ...prev, days };
+      });
+      void loadMonth({ keepError: true });
+    } catch {
+      setFormError("Network error — could not remove.");
+    } finally {
+      setSaving(false);
     }
-    await loadMonth();
   }
 
   async function setDayStatus(done: boolean) {
@@ -171,7 +207,14 @@ export function DailyHisabApp() {
       setFormError(await apiErrorMessage(res, "Could not update day."));
       return;
     }
-    await loadMonth();
+    setMonthData((prev) => {
+      if (!prev) return prev;
+      const dayDone = { ...(prev.dayDone ?? {}) };
+      if (done) dayDone[selectedDate] = new Date().toISOString();
+      else delete dayDone[selectedDate];
+      return { ...prev, dayDone };
+    });
+    void loadMonth({ keepError: true });
   }
 
   if (authed === null && loading) {

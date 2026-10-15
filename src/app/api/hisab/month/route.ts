@@ -25,10 +25,17 @@ export async function GET(request: Request) {
 
   try {
     const data = await loadMonth(parsed.year, parsed.month);
-    return NextResponse.json({
-      data,
-      storage: storageMode(),
-    });
+    return NextResponse.json(
+      {
+        data,
+        storage: storageMode(),
+      },
+      {
+        headers: {
+          "Cache-Control": "private, no-store, max-age=0, must-revalidate",
+        },
+      }
+    );
   } catch (err) {
     const message =
       err instanceof HisabStorageError ? err.message : "Could not load ledger data.";

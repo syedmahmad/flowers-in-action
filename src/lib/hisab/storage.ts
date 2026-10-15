@@ -70,7 +70,7 @@ async function writeLocal(data: HisabMonthData): Promise<void> {
 async function readBlob(year: number, month: number): Promise<HisabMonthData> {
   const pathname = blobPath(year, month);
   try {
-    const result = await get(pathname, { access: "private" });
+    const result = await get(pathname, { access: "private", useCache: false });
     if (!result || result.statusCode !== 200 || !result.stream) {
       return emptyMonth(year, month);
     }
