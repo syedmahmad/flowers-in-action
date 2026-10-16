@@ -3,7 +3,7 @@ import { NextResponse } from "next/server";
 import { isDayDone } from "@/lib/hisab/calc";
 import { isHisabAuthed } from "@/lib/hisab/auth";
 import { HisabStorageError, loadMonth, saveMonth } from "@/lib/hisab/storage";
-import type { HisabEntry, HisabKind } from "@/lib/hisab/types";
+import type { HisabEntry, HisabKind, HisabReceivedVia } from "@/lib/hisab/types";
 
 export const dynamic = "force-dynamic";
 
@@ -26,6 +26,7 @@ export async function POST(request: Request) {
     note?: string;
     amount?: number;
     kind?: HisabKind;
+    receivedVia?: HisabReceivedVia;
   };
 
   const date = body.date?.trim() ?? "";
@@ -54,11 +55,17 @@ export async function POST(request: Request) {
       { status: 409 }
     );
   }
+  let receivedVia: HisabReceivedVia | undefined;
+  if (kind === "sale") {
+    receivedVia = body.receivedVia === "online" ? "online" : "cash";
+  }
+
   const entry: HisabEntry = {
     id: randomUUID(),
     note,
     amount,
     kind,
+    ...(receivedVia ? { receivedVia } : {}),
     createdAt: new Date().toISOString(),
   };
 

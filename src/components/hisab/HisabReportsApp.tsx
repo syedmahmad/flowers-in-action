@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useCallback, useEffect, useState } from "react";
 import {
   formatPkr,
+  saleReceivedVia,
   signedAmount,
   topExpenses,
   type HisabYearSummary,
@@ -141,16 +142,19 @@ export function HisabReportsApp() {
 
   function exportCsv() {
     if (!summary || !monthData) return;
-    const lines = ["date,type,note,amount"];
+    const lines = ["date,type,note,amount,received_via"];
     for (const day of summary.days) {
       const entries = monthData.days[day.date] ?? [];
       for (const e of entries) {
         const safe = `"${e.note.replace(/"/g, '""')}"`;
-        lines.push(`${day.date},${e.kind},${safe},${e.amount}`);
+        const via = e.kind === "sale" ? saleReceivedVia(e) : "";
+        lines.push(`${day.date},${e.kind},${safe},${e.amount},${via}`);
       }
     }
     lines.push("");
     lines.push(`month_sales,${summary.sales}`);
+    lines.push(`month_sales_cash,${summary.salesCash}`);
+    lines.push(`month_sales_online,${summary.salesOnline}`);
     lines.push(`month_expenses,${summary.expenses}`);
     lines.push(`month_net,${summary.net}`);
     const blob = new Blob([lines.join("\n")], { type: "text/csv;charset=utf-8" });
@@ -176,6 +180,11 @@ export function HisabReportsApp() {
                 {entry.kind === "sale" ? "+" : "−"}
               </span>{" "}
               {entry.note}
+              {entry.kind === "sale" && (
+                <span className="ml-1 text-[10px] uppercase text-charcoal/45">
+                  ({saleReceivedVia(entry)})
+                </span>
+              )}
             </span>
             <span className="shrink-0 font-medium">{formatPkr(signedAmount(entry))}</span>
           </li>
@@ -320,19 +329,29 @@ export function HisabReportsApp() {
               Rent and fixed bills are tracked separately — subtract from month net yourself.
             </p>
 
-            <div className="mb-4 grid grid-cols-3 gap-2">
+            <div className="mb-2 grid grid-cols-2 gap-2 sm:grid-cols-4">
               <div className="rounded-xl bg-green-natural/10 p-3 text-center">
-                <p className="text-[10px] uppercase text-charcoal/55">Sales</p>
+                <p className="text-[10px] uppercase text-charcoal/55">Total received</p>
                 <p className="text-sm font-bold text-maroon-deep">{formatPkr(summary.sales)}</p>
+              </div>
+              <div className="rounded-xl bg-blush/80 p-3 text-center">
+                <p className="text-[10px] uppercase text-charcoal/55">Cash</p>
+                <p className="text-sm font-bold text-maroon-deep">{formatPkr(summary.salesCash)}</p>
+              </div>
+              <div className="rounded-xl bg-blush/80 p-3 text-center">
+                <p className="text-[10px] uppercase text-charcoal/55">Online</p>
+                <p className="text-sm font-bold text-maroon-deep">{formatPkr(summary.salesOnline)}</p>
               </div>
               <div className="rounded-xl bg-red-500/10 p-3 text-center">
                 <p className="text-[10px] uppercase text-charcoal/55">Expenses</p>
-                <p className="text-sm font-bold text-maroon-deep">{formatPkr(summary.expenses)}</p>
+                <p className="text-sm font-bold text-red-700">
+                  {summary.expenses > 0 ? formatPkr(-summary.expenses) : "0"}
+                </p>
               </div>
-              <div className="rounded-xl bg-gold-light/40 p-3 text-center">
-                <p className="text-[10px] uppercase text-charcoal/55">Net</p>
-                <p className="text-sm font-bold text-maroon-deep">{formatPkr(summary.net)}</p>
-              </div>
+            </div>
+            <div className="mb-4 rounded-xl bg-gold-light/40 p-3 text-center">
+              <p className="text-[10px] uppercase text-charcoal/55">Month net</p>
+              <p className="text-sm font-bold text-maroon-deep">{formatPkr(summary.net)}</p>
             </div>
 
             <ul className="space-y-2">

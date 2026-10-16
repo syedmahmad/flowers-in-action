@@ -1,19 +1,37 @@
-import type { HisabEntry, HisabMonthData, HisabDaySummary, HisabMonthSummary } from "./types";
+import type {
+  HisabEntry,
+  HisabMonthData,
+  HisabDaySummary,
+  HisabMonthSummary,
+  HisabReceivedVia,
+} from "./types";
 
 export function signedAmount(entry: HisabEntry): number {
   return entry.kind === "sale" ? entry.amount : -entry.amount;
 }
 
+export function saleReceivedVia(entry: HisabEntry): HisabReceivedVia {
+  if (entry.kind !== "sale") return "cash";
+  return entry.receivedVia === "online" ? "online" : "cash";
+}
+
 export function summarizeDay(date: string, entries: HisabEntry[]): HisabDaySummary {
   let sales = 0;
+  let salesCash = 0;
+  let salesOnline = 0;
   let expenses = 0;
   for (const e of entries) {
-    if (e.kind === "sale") sales += e.amount;
-    else expenses += e.amount;
+    if (e.kind === "sale") {
+      sales += e.amount;
+      if (saleReceivedVia(e) === "online") salesOnline += e.amount;
+      else salesCash += e.amount;
+    } else expenses += e.amount;
   }
   return {
     date,
     sales,
+    salesCash,
+    salesOnline,
     expenses,
     net: sales - expenses,
     entryCount: entries.length,
@@ -38,9 +56,13 @@ export function summarizeMonth(data: HisabMonthData): HisabMonthSummary {
     }));
 
   let sales = 0;
+  let salesCash = 0;
+  let salesOnline = 0;
   let expenses = 0;
   for (const d of days) {
     sales += d.sales;
+    salesCash += d.salesCash;
+    salesOnline += d.salesOnline;
     expenses += d.expenses;
   }
 
@@ -48,6 +70,8 @@ export function summarizeMonth(data: HisabMonthData): HisabMonthSummary {
     year: data.year,
     month: data.month,
     sales,
+    salesCash,
+    salesOnline,
     expenses,
     net: sales - expenses,
     days,

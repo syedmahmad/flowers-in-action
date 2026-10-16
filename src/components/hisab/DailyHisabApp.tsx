@@ -2,8 +2,8 @@
 
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { useSearchParams } from "next/navigation";
-import { formatPkr, signedAmount, summarizeDay } from "@/lib/hisab/calc";
-import type { HisabEntry, HisabKind, HisabMonthData } from "@/lib/hisab/types";
+import { formatPkr, saleReceivedVia, signedAmount, summarizeDay } from "@/lib/hisab/calc";
+import type { HisabEntry, HisabKind, HisabMonthData, HisabReceivedVia } from "@/lib/hisab/types";
 
 const HISAB_FETCH: RequestInit = { credentials: "include", cache: "no-store" };
 
@@ -50,6 +50,7 @@ export function DailyHisabApp() {
   const [amount, setAmount] = useState("");
   const [note, setNote] = useState("");
   const [kind, setKind] = useState<HisabKind>("sale");
+  const [receivedVia, setReceivedVia] = useState<HisabReceivedVia>("cash");
 
   const { year, month } = monthFromDate(selectedDate);
 
@@ -131,6 +132,7 @@ export function DailyHisabApp() {
           note,
           amount: Number(amount),
           kind,
+          ...(kind === "sale" ? { receivedVia } : {}),
         }),
       });
       if (!res.ok) {
@@ -345,6 +347,29 @@ export function DailyHisabApp() {
               </p>
             </div>
 
+            {(daySummary.sales > 0 || daySummary.expenses > 0) && (
+              <div className="mb-4 grid grid-cols-2 gap-2 sm:grid-cols-4">
+                <div className="rounded-xl border border-maroon/10 bg-white p-3 text-center">
+                  <p className="text-[10px] uppercase text-charcoal/55">Total received</p>
+                  <p className="text-sm font-bold text-maroon-deep">{formatPkr(daySummary.sales)}</p>
+                </div>
+                <div className="rounded-xl border border-maroon/10 bg-white p-3 text-center">
+                  <p className="text-[10px] uppercase text-charcoal/55">Cash</p>
+                  <p className="text-sm font-bold text-maroon-deep">{formatPkr(daySummary.salesCash)}</p>
+                </div>
+                <div className="rounded-xl border border-maroon/10 bg-white p-3 text-center">
+                  <p className="text-[10px] uppercase text-charcoal/55">Online</p>
+                  <p className="text-sm font-bold text-maroon-deep">{formatPkr(daySummary.salesOnline)}</p>
+                </div>
+                <div className="rounded-xl border border-red-200 bg-red-500/10 p-3 text-center">
+                  <p className="text-[10px] uppercase text-charcoal/55">Expenses</p>
+                  <p className="text-sm font-bold text-red-700">
+                    {daySummary.expenses > 0 ? formatPkr(-daySummary.expenses) : "0"}
+                  </p>
+                </div>
+              </div>
+            )}
+
             {!dayClosed && (
             <form onSubmit={addEntry} className="mb-6 rounded-2xl border border-maroon/10 bg-white p-4 shadow-sm">
               <p className="mb-3 text-sm font-semibold text-maroon">Add a line</p>
@@ -368,6 +393,31 @@ export function DailyHisabApp() {
                   − Expense
                 </button>
               </div>
+              {kind === "sale" && (
+                <div className="mb-3">
+                  <p className="mb-1.5 text-xs font-medium text-charcoal/70">Payment received</p>
+                  <div className="flex gap-2">
+                    <button
+                      type="button"
+                      onClick={() => setReceivedVia("cash")}
+                      className={`flex-1 rounded-xl py-2 text-sm font-semibold ${
+                        receivedVia === "cash" ? "bg-maroon text-white" : "bg-blush"
+                      }`}
+                    >
+                      Cash
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => setReceivedVia("online")}
+                      className={`flex-1 rounded-xl py-2 text-sm font-semibold ${
+                        receivedVia === "online" ? "bg-maroon text-white" : "bg-blush"
+                      }`}
+                    >
+                      Online
+                    </button>
+                  </div>
+                </div>
+              )}
               <input
                 type="number"
                 min={1}
@@ -415,7 +465,14 @@ export function DailyHisabApp() {
                     {entry.kind === "sale" ? "+" : "−"}
                   </span>
                   <div className="min-w-0 flex-1">
-                    <p className="truncate font-medium text-charcoal">{entry.note}</p>
+                    <p className="flex items-center gap-2 truncate font-medium text-charcoal">
+                      {entry.note}
+                      {entry.kind === "sale" && (
+                        <span className="shrink-0 rounded-full bg-blush px-2 py-0.5 text-[10px] font-bold uppercase tracking-wide text-charcoal/70">
+                          {saleReceivedVia(entry) === "online" ? "Online" : "Cash"}
+                        </span>
+                      )}
+                    </p>
                     <p className="text-sm text-charcoal/55">PKR {formatPkr(entry.amount)}</p>
                   </div>
                   <p className="shrink-0 font-semibold text-maroon">
