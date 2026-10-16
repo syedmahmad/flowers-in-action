@@ -11,6 +11,46 @@ import {
 } from "@/lib/hisab/calc";
 import type { HisabEntry, HisabMonthData, HisabMonthSummary } from "@/lib/hisab/types";
 
+function BreakdownGrid({
+  sales,
+  salesCash,
+  salesOnline,
+  expenses,
+  compact,
+}: {
+  sales: number;
+  salesCash: number;
+  salesOnline: number;
+  expenses: number;
+  compact?: boolean;
+}) {
+  const pad = compact ? "p-2" : "p-3";
+  const label = compact ? "text-[9px]" : "text-[10px]";
+  const value = compact ? "text-xs" : "text-sm";
+  return (
+    <div className={`grid grid-cols-2 gap-1.5 sm:grid-cols-4 ${compact ? "mt-2" : ""}`}>
+      <div className={`rounded-lg border border-maroon/10 bg-white ${pad} text-center`}>
+        <p className={`${label} uppercase text-charcoal/55`}>Total received</p>
+        <p className={`${value} font-bold text-maroon-deep`}>{formatPkr(sales)}</p>
+      </div>
+      <div className={`rounded-lg border border-maroon/10 bg-white ${pad} text-center`}>
+        <p className={`${label} uppercase text-charcoal/55`}>Cash</p>
+        <p className={`${value} font-bold text-maroon-deep`}>{formatPkr(salesCash)}</p>
+      </div>
+      <div className={`rounded-lg border border-maroon/10 bg-white ${pad} text-center`}>
+        <p className={`${label} uppercase text-charcoal/55`}>Online</p>
+        <p className={`${value} font-bold text-maroon-deep`}>{formatPkr(salesOnline)}</p>
+      </div>
+      <div className={`rounded-lg border border-red-200 bg-red-500/10 ${pad} text-center`}>
+        <p className={`${label} uppercase text-charcoal/55`}>Expenses</p>
+        <p className={`${value} font-bold text-red-700`}>
+          {expenses > 0 ? formatPkr(-expenses) : "0"}
+        </p>
+      </div>
+    </div>
+  );
+}
+
 function monthLabel(year: number, month: number): string {
   return new Date(year, month - 1, 1).toLocaleDateString("en-PK", {
     month: "long",
@@ -329,29 +369,15 @@ export function HisabReportsApp() {
               Rent and fixed bills are tracked separately — subtract from month net yourself.
             </p>
 
-            <div className="mb-2 grid grid-cols-2 gap-2 sm:grid-cols-4">
-              <div className="rounded-xl bg-green-natural/10 p-3 text-center">
-                <p className="text-[10px] uppercase text-charcoal/55">Total received</p>
-                <p className="text-sm font-bold text-maroon-deep">{formatPkr(summary.sales)}</p>
-              </div>
-              <div className="rounded-xl bg-blush/80 p-3 text-center">
-                <p className="text-[10px] uppercase text-charcoal/55">Cash</p>
-                <p className="text-sm font-bold text-maroon-deep">{formatPkr(summary.salesCash)}</p>
-              </div>
-              <div className="rounded-xl bg-blush/80 p-3 text-center">
-                <p className="text-[10px] uppercase text-charcoal/55">Online</p>
-                <p className="text-sm font-bold text-maroon-deep">{formatPkr(summary.salesOnline)}</p>
-              </div>
-              <div className="rounded-xl bg-red-500/10 p-3 text-center">
-                <p className="text-[10px] uppercase text-charcoal/55">Expenses</p>
-                <p className="text-sm font-bold text-red-700">
-                  {summary.expenses > 0 ? formatPkr(-summary.expenses) : "0"}
-                </p>
-              </div>
-            </div>
-            <div className="mb-4 rounded-xl bg-gold-light/40 p-3 text-center">
+            <BreakdownGrid
+              sales={summary.sales}
+              salesCash={summary.salesCash}
+              salesOnline={summary.salesOnline}
+              expenses={summary.expenses}
+            />
+            <div className="mb-4 mt-2 rounded-xl bg-gold-light/40 p-3 text-center">
               <p className="text-[10px] uppercase text-charcoal/55">Month net</p>
-              <p className="text-sm font-bold text-maroon-deep">{formatPkr(summary.net)}</p>
+              <p className="text-lg font-bold text-maroon-deep">{formatPkr(summary.net)}</p>
             </div>
 
             <ul className="space-y-2">
@@ -386,6 +412,13 @@ export function HisabReportsApp() {
                           )}
                         </p>
                         <p className="text-xs text-charcoal/55">{day.entryCount} lines</p>
+                        {!open && day.entryCount > 0 && (
+                          <p className="mt-1 text-[11px] leading-snug text-charcoal/60">
+                            Recv {formatPkr(day.sales)} · Cash {formatPkr(day.salesCash)} · Online{" "}
+                            {formatPkr(day.salesOnline)} · Exp{" "}
+                            {day.expenses > 0 ? formatPkr(-day.expenses) : "0"}
+                          </p>
+                        )}
                         {day.net < 0 && big.length > 0 && !open && (
                           <p className="mt-1 text-xs text-red-700/90">
                             Big costs:{" "}
@@ -399,6 +432,25 @@ export function HisabReportsApp() {
                         {formatPkr(day.net)}
                       </p>
                     </button>
+                    {open && day.entryCount > 0 && (
+                      <>
+                        <BreakdownGrid
+                          compact
+                          sales={day.sales}
+                          salesCash={day.salesCash}
+                          salesOnline={day.salesOnline}
+                          expenses={day.expenses}
+                        />
+                        <p className="mt-2 text-center text-xs text-charcoal/55">
+                          Day net{" "}
+                          <span
+                            className={`font-bold ${day.net >= 0 ? "text-green-natural" : "text-red-600"}`}
+                          >
+                            {formatPkr(day.net)}
+                          </span>
+                        </p>
+                      </>
+                    )}
                     {open && entries.length > 0 && renderDayLines(entries)}
                     {open && (
                       <Link
@@ -417,24 +469,16 @@ export function HisabReportsApp() {
 
         {tab === "year" && yearSummary && (
           <>
-            <h2 className="heading-serif mb-4 text-lg font-semibold text-maroon-deep">{year}</h2>
-            <div className="mb-4 grid grid-cols-3 gap-2">
-              <div className="rounded-xl bg-green-natural/10 p-3 text-center">
-                <p className="text-[10px] uppercase text-charcoal/55">Sales</p>
-                <p className="text-sm font-bold text-maroon-deep">
-                  {formatPkr(yearSummary.sales)}
-                </p>
-              </div>
-              <div className="rounded-xl bg-red-500/10 p-3 text-center">
-                <p className="text-[10px] uppercase text-charcoal/55">Expenses</p>
-                <p className="text-sm font-bold text-maroon-deep">
-                  {formatPkr(yearSummary.expenses)}
-                </p>
-              </div>
-              <div className="rounded-xl bg-gold-light/40 p-3 text-center">
-                <p className="text-[10px] uppercase text-charcoal/55">Net</p>
-                <p className="text-sm font-bold text-maroon-deep">{formatPkr(yearSummary.net)}</p>
-              </div>
+            <h2 className="heading-serif mb-2 text-lg font-semibold text-maroon-deep">{year}</h2>
+            <BreakdownGrid
+              sales={yearSummary.sales}
+              salesCash={yearSummary.salesCash}
+              salesOnline={yearSummary.salesOnline}
+              expenses={yearSummary.expenses}
+            />
+            <div className="mb-4 mt-2 rounded-xl bg-gold-light/40 p-3 text-center">
+              <p className="text-[10px] uppercase text-charcoal/55">Year net</p>
+              <p className="text-lg font-bold text-maroon-deep">{formatPkr(yearSummary.net)}</p>
             </div>
             <ul className="space-y-2">
               {[...yearSummary.months].reverse().map((row) => (
@@ -445,22 +489,31 @@ export function HisabReportsApp() {
                       setMonth(row.month);
                       setTab("month");
                     }}
-                    className="flex w-full items-center justify-between rounded-xl border border-maroon/8 bg-white px-4 py-3 text-left"
+                    className="w-full rounded-xl border border-maroon/8 bg-white px-4 py-3 text-left"
                   >
-                    <span className="font-medium text-charcoal">
-                      {shortMonth(row.month)} {year}
-                    </span>
-                    <span
-                      className={`font-bold ${
-                        !row.hasEntries
-                          ? "text-charcoal/35"
-                          : row.net >= 0
-                            ? "text-green-natural"
-                            : "text-red-600"
-                      }`}
-                    >
-                      {row.hasEntries ? formatPkr(row.net) : "—"}
-                    </span>
+                    <div className="flex items-start justify-between gap-2">
+                      <span className="font-medium text-charcoal">
+                        {shortMonth(row.month)} {year}
+                      </span>
+                      <span
+                        className={`shrink-0 font-bold ${
+                          !row.hasEntries
+                            ? "text-charcoal/35"
+                            : row.net >= 0
+                              ? "text-green-natural"
+                              : "text-red-600"
+                        }`}
+                      >
+                        {row.hasEntries ? formatPkr(row.net) : "—"}
+                      </span>
+                    </div>
+                    {row.hasEntries && (
+                      <p className="mt-1 text-[11px] leading-snug text-charcoal/60">
+                        Recv {formatPkr(row.sales)} · Cash {formatPkr(row.salesCash)} · Online{" "}
+                        {formatPkr(row.salesOnline)} · Exp{" "}
+                        {row.expenses > 0 ? formatPkr(-row.expenses) : "0"}
+                      </p>
+                    )}
                   </button>
                 </li>
               ))}

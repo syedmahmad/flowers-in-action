@@ -93,6 +93,8 @@ export function topExpenses(entries: HisabEntry[], limit = 3): HisabEntry[] {
 export interface HisabYearMonthRow {
   month: number;
   sales: number;
+  salesCash: number;
+  salesOnline: number;
   expenses: number;
   net: number;
   hasEntries: boolean;
@@ -101,6 +103,8 @@ export interface HisabYearMonthRow {
 export interface HisabYearSummary {
   year: number;
   sales: number;
+  salesCash: number;
+  salesOnline: number;
   expenses: number;
   net: number;
   months: HisabYearMonthRow[];
@@ -112,12 +116,22 @@ export function summarizeYear(
 ): HisabYearSummary {
   const months: HisabYearMonthRow[] = [];
   let sales = 0;
+  let salesCash = 0;
+  let salesOnline = 0;
   let expenses = 0;
 
   for (let m = 1; m <= 12; m++) {
     const data = monthDataList.find((d) => d.year === year && d.month === m);
     if (!data) {
-      months.push({ month: m, sales: 0, expenses: 0, net: 0, hasEntries: false });
+      months.push({
+        month: m,
+        sales: 0,
+        salesCash: 0,
+        salesOnline: 0,
+        expenses: 0,
+        net: 0,
+        hasEntries: false,
+      });
       continue;
     }
     const summary = summarizeMonth(data);
@@ -125,13 +139,25 @@ export function summarizeYear(
     months.push({
       month: m,
       sales: summary.sales,
+      salesCash: summary.salesCash,
+      salesOnline: summary.salesOnline,
       expenses: summary.expenses,
       net: summary.net,
       hasEntries,
     });
     sales += summary.sales;
+    salesCash += summary.salesCash;
+    salesOnline += summary.salesOnline;
     expenses += summary.expenses;
   }
 
-  return { year, sales, expenses, net: sales - expenses, months };
+  return {
+    year,
+    sales,
+    salesCash,
+    salesOnline,
+    expenses,
+    net: sales - expenses,
+    months,
+  };
 }
