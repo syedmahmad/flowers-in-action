@@ -4,15 +4,10 @@ import { useState } from "react";
 import { BouquetCard } from "@/components/catalog/BouquetCard";
 import { BouquetModal } from "@/components/catalog/BouquetModal";
 import { bouquets } from "@/data/bouquets";
+import { sortBouquetsForDisplay } from "@/lib/bouquet-display-order";
 import type { Bouquet } from "@/types/catalog";
 
-const PINNED_BOUQUET_SLUG = "red-rose-tuberose-pink-black-wrap";
-
-const bouquetsByPrice = [...bouquets].sort((a, b) => {
-  if (a.slug === PINNED_BOUQUET_SLUG) return -1;
-  if (b.slug === PINNED_BOUQUET_SLUG) return 1;
-  return a.price - b.price || a.name.localeCompare(b.name);
-});
+const displayBouquets = sortBouquetsForDisplay(bouquets);
 
 export function BouquetsSection() {
   const [selected, setSelected] = useState<Bouquet | null>(null);
@@ -32,7 +27,7 @@ export function BouquetsSection() {
           </div>
 
           <div className="grid grid-cols-2 gap-3 sm:gap-5 md:grid-cols-3 lg:grid-cols-4 lg:gap-6">
-            {bouquetsByPrice.map((bouquet) => (
+            {displayBouquets.map((bouquet) => (
               <BouquetCard key={bouquet.slug} bouquet={bouquet} onOpen={setSelected} />
             ))}
           </div>

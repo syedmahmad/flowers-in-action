@@ -25,7 +25,22 @@ function slugFromName(name) {
     .replace(/^-|-$/g, "");
 }
 
-const PINNED_BOUQUET_SLUG = "red-rose-tuberose-pink-black-wrap";
+const BOUQUET_TOP_SLUGS = JSON.parse(
+  fs.readFileSync(path.resolve("scripts/bouquet-top-slugs.json"), "utf8")
+);
+
+function sortBouquetManifest(manifest) {
+  const bySlug = new Map(manifest.map((b) => [b.slug, b]));
+  const top = [];
+  for (const slug of BOUQUET_TOP_SLUGS) {
+    const item = bySlug.get(slug);
+    if (item) top.push(item);
+  }
+  const topSet = new Set(BOUQUET_TOP_SLUGS);
+  const rest = manifest.filter((b) => !topSet.has(b.slug));
+  rest.sort((a, b) => b.price - a.price || a.name.localeCompare(b.name));
+  return [...top, ...rest];
+}
 
 const BOUQUET_CURATED = [
   {
@@ -1543,6 +1558,20 @@ function processShop(input, output) {
   );
 }
 
+/** Homepage hero — 4:5 crop to match Hero.tsx */
+function processHero(input, output) {
+  run(
+    `magick "${input}" -auto-orient -gravity South -crop 4:5 +repage -resize 1200x1500> -strip -quality 92 "${output}"`
+  );
+}
+
+/** Homepage “Fresh Flower Bouquets” collection card — 5:6 crop */
+function processCollectionBouquets(input, output) {
+  run(
+    `magick "${input}" -auto-orient -gravity center -crop 5:6 +repage -resize 1000x1200> -strip -quality 90 "${output}"`
+  );
+}
+
 function listImages(dir) {
   if (!fs.existsSync(dir)) return [];
   return fs.readdirSync(dir).filter((f) => IMAGE_EXT.test(f));
@@ -1573,7 +1602,7 @@ function main() {
 
   [bouquetWeb, eventWeb, shopWeb].forEach(ensureDir);
 
-  const bouquetManifest = [];
+  let bouquetManifest = [];
 
   for (const item of BOUQUET_CURATED) {
     if (BOUQUET_EXCLUDE_SOURCES.has(item.src)) continue;
@@ -1615,14 +1644,7 @@ function main() {
     )
   );
 
-  bouquetManifest.sort(
-    (a, b) => a.price - b.price || a.name.localeCompare(b.name)
-  );
-
-  const pinnedIndex = bouquetManifest.findIndex((b) => b.slug === PINNED_BOUQUET_SLUG);
-  if (pinnedIndex > 0) {
-    bouquetManifest.unshift(...bouquetManifest.splice(pinnedIndex, 1));
-  }
+  bouquetManifest = sortBouquetManifest(bouquetManifest);
 
   bouquetManifest.forEach((b, i) => {
     if (b.originalPrice === undefined && b.discount) {
@@ -1703,6 +1725,20 @@ function main() {
     } catch {
       console.warn("Skip shop", file);
     }
+  }
+
+  const heroSource = path.join(ROOT, "marketing/hero-source-sunflower.png");
+  const heroOut = path.join(ROOT, "marketing/home-hero-sunflower.jpg");
+  if (fs.existsSync(heroSource)) {
+    processHero(heroSource, heroOut);
+    console.log("Updated homepage hero:", heroOut);
+  }
+
+  const collectionBouquetsSource = path.join(ROOT, "marketing/collection-bouquets-source.png");
+  const collectionBouquetsOut = path.join(ROOT, "marketing/home-collection-bouquets-v4.jpg");
+  if (fs.existsSync(collectionBouquetsSource)) {
+    processCollectionBouquets(collectionBouquetsSource, collectionBouquetsOut);
+    console.log("Updated collection bouquets card:", collectionBouquetsOut);
   }
 
   fs.writeFileSync(
