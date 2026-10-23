@@ -9,6 +9,7 @@ import {
   topExpenses,
   type HisabYearSummary,
 } from "@/lib/hisab/calc";
+import { formatHisabEntryTime } from "@/lib/hisab/date";
 import type { HisabEntry, HisabMonthData, HisabMonthSummary } from "@/lib/hisab/types";
 
 function BreakdownGrid({
@@ -226,7 +227,14 @@ export function HisabReportsApp() {
                 </span>
               )}
             </span>
-            <span className="shrink-0 font-medium">{formatPkr(signedAmount(entry))}</span>
+            <span className="shrink-0 text-right font-medium">
+              {formatPkr(signedAmount(entry))}
+              {entry.createdAt && (
+                <span className="block text-[10px] font-normal text-charcoal/45">
+                  {formatHisabEntryTime(entry.createdAt)}
+                </span>
+              )}
+            </span>
           </li>
         ))}
       </ul>

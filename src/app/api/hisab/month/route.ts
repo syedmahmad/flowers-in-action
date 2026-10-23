@@ -1,5 +1,7 @@
 import { NextResponse } from "next/server";
-import { isHisabAuthed } from "@/lib/hisab/auth";
+import { isHisabAuthed, isHisabOwnerAuthed, isHisabStaffAuthed } from "@/lib/hisab/auth";
+import { todayIsoPakistan } from "@/lib/hisab/date";
+import { filterMonthDataForStaff } from "@/lib/hisab/staff-scope";
 import { HisabStorageError, loadMonth, storageMode } from "@/lib/hisab/storage";
 
 export const dynamic = "force-dynamic";
@@ -24,11 +26,21 @@ export async function GET(request: Request) {
   }
 
   try {
-    const data = await loadMonth(parsed.year, parsed.month);
+    const owner = await isHisabOwnerAuthed();
+    const staff = await isHisabStaffAuthed();
+    const today = todayIsoPakistan();
+    let data = await loadMonth(parsed.year, parsed.month);
+    const staffOnly = staff && !owner;
+    if (staffOnly) {
+      data = filterMonthDataForStaff(data, today);
+    }
     return NextResponse.json(
       {
         data,
         storage: storageMode(),
+        role: owner ? "owner" : "staff",
+        today,
+        staffTodayOnly: staffOnly,
       },
       {
         headers: {

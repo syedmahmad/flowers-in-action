@@ -1,7 +1,8 @@
 import { randomUUID } from "crypto";
 import { NextResponse } from "next/server";
 import { isDayDone } from "@/lib/hisab/calc";
-import { isHisabAuthed } from "@/lib/hisab/auth";
+import { isHisabAuthed, isHisabOwnerAuthed, isHisabStaffAuthed } from "@/lib/hisab/auth";
+import { assertStaffMayEditDate } from "@/lib/hisab/staff-scope";
 import { HisabStorageError, loadMonth, saveMonth } from "@/lib/hisab/storage";
 import type { HisabEntry, HisabKind, HisabReceivedVia } from "@/lib/hisab/types";
 
@@ -45,6 +46,12 @@ export async function POST(request: Request) {
   }
   if (kind !== "sale" && kind !== "expense") {
     return NextResponse.json({ error: "Choose sale or expense." }, { status: 400 });
+  }
+
+  const staffOnly = (await isHisabStaffAuthed()) && !(await isHisabOwnerAuthed());
+  const gate = await assertStaffMayEditDate(date, staffOnly);
+  if (!gate.ok) {
+    return NextResponse.json({ error: gate.error }, { status: 403 });
   }
 
   const parts = parseDateParts(date)!;
@@ -95,6 +102,12 @@ export async function DELETE(request: Request) {
 
   if (!parts || !id) {
     return NextResponse.json({ error: "Invalid request." }, { status: 400 });
+  }
+
+  const staffOnly = (await isHisabStaffAuthed()) && !(await isHisabOwnerAuthed());
+  const gate = await assertStaffMayEditDate(date, staffOnly);
+  if (!gate.ok) {
+    return NextResponse.json({ error: gate.error }, { status: 403 });
   }
 
   const monthData = await loadMonth(parts.year, parts.month);

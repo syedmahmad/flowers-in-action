@@ -3,6 +3,7 @@
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { useSearchParams } from "next/navigation";
 import { formatPkr, saleReceivedVia, signedAmount, summarizeDay } from "@/lib/hisab/calc";
+import { formatHisabDayLabel, formatHisabEntryTime, todayIsoPakistan } from "@/lib/hisab/date";
 import type { HisabEntry, HisabKind, HisabMonthData, HisabReceivedVia } from "@/lib/hisab/types";
 
 const HISAB_FETCH: RequestInit = { credentials: "include", cache: "no-store" };
@@ -51,6 +52,8 @@ export function DailyHisabApp() {
   const [note, setNote] = useState("");
   const [kind, setKind] = useState<HisabKind>("sale");
   const [receivedVia, setReceivedVia] = useState<HisabReceivedVia>("cash");
+  const [staffTodayOnly, setStaffTodayOnly] = useState(true);
+  const [serverToday, setServerToday] = useState(todayIsoPakistan);
 
   const { year, month } = monthFromDate(selectedDate);
 
@@ -73,9 +76,18 @@ export function DailyHisabApp() {
       const json = (await res.json()) as {
         data: HisabMonthData;
         storage: string;
+        staffTodayOnly?: boolean;
+        today?: string;
       };
       setMonthData(json.data);
       setStorage(json.storage);
+      if (json.today) setServerToday(json.today);
+      if (json.staffTodayOnly) {
+        setStaffTodayOnly(true);
+        setSelectedDate(json.today ?? todayIsoPakistan());
+      } else {
+        setStaffTodayOnly(false);
+      }
       setAuthed(true);
     } catch {
       setFormError("Could not load data. Try again.");
@@ -303,13 +315,29 @@ export function DailyHisabApp() {
 
       <main className="mx-auto max-w-lg px-4 pt-4">
           <>
-            <label className="mb-1 block text-sm font-medium text-charcoal">Date</label>
-            <input
-              type="date"
-              value={selectedDate}
-              onChange={(e) => setSelectedDate(e.target.value)}
-              className="mb-4 w-full rounded-xl border border-maroon/20 px-3 py-2"
-            />
+            {staffTodayOnly ? (
+              <div className="mb-4 rounded-xl border border-maroon/15 bg-blush/40 px-4 py-3">
+                <p className="text-xs font-semibold uppercase tracking-wide text-maroon/80">
+                  Today&apos;s hisab only
+                </p>
+                <p className="mt-1 text-sm font-medium text-charcoal">
+                  {formatHisabDayLabel(serverToday)}
+                </p>
+                <p className="mt-1 text-xs text-charcoal/55">
+                  Previous days are not shown on team login. Owner uses reports to review history.
+                </p>
+              </div>
+            ) : (
+              <>
+                <label className="mb-1 block text-sm font-medium text-charcoal">Date</label>
+                <input
+                  type="date"
+                  value={selectedDate}
+                  onChange={(e) => setSelectedDate(e.target.value)}
+                  className="mb-4 w-full rounded-xl border border-maroon/20 px-3 py-2"
+                />
+              </>
+            )}
 
             {dayClosed && (
               <div className="mb-4 rounded-2xl border border-green-natural/30 bg-green-natural/15 px-4 py-3">
@@ -473,7 +501,12 @@ export function DailyHisabApp() {
                         </span>
                       )}
                     </p>
-                    <p className="text-sm text-charcoal/55">PKR {formatPkr(entry.amount)}</p>
+                    <p className="text-sm text-charcoal/55">
+                      PKR {formatPkr(entry.amount)}
+                      {entry.createdAt && (
+                        <span className="text-charcoal/45"> · {formatHisabEntryTime(entry.createdAt)}</span>
+                      )}
+                    </p>
                   </div>
                   <p className="shrink-0 font-semibold text-maroon">
                     {formatPkr(signedAmount(entry))}

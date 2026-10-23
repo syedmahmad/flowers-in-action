@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import { isDayDone } from "@/lib/hisab/calc";
-import { isHisabAuthed } from "@/lib/hisab/auth";
+import { isHisabAuthed, isHisabOwnerAuthed, isHisabStaffAuthed } from "@/lib/hisab/auth";
+import { assertStaffMayEditDate } from "@/lib/hisab/staff-scope";
 import { HisabStorageError, loadMonth, saveMonth } from "@/lib/hisab/storage";
 
 export const dynamic = "force-dynamic";
@@ -27,6 +28,12 @@ export async function POST(request: Request) {
   }
   if (typeof body.done !== "boolean") {
     return NextResponse.json({ error: "Invalid status." }, { status: 400 });
+  }
+
+  const staffOnly = (await isHisabStaffAuthed()) && !(await isHisabOwnerAuthed());
+  const gate = await assertStaffMayEditDate(date, staffOnly);
+  if (!gate.ok) {
+    return NextResponse.json({ error: gate.error }, { status: 403 });
   }
 
   const monthData = await loadMonth(parts.year, parts.month);
