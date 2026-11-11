@@ -1542,6 +1542,38 @@ export const bouquets: Bouquet[] = [
     featured: true,
     available: true,
   },
+  {
+    id: "bq-110",
+    slug: "sky-blue-cash-chocolate-bouquet",
+    name: "Sky Blue Cash & Chocolate Bouquet",
+    description: "A beautiful sky-blue themed bouquet featuring white and blue chrysanthemums, Cadbury Dairy Milk chocolates, and 7,000 PKR cash creatively arranged as fans. Wrapped in elegant blue paper with a matching ribbon. (Price includes 7,000 PKR cash + 3,000 PKR for floral arrangement and chocolates).",
+    image: "/images/bouquets/web/sky-blue-cash-chocolate-bouquet.jpg",
+    imageAlt: "Sky Blue Cash & Chocolate Bouquet with Pakistani Rupee notes and Cadbury by Phool Pattiyan Lahore",
+    price: 10000,
+    originalPrice: 11111,
+    discountPercentage: 10,
+    flowerOrigin: "local",
+    featured: true,
+    available: true,
+  },
+  {
+    id: "bq-111",
+    slug: "pastel-blue-purple-symphony",
+    name: "Pastel Blue & Purple Symphony",
+    description: "A soft, dreamy arrangement featuring tinted sky-blue and blush-pink chrysanthemums interwoven with delicate purple baby's breath. Beautifully presented in premium frosted white and blue layered wrapping with a matching satin ribbon tie.",
+    image: "/images/bouquets/web/pastel-blue-purple-symphony-1.jpg",
+    gallery: [
+      "/images/bouquets/web/pastel-blue-purple-symphony-2.jpg"
+    ],
+    video: "/videos/bouquets/pastel-blue-purple-symphony.mp4",
+    imageAlt: "Pastel Blue and Purple Chrysanthemum Bouquet by Phool Pattiyan Lahore",
+    price: 5000,
+    originalPrice: 5556,
+    discountPercentage: 10,
+    flowerOrigin: "local",
+    featured: true,
+    available: true,
+  },
 ];
 
 export const localBouquets = bouquets.filter((b) => b.flowerOrigin === "local");

@@ -551,6 +551,63 @@ export const events: EventPackage[] = [
     featured: true,
     available: true,
   },
+  {
+    id: "ev-37",
+    slug: "silver-room-decor-package",
+    name: "Silver Room Decor Package",
+    description: "Beautifully styled room decor with fresh red and white roses, perfect for wedding nights, anniversaries, or special romantic surprises. Includes bed styling and elegant floral borders.",
+    images: [
+      "/images/events/web/room-decor-silver-1.jpg",
+      "/images/events/web/room-decor-silver-2.jpg",
+      "/images/events/web/room-decor-silver-3.jpg"
+    ],
+    imageAlt: "Silver Room Decor Package by Phool Pattiyan Lahore",
+    price: 20000,
+    originalPrice: 22222,
+    discountPercentage: 10,
+    pricePrefix: "Starting from",
+    includedItems: ["Fresh rose petals on bed", "Floral borders on bed frame", "Side table floral arrangements", "Setup in Lahore"],
+    featured: true,
+    available: true,
+  },
+  {
+    id: "ev-38",
+    slug: "gold-room-decor-package",
+    name: "Gold Room Decor Package",
+    description: "Premium room decor featuring an elegant bed canopy draped with sheer fabric, accented by lush garlands of red and white roses. Perfect for unforgettable romantic celebrations.",
+    images: [
+      "/images/events/web/room-decor-gold-1.jpg",
+      "/images/events/web/room-decor-gold-2.jpg",
+      "/images/events/web/room-decor-gold-3.jpg"
+    ],
+    imageAlt: "Gold Room Decor Package by Phool Pattiyan Lahore",
+    price: 30000,
+    originalPrice: 33333,
+    discountPercentage: 10,
+    pricePrefix: "Starting from",
+    includedItems: ["Sheer bed canopy draping", "Lush floral header garland", "Floral side accents", "Setup in Lahore"],
+    featured: true,
+    available: true,
+  },
+  {
+    id: "ev-39",
+    slug: "platinum-room-decor-package",
+    name: "Platinum Room Decor Package",
+    description: "Our most luxurious room decor package. Features a complete grand four-poster floral canopy with cascading red and white blooms, soft tulle draping, and lavish floral accents.",
+    images: [
+      "/images/events/web/room-decor-platinum-1.jpg",
+      "/images/events/web/room-decor-platinum-2.jpg",
+      "/images/events/web/room-decor-platinum-3.jpg"
+    ],
+    imageAlt: "Platinum Room Decor Package by Phool Pattiyan Lahore",
+    price: 40000,
+    originalPrice: 44444,
+    discountPercentage: 10,
+    pricePrefix: "Starting from",
+    includedItems: ["Full 4-poster floral canopy", "Cascading rose garlands", "Premium sheer tulle draping", "Extensive room floral styling", "Setup in Lahore"],
+    featured: true,
+    available: true,
+  }
 ];
 
 export const featuredEvents = events.filter((e) => e.featured);
