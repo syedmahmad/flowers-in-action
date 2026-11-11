@@ -54,9 +54,11 @@ export async function GET(request: Request) {
         },
       });
 
+      const toEmail = process.env.REPORT_DESTINATION_EMAIL || "syedmahmad099@gmail.com";
+
       await transporter.sendMail({
         from: process.env.SMTP_EMAIL,
-        to: "syedmahmad099@gmail.com",
+        to: toEmail,
         subject: `Weekly Hisab Backup & Summary - ${today}`,
         text: `Hello, here is your weekly Hisab summary and backup. Total Net Profit so far this month: ${summary.net} PKR.\n\nPlease find the detailed JSON attached.`,
         attachments: [
@@ -74,7 +76,7 @@ export async function GET(request: Request) {
     // CallMeBot Free API for WhatsApp (Optional)
     // Send a simple summary message to WhatsApp if CALLMEBOT_API_KEY is configured
     if (process.env.CALLMEBOT_API_KEY) {
-      const phone = "+923349998990";
+      const phone = process.env.REPORT_DESTINATION_PHONE || "+923349998990"; // e.g. +923349998990
       const message = encodeURIComponent(
         `*Hisab Weekly Summary*\nMonth: ${month}/${year}\nTotal Sales: Rs ${summary.sales}\nTotal Expenses: Rs ${summary.expenses}\n*Net Profit: Rs ${summary.net}*`
       );

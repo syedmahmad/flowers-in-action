@@ -558,8 +558,7 @@ export const events: EventPackage[] = [
     description: "Elegant room decor featuring 2 side styling (bed head side and foot side) along with side table bunches for a beautiful and subtle romantic setup.",
     images: [
       "/images/events/web/room-decor-gold-1.jpg",
-      "/images/events/web/room-decor-gold-2.jpg",
-      "/images/events/web/room-decor-gold-3.jpg"
+      "/images/events/web/room-decor-platinum-1.jpg",
     ],
     imageAlt: "Silver Room Decor Package by Phool Pattiyan Lahore",
     price: 20000,
@@ -576,9 +575,7 @@ export const events: EventPackage[] = [
     name: "Gold Room Decor Package",
     description: "Premium room decor with lush floral arrangements covering all 4 sides of the bed, creating a stunning and immersive floral experience.",
     images: [
-      "/images/events/web/room-decor-silver-1.jpg",
-      "/images/events/web/room-decor-silver-2.jpg",
-      "/images/events/web/room-decor-silver-3.jpg"
+      "/images/events/web/room-decor-gold-2.jpg",
     ],
     imageAlt: "Gold Room Decor Package by Phool Pattiyan Lahore",
     price: 30000,
@@ -595,9 +592,11 @@ export const events: EventPackage[] = [
     name: "Platinum Room Decor Package",
     description: "Our most luxurious elevated room decor. Features a complete grand canopy, flowers on all 4 sides, elaborate side tables, and rose petals scattered on the floor.",
     images: [
-      "/images/events/web/room-decor-platinum-1.jpg",
+      "/images/events/web/room-decor-silver-1.jpg",
+      "/images/events/web/room-decor-silver-2.jpg",
+      "/images/events/web/room-decor-silver-3.jpg",
+      "/images/events/web/room-decor-gold-3.jpg",
       "/images/events/web/room-decor-platinum-2.jpg",
-      "/images/events/web/room-decor-platinum-3.jpg"
     ],
     imageAlt: "Platinum Room Decor Package by Phool Pattiyan Lahore",
     price: 40000,
@@ -616,7 +615,6 @@ export const events: EventPackage[] = [
     images: [
       "/images/events/web/car-decor-silver-1.jpg",
       "/images/events/web/car-decor-silver-3.jpg",
-      "/images/events/web/car-decor-silver-4.jpg",
       "/images/events/web/car-decor-silver-5.jpg",
       "/images/events/web/car-decor-gold-1.jpg"
     ],
@@ -639,7 +637,8 @@ export const events: EventPackage[] = [
       "/images/events/web/car-decor-gold-3.jpg",
       "/images/events/web/car-decor-gold-4.jpg",
       "/images/events/web/car-decor-gold-5.jpg",
-      "/images/events/web/car-decor-platinum-4.jpg"
+      "/images/events/web/car-decor-platinum-4.jpg",
+      "/images/events/web/car-decor-silver-2.jpg",
     ],
     imageAlt: "Gold Car Decor Package by Phool Pattiyan Lahore",
     price: 14000,
@@ -656,11 +655,11 @@ export const events: EventPackage[] = [
     name: "Platinum Car Decor Package",
     description: "Our most lavish car decor package. Features 3 beautiful bunches with trailing garlands, fully covered sections, and the most premium blooms for an absolutely grand arrival.",
     images: [
-      "/images/events/web/car-decor-silver-2.jpg",
       "/images/events/web/car-decor-platinum-1.jpg",
       "/images/events/web/car-decor-platinum-2.jpg",
       "/images/events/web/car-decor-platinum-3.jpg",
-      "/images/events/web/car-decor-platinum-5.jpg"
+      "/images/events/web/car-decor-platinum-5.jpg",
+      "/images/events/web/car-decor-silver-4.jpg",
     ],
     imageAlt: "Platinum Car Decor Package by Phool Pattiyan Lahore",
     price: 20000,
