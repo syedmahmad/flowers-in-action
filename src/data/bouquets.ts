@@ -1509,6 +1509,39 @@ export const bouquets: Bouquet[] = [
     featured: true,
     available: true,
   },
+  {
+    id: "bq-108",
+    slug: "ocean-blush-symphony",
+    name: "Ocean Blush Symphony",
+    description: "A stunning mix of sky blue chrysanthemums, soft pink blooms, and delicate baby's breath elegantly wrapped in frosted white paper.",
+    image: "/images/bouquets/web/ocean-blush-symphony.jpg",
+    imageAlt: "Ocean Blush Symphony fresh flower bouquet with blue chrysanthemums and pink flowers by Phool Pattiyan Lahore",
+    price: 5500,
+    originalPrice: 6111,
+    discountPercentage: 10,
+    flowerOrigin: "local",
+    featured: true,
+    available: true,
+  },
+  {
+    id: "bq-109",
+    slug: "crimson-wealth-cash-bouquet",
+    name: "Crimson Wealth Cash Bouquet",
+    description: "A grand statement bouquet featuring premium red roses, baby's breath, and 12,000 PKR cash elegantly folded into the arrangement. Wrapped in premium black paper with a striking red ribbon. (Price includes 12,000 PKR cash + 5,000 PKR floral arrangement).",
+    image: "/images/bouquets/web/crimson-wealth-cash-bouquet-1.jpg",
+    gallery: [
+      "/images/bouquets/web/crimson-wealth-cash-bouquet-2.jpg",
+      "/images/bouquets/web/crimson-wealth-cash-bouquet-3.jpg",
+      "/images/bouquets/web/crimson-wealth-cash-bouquet-4.jpg"
+    ],
+    imageAlt: "Crimson Wealth Cash Bouquet with red roses and Pakistani Rupee notes by Phool Pattiyan Lahore",
+    price: 17000,
+    originalPrice: 18889,
+    discountPercentage: 10,
+    flowerOrigin: "local",
+    featured: true,
+    available: true,
+  },
 ];
 
 export const localBouquets = bouquets.filter((b) => b.flowerOrigin === "local");

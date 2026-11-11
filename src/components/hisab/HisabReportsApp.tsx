@@ -77,6 +77,7 @@ export function HisabReportsApp() {
   const [expandedDate, setExpandedDate] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
   const [loadError, setLoadError] = useState("");
+  const [dayStatusBusy, setDayStatusBusy] = useState<string | null>(null);
 
   const loadMonthReport = useCallback(async () => {
     setLoading(true);
@@ -179,6 +180,29 @@ export function HisabReportsApp() {
     setMonthData(null);
     setSummary(null);
     setYearSummary(null);
+  }
+
+  async function setDayStatus(date: string, done: boolean) {
+    setLoadError("");
+    setDayStatusBusy(date);
+    try {
+      const res = await fetch("/api/hisab/day-status", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        credentials: "include",
+        body: JSON.stringify({ date, done }),
+      });
+      if (!res.ok) {
+        const j = (await res.json()) as { error?: string };
+        setLoadError(j.error ?? "Could not update this day.");
+        return;
+      }
+      await loadMonthReport();
+    } catch {
+      setLoadError("Network error — could not update this day.");
+    } finally {
+      setDayStatusBusy(null);
+    }
   }
 
   function exportCsv() {
@@ -460,6 +484,35 @@ export function HisabReportsApp() {
                       </>
                     )}
                     {open && entries.length > 0 && renderDayLines(entries)}
+                    {open && day.done && monthData?.dayDone?.[day.date] && (
+                      <p className="mt-2 text-center text-xs text-charcoal/55">
+                        Marked done{" "}
+                        {new Date(monthData.dayDone[day.date]).toLocaleString("en-PK", {
+                          dateStyle: "medium",
+                          timeStyle: "short",
+                        })}
+                      </p>
+                    )}
+                    {open && !day.done && day.entryCount > 0 && (
+                      <button
+                        type="button"
+                        disabled={dayStatusBusy === day.date}
+                        onClick={() => void setDayStatus(day.date, true)}
+                        className="mt-3 w-full rounded-xl bg-green-natural py-2.5 text-sm font-bold text-white disabled:opacity-60"
+                      >
+                        {dayStatusBusy === day.date ? "Saving…" : "Mark this day done"}
+                      </button>
+                    )}
+                    {open && day.done && (
+                      <button
+                        type="button"
+                        disabled={dayStatusBusy === day.date}
+                        onClick={() => void setDayStatus(day.date, false)}
+                        className="mt-3 w-full rounded-xl border border-maroon/25 bg-white py-2.5 text-sm font-semibold text-maroon disabled:opacity-60"
+                      >
+                        {dayStatusBusy === day.date ? "Saving…" : "Re-open to edit"}
+                      </button>
+                    )}
                     {open && (
                       <Link
                         href={`/daily-hisab?date=${day.date}`}

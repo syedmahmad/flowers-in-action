@@ -46,39 +46,50 @@ export function EventsSection({ mode = "full" }: EventsSectionProps) {
 
   return (
     <>
-      <section id="events" className="section-padding scroll-mt-20 bg-blush/25">
-        <div className="container-narrow">
-          <div className="mb-8 flex flex-col gap-3 sm:mb-10 sm:flex-row sm:items-end sm:justify-between lg:mb-12">
-            <div>
-              <p className="section-eyebrow">Celebrations</p>
-              <h2 className="section-title mb-3">Events &amp; Decorations</h2>
-              <p className="section-lead mx-0 max-w-2xl text-left">
-                Birthday decoration, wedding flowers, room setups and celebration décor —
-                crafted in Lahore with customisation on WhatsApp.
-              </p>
-            </div>
-            {mode === "homepage" && events.length > featuredEvents.length && (
-              <Link
-                href="#events-all"
-                className="text-sm font-semibold text-maroon hover:underline"
-              >
-                View all events →
-              </Link>
-            )}
+      <section id="events" className="section-padding scroll-mt-20 relative overflow-hidden bg-ivory">
+        {/* Subtle premium background textures */}
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_left,rgba(64,145,108,0.05),transparent_50%)]" />
+        <div className="premium-noise pointer-events-none absolute inset-0 opacity-10" aria-hidden="true" />
+
+        <div className="container-narrow relative z-10">
+          <div className="mb-10 flex flex-col items-center text-center sm:mb-12 lg:mb-16">
+            <p className="mb-4 inline-flex items-center gap-2 rounded-full border border-maroon/10 bg-white px-4 py-1.5 text-[0.625rem] font-semibold uppercase tracking-[0.24em] text-maroon shadow-sm backdrop-blur-md">
+              Celebrations
+            </p>
+            <h2 className="heading-serif mb-4 text-3xl font-semibold text-maroon-deep sm:text-4xl lg:text-[2.75rem]">
+              Events &amp; Decorations
+            </h2>
+            <p className="mx-auto max-w-2xl text-sm leading-relaxed text-charcoal/70 sm:text-base">
+              Birthday decoration, wedding flowers, room setups and celebration décor —
+              crafted in Lahore with customisation on WhatsApp.
+            </p>
           </div>
 
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 lg:gap-6">
+          <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3 lg:gap-5">
             {displayEvents.map((event) => (
               <EventCard key={event.slug} event={event} onOpen={openEvent} />
             ))}
           </div>
 
           {mode === "homepage" && events.length > featuredEvents.length && (
-            <div id="events-all" className="scroll-mt-20 mt-10 border-t border-blush/80 pt-10">
-              <h3 className="heading-serif mb-4 text-xl font-semibold text-maroon-deep sm:text-2xl">
-                All Event Packages
-              </h3>
-              <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 lg:gap-6">
+            <div className="mt-12 text-center">
+              <Link
+                href="#events-all"
+                className="inline-flex items-center gap-2 rounded-full border border-maroon/20 bg-white/50 px-6 py-2.5 text-sm font-medium text-maroon shadow-sm backdrop-blur-md transition-colors hover:bg-white"
+              >
+                View all events →
+              </Link>
+            </div>
+          )}
+
+          {mode === "homepage" && events.length > featuredEvents.length && (
+            <div id="events-all" className="scroll-mt-20 mt-16 border-t border-maroon/10 pt-16">
+              <div className="mb-10 text-center">
+                <h3 className="heading-serif text-2xl font-semibold text-maroon-deep sm:text-3xl">
+                  All Event Packages
+                </h3>
+              </div>
+              <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3 lg:gap-5">
                 {events.map((event) => (
                   <EventCard key={event.slug} event={event} onOpen={openEvent} />
                 ))}

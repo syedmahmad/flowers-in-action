@@ -511,6 +511,46 @@ export const events: EventPackage[] = [
     featured: true,
     available: true,
   },
+  {
+    id: "ev-35",
+    slug: "tiny-toes-pretty-bows-birthday",
+    name: "Tiny Toes & Pretty Bows",
+    description: "Elegant pastel yellow and pink balloon arch with draped fabric and custom 'Tiny Toes and pretty bows' sign for baby showers and birthdays.",
+    images: ["/images/events/web/tiny-toes-balloon-decor.jpg"],
+    imageAlt: "Tiny Toes & Pretty Bows Balloon Decor by Phool Pattiyan Lahore",
+    price: 18000,
+    originalPrice: 20000,
+    discountPercentage: 10,
+    pricePrefix: "Starting from",
+    includedItems: ["Custom text backdrop", "Pastel yellow & pink balloon arch", "Fabric drape accent", "Setup in Lahore"],
+    featured: true,
+    available: true,
+  },
+  {
+    id: "ev-36",
+    slug: "elegant-ivory-blush-nikkah",
+    name: "Elegant Ivory & Blush Nikkah Setup",
+    description: "A complete luxury Nikkah stage featuring a thick floral canopy of white and blush roses over gold sequin and white chiffon drapes, illuminated by warm fairy lights. Includes a matching fresh floral table runner for the signing table, and elegant white pedestals overflowing with roses.",
+    images: [
+      "/images/events/web/elegant-ivory-blush-nikkah-1.jpg",
+      "/images/events/web/elegant-ivory-blush-nikkah-2.jpg",
+      "/images/events/web/elegant-ivory-blush-nikkah-3.jpg"
+    ],
+    videos: [
+      "/videos/events/elegant-ivory-blush-nikkah-1.mp4",
+      "/videos/events/elegant-ivory-blush-nikkah-2.mp4",
+      "/videos/events/elegant-ivory-blush-nikkah-3.mp4",
+      "/videos/events/elegant-ivory-blush-nikkah-4.mp4"
+    ],
+    imageAlt: "Elegant Ivory & Blush Nikkah Stage Setup by Phool Pattiyan Lahore",
+    price: 35000,
+    originalPrice: 38889,
+    discountPercentage: 10,
+    pricePrefix: "Starting from",
+    includedItems: ["Floral header canopy (White & Blush)", "Gold sequin & chiffon draping", "Fairy light curtain", "Fresh floral table runner", "Rose pedestal arrangements", "Setup in Lahore"],
+    featured: true,
+    available: true,
+  },
 ];
 
 export const featuredEvents = events.filter((e) => e.featured);

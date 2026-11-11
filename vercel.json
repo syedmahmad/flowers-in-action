@@ -1,0 +1,9 @@
+{
+  "crons": [
+    {
+      "path": "/api/hisab/cron/report",
+      "schedule": "0 20 * * 5"
+    }
+  ]
+}
+

@@ -19,11 +19,11 @@ export function EventCard({ event, onOpen }: EventCardProps) {
   const discounted = hasDiscount(event);
 
   return (
-    <article className="group flex flex-col overflow-hidden rounded-2xl bg-white shadow-[0_4px_24px_rgba(27,67,50,0.06)] transition-shadow duration-300 hover:shadow-[0_8px_32px_rgba(27,67,50,0.1)]">
+    <article className="group relative flex flex-col overflow-hidden rounded-2xl ring-1 ring-maroon/8 shadow-[0_4px_24px_rgba(27,67,50,0.06)] transition-[box-shadow,transform,ring-color] duration-300 hover:-translate-y-1 hover:shadow-[0_16px_48px_rgba(27,67,50,0.14)] hover:ring-gold/25 aspect-[4/5] sm:aspect-[3/4]">
       <button
         type="button"
         onClick={() => onOpen(event)}
-        className="relative aspect-[4/3] overflow-hidden text-left"
+        className="absolute inset-0 h-full w-full text-left"
         aria-label={`View ${event.name}`}
       >
         <Image
@@ -31,61 +31,55 @@ export function EventCard({ event, onOpen }: EventCardProps) {
           alt={event.imageAlt}
           fill
           sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, 33vw"
-          className="object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+          className="object-cover object-[center_15%] transition-transform duration-700 ease-out group-hover:scale-[1.05]"
           loading="lazy"
         />
         {discounted && event.discountPercentage && (
-          <span className="absolute left-3 top-3 rounded-full bg-maroon/90 px-2.5 py-1 text-[10px] font-medium text-white sm:text-xs">
+          <span className="absolute left-3 top-3 rounded-full bg-maroon-deep/90 px-2.5 py-1 text-[10px] font-semibold tracking-wide text-white backdrop-blur-sm sm:text-xs z-10">
             {getDiscountBadge(event.discountPercentage)}
           </span>
         )}
       </button>
 
-      <div className="flex flex-1 flex-col p-3 sm:p-4">
+      {/* Glassmorphism gradient overlay to make text readable */}
+      <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-maroon-deep/90 via-maroon-deep/30 to-transparent mix-blend-multiply" />
+
+      {/* Glass Panel Content */}
+      <div className="relative mt-auto flex flex-col p-4 sm:p-5 text-white bg-gradient-to-t from-black/50 to-transparent backdrop-blur-[2px]">
         <button type="button" onClick={() => onOpen(event)} className="text-left">
-          <h3 className="heading-serif mb-1 text-sm font-semibold leading-snug text-maroon-deep sm:text-lg">
+          <h3 className="heading-serif mb-1 text-base font-semibold leading-snug text-white sm:text-xl">
             {event.name}
           </h3>
         </button>
-        <p className="mb-3 line-clamp-2 text-xs leading-relaxed text-charcoal/70 sm:text-sm">
-          {event.description}
-        </p>
 
         <div className="mb-3 sm:mb-4">
-          <p className="text-xs text-charcoal/60 sm:text-sm">
-            {event.pricePrefix ?? "From"}{" "}
-            <span className="text-base font-bold text-maroon sm:text-xl">
+          <p className="text-[10px] text-white/80 sm:text-xs uppercase tracking-wide mb-1">
+            {event.pricePrefix ?? "From"}
+          </p>
+          <div className="flex flex-wrap items-baseline gap-x-2 gap-y-0.5">
+            <span className="text-sm font-bold text-gold sm:text-lg">
               PKR {formatPrice(event.price)}
             </span>
-          </p>
-          {discounted && event.originalPrice && (
-            <p className="text-xs text-charcoal/45 line-through sm:text-sm">
-              PKR {formatPrice(event.originalPrice)}
-            </p>
-          )}
+            {discounted && event.originalPrice && (
+              <span className="text-[10px] text-white/60 line-through sm:text-xs">
+                PKR {formatPrice(event.originalPrice)}
+              </span>
+            )}
+          </div>
         </div>
 
-        <div className="mt-auto grid gap-2">
+        <div className="grid gap-2">
           <Button
             variant="whatsapp"
             size="sm"
             href={buildEventWhatsAppUrl(event)}
             external
-            className="w-full whitespace-nowrap px-2.5 text-[11px] sm:px-4 sm:text-sm"
+            className="w-full whitespace-nowrap px-2.5 text-[11px] sm:px-4 sm:text-sm bg-white/20 hover:bg-white/30 text-white backdrop-blur-md border border-white/30"
             aria-label={`Book ${event.name} on WhatsApp`}
           >
             <span className="sm:hidden">Book</span>
             <span className="hidden sm:inline">Book on WhatsApp</span>
           </Button>
-          {event.images.length > 1 && (
-            <button
-              type="button"
-              onClick={() => onOpen(event)}
-              className="py-1 text-center text-sm font-medium text-maroon hover:underline"
-            >
-              View photos
-            </button>
-          )}
         </div>
       </div>
     </article>

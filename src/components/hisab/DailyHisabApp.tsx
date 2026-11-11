@@ -108,12 +108,20 @@ export function DailyHisabApp() {
   async function handleLogin(e: React.FormEvent) {
     e.preventDefault();
     setLoginError("");
-    const res = await fetch("/api/hisab/login", {
+    let res = await fetch("/api/hisab/login", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       credentials: "include",
       body: JSON.stringify({ pin, role: "staff" }),
     });
+    if (!res.ok) {
+      res = await fetch("/api/hisab/login", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        credentials: "include",
+        body: JSON.stringify({ pin, role: "owner" }),
+      });
+    }
     if (!res.ok) {
       const j = (await res.json()) as { error?: string };
       setLoginError(j.error ?? "Login failed.");
@@ -250,7 +258,12 @@ export function DailyHisabApp() {
             Daily Hisab
           </h1>
           <p className="mb-6 text-sm text-charcoal/65">
-            Team PIN for daily entry only. Month and year totals are not shown here.
+            Team PIN for today&apos;s entry. Owner PIN also works here to pick past dates and close
+            days. Month totals are on{" "}
+            <a href="/daily-hisab/reports" className="text-maroon underline-offset-2 hover:underline">
+              reports
+            </a>
+            .
           </p>
           <input
             type="text"

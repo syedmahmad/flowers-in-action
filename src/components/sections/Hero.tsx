@@ -24,9 +24,9 @@ export function Hero() {
       />
 
       <div className="container-narrow relative px-4 py-8 sm:px-6 sm:py-14 lg:px-8 lg:py-20 xl:py-24">
-        <div className="flex flex-col gap-8 lg:grid lg:grid-cols-[1.05fr_0.95fr] lg:items-center lg:gap-12 xl:gap-16">
+        <div className="flex flex-col gap-8 lg:grid lg:grid-cols-[1.1fr_0.9fr] lg:items-center lg:gap-12 xl:gap-16">
           <div className="flex flex-col justify-center text-center lg:text-left">
-            <p className="mb-4 inline-flex items-center gap-2.5 self-center rounded-full border border-gold/25 bg-white/75 px-4 py-2 text-[0.625rem] font-semibold uppercase tracking-[0.24em] text-maroon-deep shadow-[0_8px_30px_rgba(27,67,50,0.06)] backdrop-blur-sm sm:text-xs lg:self-start">
+            <p className="mb-4 inline-flex items-center gap-2.5 self-center rounded-full border border-gold/25 bg-white/60 px-4 py-2 text-[0.625rem] font-semibold uppercase tracking-[0.24em] text-maroon-deep shadow-[0_8px_30px_rgba(27,67,50,0.06)] backdrop-blur-md sm:text-xs lg:self-start">
               <span className="relative flex h-2 w-2" aria-hidden="true">
                 <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-natural/40" />
                 <span className="relative inline-flex h-2 w-2 rounded-full bg-green-natural" />
@@ -58,7 +58,7 @@ export function Hero() {
               {["Fresh Bouquets", "Event Décor", "Same-day Lahore"].map((tag) => (
                 <span
                   key={tag}
-                  className="rounded-full border border-maroon/10 bg-white/70 px-3 py-1.5 text-[0.6875rem] font-medium tracking-wide text-charcoal/75 backdrop-blur-sm sm:text-xs"
+                  className="rounded-full border border-maroon/10 bg-white/40 px-3 py-1.5 text-[0.6875rem] font-medium tracking-wide text-charcoal/75 backdrop-blur-md sm:text-xs"
                 >
                   {tag}
                 </span>
@@ -77,50 +77,61 @@ export function Hero() {
                 href="#events"
                 variant="outline"
                 size="lg"
-                className="w-full border-maroon/20 bg-white/50 backdrop-blur-sm sm:w-auto sm:min-w-[12rem]"
+                className="w-full border-maroon/20 bg-white/30 backdrop-blur-md sm:w-auto sm:min-w-[12rem]"
               >
                 Explore Events
               </Button>
             </div>
           </div>
 
-          <div className="relative mx-auto w-full max-w-[19rem] sm:max-w-sm lg:mx-0 lg:max-w-none">
-            <div
-              className="absolute -inset-3 rounded-[1.5rem] bg-gradient-to-br from-gold/20 via-transparent to-green-natural/15 blur-xl sm:-inset-4 sm:rounded-[1.75rem]"
-              aria-hidden="true"
-            />
+          <div className="relative mx-auto w-full lg:mx-0 lg:max-w-none">
+            {/* Bento Grid layout for Hero */}
+            <div className="grid grid-cols-2 gap-2 sm:gap-4">
+              {/* Left Column (Tall image) */}
+              <div className="hero-image-glow relative h-full overflow-hidden rounded-[1rem] bg-[#f7f3ed] ring-1 ring-gold/25 sm:rounded-[1.5rem]">
+                <Image
+                  src={images.marketing.heroBouquet}
+                  alt="Premium Rose and Mixed Bloom Bouquet"
+                  fill
+                  priority
+                  sizes="(max-width: 1024px) 50vw, 22vw"
+                  className="photo-editorial object-cover object-[center_55%]"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-maroon-deep/70 via-maroon-deep/10 to-transparent mix-blend-multiply" />
+                <div className="absolute inset-x-1.5 bottom-1.5 sm:inset-x-2 sm:bottom-2 rounded-xl border border-white/20 bg-white/20 p-2 sm:p-3 backdrop-blur-md">
+                  <p className="heading-serif text-xs sm:text-sm font-semibold text-white">Fresh Bouquets</p>
+                  <p className="text-[0.55rem] sm:text-[0.625rem] text-white/80">Hand-tied daily</p>
+                </div>
+              </div>
 
-            <div className="hero-image-glow photo-vignette relative aspect-[4/5] overflow-hidden rounded-[1.5rem] bg-[#f7f3ed] ring-1 ring-gold/25 sm:rounded-[1.75rem] lg:rounded-[2rem]">
-              <Image
-                src={images.marketing.heroBouquet}
-                alt="Sunflower and mixed bloom bouquet by Phool Pattiyan Lahore"
-                fill
-                priority
-                sizes="(max-width: 1024px) 90vw, 42vw"
-                className="photo-editorial object-cover object-[center_55%]"
-              />
-              <div
-                className="absolute inset-0 bg-gradient-to-t from-maroon-deep/45 via-maroon-deep/5 to-[#fffef9]/20"
-                aria-hidden="true"
-              />
-              <div
-                className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(201,169,98,0.18),transparent_42%)]"
-                aria-hidden="true"
-              />
-            </div>
+              {/* Right Column (2 stacked blocks) */}
+              <div className="flex flex-col gap-2 sm:gap-4 h-full">
+                <div className="hero-image-glow relative aspect-square overflow-hidden rounded-[1rem] bg-[#f7f3ed] ring-1 ring-gold/25 sm:rounded-[1.5rem]">
+                  <Image
+                    src={images.marketing.collectionEvents}
+                    alt="Mehndi setup and floral decor"
+                    fill
+                    sizes="(max-width: 1024px) 50vw, 22vw"
+                    className="photo-editorial object-cover object-[center_65%]"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-maroon-deep/70 via-transparent to-transparent mix-blend-multiply" />
+                  <div className="absolute inset-x-1.5 bottom-1.5 sm:inset-x-2 sm:bottom-2 rounded-xl border border-white/20 bg-white/20 p-2 sm:p-2.5 backdrop-blur-md">
+                    <p className="heading-serif text-xs sm:text-sm font-semibold text-white">Event Décor</p>
+                  </div>
+                </div>
 
-            <div className="absolute -left-2 top-8 rounded-2xl border border-white/60 bg-white/90 px-4 py-3 shadow-[0_16px_40px_rgba(15,41,34,0.12)] backdrop-blur-md sm:-left-5 sm:top-10">
-              <p className="text-[0.625rem] font-semibold uppercase tracking-[0.22em] text-green-natural">
-                Handcrafted
-              </p>
-              <p className="heading-serif mt-1 text-lg font-semibold text-maroon-deep">Fresh Daily</p>
-            </div>
-
-            <div className="absolute -bottom-3 -right-1 rounded-2xl border border-gold/25 bg-maroon-deep px-4 py-3 text-white shadow-[0_16px_40px_rgba(15,41,34,0.2)] sm:-right-4">
-              <p className="text-[0.625rem] font-semibold uppercase tracking-[0.22em] text-gold">
-                Lahore Delivery
-              </p>
-              <p className="heading-serif mt-1 text-lg font-semibold">DHA &amp; Beyond</p>
+                <div className="hero-image-glow relative flex-1 min-h-[5rem] overflow-hidden rounded-[1rem] bg-gradient-to-br from-maroon to-maroon-deep p-3 sm:p-4 ring-1 ring-gold/25 sm:rounded-[1.5rem]">
+                  <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_80%,rgba(201,169,98,0.25),transparent_50%)]" />
+                  <div className="relative flex h-full flex-col justify-center">
+                    <p className="text-[0.55rem] sm:text-[0.65rem] font-bold uppercase tracking-[0.2em] text-gold">
+                      Lahore Delivery
+                    </p>
+                    <p className="heading-serif mt-0.5 sm:mt-1 text-base sm:text-xl font-medium leading-tight text-white">
+                      Same-day to your door.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
