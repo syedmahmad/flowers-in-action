@@ -9,6 +9,7 @@ import { TrustBar } from "@/components/sections/TrustBar";
 import { CollectionCards } from "@/components/sections/CollectionCards";
 import { BouquetsSection } from "@/components/sections/BouquetsSection";
 import { EventsSection } from "@/components/sections/EventsSection";
+import { PackagesSection } from "@/components/sections/PackagesSection";
 import { CustomOrdersSection } from "@/components/sections/CustomOrdersSection";
 import { AboutSection } from "@/components/sections/AboutSection";
 import { HowItWorksSection } from "@/components/sections/HowItWorksSection";
@@ -40,6 +41,9 @@ export default function HomePage() {
         <BouquetsSection />
         <Suspense fallback={<EventsFallback />}>
           <EventsSection mode="homepage" />
+        </Suspense>
+        <Suspense fallback={<EventsFallback />}>
+          <PackagesSection />
         </Suspense>
         <CustomOrdersSection />
         <AboutSection />

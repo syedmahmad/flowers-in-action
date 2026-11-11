@@ -24,7 +24,13 @@ export function EventsSection({ mode = "full" }: EventsSectionProps) {
 
   const selected = manualSelected ?? urlEvent;
 
-  const displayEvents = mode === "homepage" ? featuredEvents : events;
+  const displayEvents = (mode === "homepage" ? featuredEvents : events).filter(
+    (e) => !(e.slug.includes("package") && (e.slug.includes("room-decor") || e.slug.includes("car-decor")))
+  );
+  
+  const allNonPackageEvents = events.filter(
+    (e) => !(e.slug.includes("package") && (e.slug.includes("room-decor") || e.slug.includes("car-decor")))
+  );
 
   const openEvent = useCallback(
     (event: EventPackage) => {
@@ -71,7 +77,7 @@ export function EventsSection({ mode = "full" }: EventsSectionProps) {
             ))}
           </div>
 
-          {mode === "homepage" && events.length > featuredEvents.length && (
+          {mode === "homepage" && allNonPackageEvents.length > displayEvents.length && (
             <div className="mt-12 text-center">
               <Link
                 href="#events-all"
@@ -82,7 +88,7 @@ export function EventsSection({ mode = "full" }: EventsSectionProps) {
             </div>
           )}
 
-          {mode === "homepage" && events.length > featuredEvents.length && (
+          {mode === "homepage" && allNonPackageEvents.length > displayEvents.length && (
             <div id="events-all" className="scroll-mt-20 mt-16 border-t border-maroon/10 pt-16">
               <div className="mb-10 text-center">
                 <h3 className="heading-serif text-2xl font-semibold text-maroon-deep sm:text-3xl">
@@ -90,7 +96,7 @@ export function EventsSection({ mode = "full" }: EventsSectionProps) {
                 </h3>
               </div>
               <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3 lg:gap-5">
-                {events.map((event) => (
+                {allNonPackageEvents.map((event) => (
                   <EventCard key={event.slug} event={event} onOpen={openEvent} />
                 ))}
               </div>
