@@ -377,36 +377,32 @@ export function DailyHisabApp() {
             )}
 
             <div
-              className={`mb-4 rounded-2xl px-4 py-3 text-center ${
-                daySummary.net >= 0 ? "bg-green-natural/10" : "bg-red-500/10"
+              className={`mb-3 rounded-2xl border-2 px-4 py-5 text-center ${
+                (daySummary.salesCash - daySummary.expenses) >= 0 ? "border-green-natural/40 bg-green-natural/15 shadow-sm" : "border-red-500/40 bg-red-500/15 shadow-sm"
               }`}
             >
-              <p className="text-xs uppercase tracking-wide text-charcoal/60">Net for this day</p>
-              <p className="text-2xl font-bold text-maroon-deep">PKR {formatPkr(daySummary.net)}</p>
-              <p className="mt-1 text-xs text-charcoal/65">
-                Sales {formatPkr(daySummary.sales)} · Expenses {formatPkr(daySummary.expenses)}
+              <p className="text-[11px] font-bold uppercase tracking-[0.2em] text-maroon-deep/80">💰 Cash in Box</p>
+              <p className="mt-1 text-[2.25rem] font-black text-maroon-deep">PKR {formatPkr(daySummary.salesCash - daySummary.expenses)}</p>
+              <p className="mt-2 flex items-center justify-center gap-2 text-xs font-medium text-maroon-deep/75">
+                <span>Cash In: {formatPkr(daySummary.salesCash)}</span>
+                <span className="opacity-50">•</span>
+                <span>Expenses: {formatPkr(daySummary.expenses)}</span>
               </p>
             </div>
 
             {(daySummary.sales > 0 || daySummary.expenses > 0) && (
-              <div className="mb-4 grid grid-cols-2 gap-2 sm:grid-cols-4">
-                <div className="rounded-xl border border-maroon/10 bg-white p-3 text-center">
-                  <p className="text-[10px] uppercase text-charcoal/55">Total received</p>
-                  <p className="text-sm font-bold text-maroon-deep">{formatPkr(daySummary.sales)}</p>
+              <div className="mb-5 grid grid-cols-2 gap-2 sm:grid-cols-3">
+                <div className="rounded-xl border border-maroon/10 bg-white p-3 text-center shadow-sm">
+                  <p className="text-[10px] font-semibold uppercase text-charcoal/60">Online Sales</p>
+                  <p className="mt-0.5 text-base font-bold text-maroon-deep">{formatPkr(daySummary.salesOnline)}</p>
                 </div>
-                <div className="rounded-xl border border-maroon/10 bg-white p-3 text-center">
-                  <p className="text-[10px] uppercase text-charcoal/55">Cash</p>
-                  <p className="text-sm font-bold text-maroon-deep">{formatPkr(daySummary.salesCash)}</p>
+                <div className="rounded-xl border border-maroon/10 bg-white p-3 text-center shadow-sm">
+                  <p className="text-[10px] font-semibold uppercase text-charcoal/60">Total Sales</p>
+                  <p className="mt-0.5 text-base font-bold text-maroon-deep">{formatPkr(daySummary.sales)}</p>
                 </div>
-                <div className="rounded-xl border border-maroon/10 bg-white p-3 text-center">
-                  <p className="text-[10px] uppercase text-charcoal/55">Online</p>
-                  <p className="text-sm font-bold text-maroon-deep">{formatPkr(daySummary.salesOnline)}</p>
-                </div>
-                <div className="rounded-xl border border-red-200 bg-red-500/10 p-3 text-center">
-                  <p className="text-[10px] uppercase text-charcoal/55">Expenses</p>
-                  <p className="text-sm font-bold text-red-700">
-                    {daySummary.expenses > 0 ? formatPkr(-daySummary.expenses) : "0"}
-                  </p>
+                <div className="col-span-2 sm:col-span-1 rounded-xl border border-maroon/10 bg-white p-3 text-center shadow-sm">
+                  <p className="text-[10px] font-semibold uppercase text-charcoal/60">Total Net</p>
+                  <p className="mt-0.5 text-base font-bold text-maroon-deep">{formatPkr(daySummary.net)}</p>
                 </div>
               </div>
             )}
