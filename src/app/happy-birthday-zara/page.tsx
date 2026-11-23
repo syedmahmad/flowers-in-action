@@ -111,6 +111,9 @@ export default function HappyBirthdayZara() {
                 My dearest Zara, words can never truly express how much you mean to me. From the moment you walked into my life, you have filled it with light, joy, and endless love.
               </p>
               <p>
+                You have transformed my world and, in the process, transformed me. I have always lived with a pure heart and good intentions, but the gentle, patient way you handle my flaws and little habits is truly remarkable. You didn't just accept me; you nurtured my soul and brought out the absolute best version of the man I was always meant to be.
+              </p>
+              <p>
                 You are not just the best wife a man could ask for, but the most loving and caring mother to our two precious daughters. Seeing you with them makes me fall in love with you all over again, every single day.
               </p>
               <p>
