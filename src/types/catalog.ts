@@ -1,4 +1,4 @@
-export type FlowerOrigin = "local" | "imported";
+export type FlowerOrigin = "local" | "imported" | "artificial";
 
 export interface Bouquet {
   id: string;
